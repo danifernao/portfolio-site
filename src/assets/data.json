@@ -1,0 +1,175 @@
+{
+  "header": {
+    "name": "Daniel Fernández Juvinao",
+    "profession": "Desarrollador Web / Técnico Profesional en Sistemas",
+    "photo": "me.png"
+  },
+  "about": {
+    "id": "acerca-de-mi",
+    "title": "Acerca de mí",
+    "description": "Soy un colombiano amante del desarrollo web, de los diseños sencillos y adaptables, siguiendo las buenas prácticas en marcado y en SEO; haciendo énfasis en la eficiencia y legibilidad en la codificación; siempre en constante aprendizaje."
+  },
+  "skills": {
+    "id": "tecnologias",
+    "title": "Tecnologías",
+    "items": [
+      "XHTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "Vue.js",
+      "PHP",
+      "MySQL",
+      "Laravel",
+      "WordPress",
+      "Git"
+    ]
+  },
+  "projects": {
+    "id": "proyectos",
+    "title": "Proyectos",
+    "items":[
+      {
+        "date": "2025",
+        "title": "AniGuess",
+        "description": "Un simple juego en donde se tiene que adivinar el nombre de la obra a la que pertence un personaje de alguna animación, novela o cómic registrado en la base de datos de AniList.",
+        "tags": ["React", "TypeScript", "API"],
+        "screenshot": "project-aniguess.png",
+        "links": [
+          {
+            "text": "Demostración",
+            "url": "https://wx3.netlify.app/aniguess/"
+          },
+          {
+            "text": "Código fuente",
+            "url": "https://github.com/danifernao/aniguess"
+          }
+        ]
+      },
+      {
+        "date": "2025",
+        "title": "Player Card",
+        "description": "Un proyecto personal para compartir en un solo lugar mis UID de los videojuegos multijugador en línea que juego.",
+        "tags": ["React", "React Router"],
+        "screenshot": "project-player-card.png",
+        "links": [
+          {
+            "text": "Demostración",
+            "url": "https://wx3.netlify.app/player-card/"
+          },
+          {
+            "text": "Código fuente",
+            "url": "https://github.com/dotdani/player-card"
+          }
+        ]
+      },
+      {
+        "date": "2025",
+        "title": "Sudoku",
+        "description": "Un Sudoku sencillo para seguir solidificando mis conocimientos en React.",
+        "tags": ["React"],
+        "screenshot": "project-sudoku.png",
+        "links": [
+          {
+            "text": "Demostración",
+            "url": "https://wx3.netlify.app/sudoku/"
+          },
+          {
+            "text": "Código fuente",
+            "url": "https://github.com/dotdani/sudoku"
+          }
+        ]
+      },
+      {
+        "date": "2025",
+        "title": "Curriculum Vitae",
+        "description": "Una hoja de vida tradicional con la posibilidad de ofrecer el contenido en varios idiomas.",
+        "tags": ["React"],
+        "screenshot": "project-cv.png",
+        "links": [
+          {
+            "text": "Demostración",
+            "url": "https://wx3.netlify.app/cv/"
+          },
+          {
+            "text": "Código fuente",
+            "url": "https://github.com/dotdani/curriculum-vitae"
+          }
+        ]
+      },
+      {
+        "date": "2025",
+        "title": "Cronómetro",
+        "description": "Un cronómetro basado en la apariencia y comportamiento de la aplicación Reloj de Google.",
+        "tags": ["React"],
+        "screenshot": "project-cronometro.png",
+        "links": [
+          {
+            "text": "Demostración",
+            "url": "https://wx3.netlify.app/stopwatch/"
+          },
+          {
+            "text": "Código fuente",
+            "url": "https://github.com/dotdani/stopwatch"
+          }
+        ]
+      },
+      {
+        "date": "2023",
+        "title": "Fundadores",
+        "description": "Tema de WordPress para el sitio web del Hogar Infantil Los Fundadores.",
+        "tags": ["WordPress"],
+        "screenshot": "project-fundadores.png",
+        "links": [
+          {
+            "text": "Código fuente",
+            "url": "https://github.com/dotdani/fundadores"
+          }
+        ]
+      },
+      {
+        "date": "2022",
+        "title": "Inventario",
+        "description": "Aplicación web para la gestión de inventario elaborado con Laravel y Vue.js.",
+        "tags": ["Vue.js", "Laravel"],
+        "screenshot": "project-inventario.png",
+        "links": [
+          {
+            "text": "Código fuente",
+            "url": "https://github.com/dotdani/inventario"
+          }
+        ]
+      }
+    ]
+  },
+  "education": {
+    "id": "educacion",
+    "title": "Educación",
+    "items": [
+      {
+        "date": "2023",
+        "title": "Tecnólogo en Análisis y Desarrollo de Sistemas de Información",
+        "description": "Servicio Nacional de Aprendizaje\nCertifica las capacidades para la especificación de los requisitos necesarios para el desarrollo de un sistema de información, el análisis respectivo para su construcción, el diseño del mismo, su codificación y la implantación de la solución, aplicando las buenas prácticas de calidad en el proceso de desarrollo de *software*."
+      },
+      {
+        "date": "2010",
+        "title": "Técnico Profesional en Sistemas",
+        "description": "Instituto Nacional de Formación Técnica Profesional «Humberto Velásquez García»\nCertifica las capacidades para la gestión y el mantenimiento de los componentes físicos y lógicos de un ordenador y el apoyo en los procesos técnicos para el desarrollo de aplicaciones web y de escritorio."
+      }
+    ]
+  },
+  "links": {
+    "id": "enlaces",
+    "title": "Enlaces",
+    "items": [
+      {
+        "text": "LinkedIn",
+        "url": "https://linkedin.com/in/danifernao"
+      },
+      {
+        "text": "GitHub",
+        "url": "https://github.com/danifernao"
+      }
+    ]
+  }
+}
