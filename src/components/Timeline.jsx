@@ -1,11 +1,11 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import ReactMarkdown from "react-markdown";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
-function Timeline({ items }) {
+function Timeline({ id, items }) {
   const [isHidden, setIsHidden] = useState(true);
   const [imageSrc, setImageSrc] = useState(null);
 
@@ -20,6 +20,13 @@ function Timeline({ items }) {
       e.preventDefault();
     }
   };
+
+  useEffect(() => {
+    const fragment = window.location.hash.slice(1);
+    if (fragment === id) {
+      setIsHidden(false);
+    }
+  }, []);
 
   return (
     <div className={`timeline ${isHidden ? "" : "expanded"}`}>
@@ -87,7 +94,7 @@ function Timeline({ items }) {
         <div className="more">
           <a
             href="#"
-            aria-expanded={isHidden}
+            aria-expanded={!isHidden}
             aria-controls="projects"
             onClick={expand}
           >
@@ -110,6 +117,7 @@ function Timeline({ items }) {
 }
 
 Timeline.PropTypes = {
+  id: PropTypes.string,
   items: PropTypes.arrayOf(
     PropTypes.shape({
       date: PropTypes.string,

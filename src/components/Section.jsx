@@ -10,7 +10,7 @@ function Section({ data }) {
         </h2>
       )}
       {data.description && <p>{data.description}</p>}
-      {data.items && <Timeline items={data.items} />}
+      {data.items && <Timeline id={data.id} items={data.items} />}
     </div>
   );
 }
