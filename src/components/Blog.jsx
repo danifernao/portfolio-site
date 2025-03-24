@@ -40,6 +40,10 @@ function Blog({ data }) {
     event.preventDefault();
   };
 
+  const formatURL = (url) => {
+    return url.replace(/^(http)\:\/\//, "https://");
+  };
+
   useEffect(() => {
     const controller = new AbortController();
     const signal = controller.signal;
@@ -59,7 +63,7 @@ function Blog({ data }) {
       <ul>
         {posts.map((post, i) => (
           <li key={i}>
-            <a href={post.url} target="_blank">
+            <a href={formatURL(post.url)} target="_blank">
               {post.title}
             </a>
             <time dateTime={post.published}>

@@ -150,9 +150,13 @@ p {
 }
 
 .section.blog time {
-  margin-left: 0.5rem;
   font-size: 0.9rem;
   font-style: italic;
+}
+
+.section.blog time:before {
+  content: "•";
+  margin: 0 0.5rem;
 }
 
 .section.blog.loading .loading {
