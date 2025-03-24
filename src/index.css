@@ -133,6 +133,32 @@ p {
   margin: 0 0.5rem;
 }
 
+
+.section.blog ul {
+  margin: 0;
+  padding: 0 0 0 1rem;
+  list-style: square;
+}
+
+.section.blog.loading .more,
+.section.blog:not(.loading) .loading {
+  display: none !important;
+}
+
+.section.blog li {
+  margin: 0.3rem 0;
+}
+
+.section.blog time {
+  margin-left: 0.5rem;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.section.blog.loading .loading {
+  font-style: italic;
+}
+
 .section.links dl {
   display: grid;
   grid-template-columns: auto 1fr;

@@ -158,6 +158,19 @@
       }
     ]
   },
+  "blog": {
+    "id": "bitacora",
+    "title": "Bitácora",
+    "api": {
+      "blogId": "8541091818058714641",
+      "key": "AIzaSyCyD4gKMmc6qTpDTUrnSbZDWqVqXZO8r2g",
+      "maxResults": 7
+
+    },
+    "more": "Ver más entradas...",
+    "loading": "Obteniendo entradas...",
+    "error": "No se pudo cargar las entradas. Por favor, inténtelo más tarde."
+  },
   "links": {
     "id": "enlaces",
     "title": "Enlaces",

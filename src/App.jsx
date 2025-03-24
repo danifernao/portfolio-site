@@ -1,6 +1,7 @@
 import data from "./assets/data.json";
 import Header from "./components/Header";
 import Skills from "./components/Skills";
+import Blog from "./components/Blog";
 import Links from "./components/Links";
 import Section from "./components/Section";
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -16,6 +17,7 @@ function App() {
         <Section data={data.about} />
         <Skills data={data.skills} />
         <Section data={data.projects} />
+        <Blog data={data.blog} />
         <Section data={data.education} />
         <Links data={data.links} />
       </div>
