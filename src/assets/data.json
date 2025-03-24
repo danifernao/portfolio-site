@@ -32,7 +32,7 @@
       {
         "date": "2025",
         "title": "AniGuess",
-        "description": "Un simple juego en donde tienes que adivinar el nombre de la animación, cómic o novela a la que pertenece un personaje.",
+        "description": "Un simple juego en donde se tiene que adivinar el nombre de la animación, cómic o novela a la que pertenece un personaje.",
         "tags": ["React", "TypeScript", "API"],
         "screenshot": "project-aniguess.png",
         "links": [
@@ -49,7 +49,7 @@
       {
         "date": "2025",
         "title": "Player Card",
-        "description": "Un proyecto personal para compartir en un solo lugar mis UID de los videojuegos multijugador en línea que juego.",
+        "description": "Proyecto personal para compartir en un solo lugar mis UID de los videojuegos multijugador en línea que juego.",
         "tags": ["React", "React Router"],
         "screenshot": "project-player-card.png",
         "links": [
@@ -66,7 +66,7 @@
       {
         "date": "2025",
         "title": "Sudoku",
-        "description": "Un Sudoku sencillo para seguir solidificando mis conocimientos en React.",
+        "description": "Aplicación sencilla para jugar Sudoku, con dos niveles de dificultad: fácil y difícil, ideal para disfrutar de un reto rápido.",
         "tags": ["React"],
         "screenshot": "project-sudoku.png",
         "links": [
@@ -130,7 +130,7 @@
       {
         "date": "2022",
         "title": "Sistema de gestión de inventario",
-        "description": "Aplicación web para la gestión de inventario elaborado con Laravel y Vue.js.",
+        "description": "Aplicación web para la gestión de inventario.",
         "tags": ["Vue.js", "Laravel"],
         "screenshot": "project-inventario.png",
         "links": [
@@ -143,7 +143,7 @@
       {
         "date": "2020",
         "title": "Soy Daniel",
-        "description": "Una simple página personal.",
+        "description": "Una página personal sencilla en donde comparto información sobre mí, enlaces y citas favoritas.",
         "tags": ["Vue.js", "API"],
         "screenshot": "project-soy-daniel.png",
         "links": [
