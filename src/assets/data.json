@@ -33,7 +33,7 @@
         "date": "2025",
         "title": "AniGuess",
         "description": "Un simple juego en donde se tiene que adivinar el nombre de la animación, cómic o novela a la que pertenece un personaje.",
-        "tags": ["React", "TypeScript", "API"],
+        "tags": ["React", "TypeScript", "Integración API"],
         "screenshot": "project-aniguess.png",
         "links": [
           {
@@ -131,7 +131,7 @@
         "date": "2022",
         "title": "Sistema de gestión de inventario",
         "description": "Aplicación web para la gestión de inventario.",
-        "tags": ["Vue.js", "Laravel"],
+        "tags": ["Vue.js", "Laravel", "Integración API"],
         "screenshot": "project-inventario.png",
         "links": [
           {
@@ -144,7 +144,7 @@
         "date": "2020",
         "title": "Soy Daniel",
         "description": "Una página personal sencilla en donde comparto información sobre mí, enlaces y citas favoritas.",
-        "tags": ["Vue.js", "API"],
+        "tags": ["Vue.js", "Integración API"],
         "screenshot": "project-soy-daniel.png",
         "links": [
           {
