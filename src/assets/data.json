@@ -32,7 +32,7 @@
       {
         "date": "2025",
         "title": "AniGuess",
-        "description": "Un simple juego en donde se tiene que adivinar el nombre de la obra a la que pertence un personaje de alguna animación, novela o cómic registrado en la base de datos de AniList.",
+        "description": "Un simple juego en donde tienes que adivinar el nombre de la animación, cómic o novela a la que pertenece un personaje.",
         "tags": ["React", "TypeScript", "API"],
         "screenshot": "project-aniguess.png",
         "links": [
@@ -129,7 +129,7 @@
       },
       {
         "date": "2022",
-        "title": "Inventario",
+        "title": "Sistema de gestión de inventario",
         "description": "Aplicación web para la gestión de inventario elaborado con Laravel y Vue.js.",
         "tags": ["Vue.js", "Laravel"],
         "screenshot": "project-inventario.png",
@@ -137,6 +137,32 @@
           {
             "text": "Código fuente",
             "url": "https://github.com/dotdani/inventario"
+          }
+        ]
+      },
+      {
+        "date": "2020",
+        "title": "Soy Daniel",
+        "description": "Una simple página personal.",
+        "tags": ["Vue.js", "API"],
+        "screenshot": "project-soy-daniel.png",
+        "links": [
+          {
+            "text": "Demostración",
+            "url": "https://soy-daniel.web.app/"
+          }
+        ]
+      },
+      {
+        "date": "2016",
+        "title": "Devitácora",
+        "description": "Blog personal sobre desarrollo web, bitácoras digitales y otros temas informáticos en general. La plantilla XML empleada es de mi autoría.",
+        "tags": ["Etiquetado de Blogger", "XHTML", "CSS"],
+        "screenshot": "project-devitacora.png",
+        "links": [
+          {
+            "text": "Demostración",
+            "url": "https://devitacora.blogspot.com/"
           }
         ]
       }

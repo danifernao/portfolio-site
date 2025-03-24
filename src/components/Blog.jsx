@@ -63,12 +63,12 @@ function Blog({ data }) {
       <ul>
         {posts.map((post, i) => (
           <li key={i}>
-            <a href={formatURL(post.url)} target="_blank">
-              {post.title}
-            </a>
             <time dateTime={post.published}>
               {new Date(post.published).toISOString().split("T")[0]}
             </time>
+            <a href={formatURL(post.url)} target="_blank">
+              {post.title}
+            </a>
           </li>
         ))}
       </ul>

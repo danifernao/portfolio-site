@@ -136,8 +136,12 @@ p {
 
 .section.blog ul {
   margin: 0;
-  padding: 0 0 0 1rem;
-  list-style: square;
+  padding: 0;
+  list-style: none;
+}
+
+.section.blog time {
+  font-size: 0.9rem;
 }
 
 .section.blog.loading .more,
@@ -146,17 +150,17 @@ p {
 }
 
 .section.blog li {
+  display: flex;
   margin: 0.3rem 0;
+  gap: 0.3rem;
 }
 
 .section.blog time {
-  font-size: 0.9rem;
-  font-style: italic;
 }
 
-.section.blog time:before {
+.section.blog time:after {
   content: "•";
-  margin: 0 0.5rem;
+  margin-left: 0.3rem;
 }
 
 .section.blog.loading .loading {
