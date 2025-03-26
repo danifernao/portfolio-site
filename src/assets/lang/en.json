@@ -1,0 +1,214 @@
+{
+  "header": {
+    "name": "Daniel Fernandez",
+    "profession": "Web Developer / IT Systems Technician",
+    "photo": "me.png"
+  },
+  "about": {
+    "id": "about-me",
+    "title": "About Me",
+    "description": "I am a Colombian passionate about web development, with a philosophy focused on simple and adaptable designs, following good practices in markup and SEO, prioritizing efficiency and readability in coding, always in constant learning."
+  },
+  "skills": {
+    "id": "technologies",
+    "title": "Technologies and Tools",
+    "items": [
+      "XHTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "Vue.js",
+      "PHP",
+      "MySQL",
+      "Laravel",
+      "WordPress",
+      "Git"
+    ]
+  },
+  "projects": {
+    "id": "projects",
+    "title": "Projects",
+    "items":[
+      {
+        "date": "2025",
+        "title": "AniGuess",
+        "description": "A simple game where you have to guess the name of the animation, comic or novel to which a character belongs.",
+        "tags": ["React", "TypeScript", "API Integration"],
+        "screenshot": "project-aniguess.png",
+        "links": [
+          {
+            "text": "Demo",
+            "url": "https://wx3.netlify.app/aniguess/"
+          },
+          {
+            "text": "Source code",
+            "url": "https://github.com/danifernao/aniguess"
+          }
+        ]
+      },
+      {
+        "date": "2025",
+        "title": "Player Card",
+        "description": "A personal project to share my UIDs from the online multiplayer games I play in one place.",
+        "tags": ["React", "React Router"],
+        "screenshot": "project-player-card.png",
+        "links": [
+          {
+            "text": "Demo",
+            "url": "https://wx3.netlify.app/player-card/"
+          },
+          {
+            "text": "Source code",
+            "url": "https://github.com/dotdani/player-card"
+          }
+        ]
+      },
+      {
+        "date": "2025",
+        "title": "Sudoku",
+        "description": "A simple app to play Sudoku, with two difficulty levels: easy and hard, ideal for enjoying a quick challenge.",
+        "tags": ["React"],
+        "screenshot": "project-sudoku.png",
+        "links": [
+          {
+            "text": "Demo",
+            "url": "https://wx3.netlify.app/sudoku/"
+          },
+          {
+            "text": "Source code",
+            "url": "https://github.com/dotdani/sudoku"
+          }
+        ]
+      },
+      {
+        "date": "2025",
+        "title": "Curriculum Vitae",
+        "description": "A traditional resume with the possibility of offering its content in several languages.",
+        "tags": ["React"],
+        "screenshot": "project-cv.png",
+        "links": [
+          {
+            "text": "Demo",
+            "url": "https://wx3.netlify.app/cv/"
+          },
+          {
+            "text": "Source code",
+            "url": "https://github.com/dotdani/curriculum-vitae"
+          }
+        ]
+      },
+      {
+        "date": "2025",
+        "title": "Stopwatch",
+        "description": "A stopwatch based on the look and feel of the Google Clock application.",
+        "tags": ["React"],
+        "screenshot": "project-cronometro.png",
+        "links": [
+          {
+            "text": "Demo",
+            "url": "https://wx3.netlify.app/stopwatch/"
+          },
+          {
+            "text": "Source code",
+            "url": "https://github.com/dotdani/stopwatch"
+          }
+        ]
+      },
+      {
+        "date": "2023",
+        "title": "Fundadores",
+        "description": "A WordPress theme for the Hogar Infantil Los Fundadores website.",
+        "tags": ["WordPress"],
+        "screenshot": "project-fundadores.png",
+        "links": [
+          {
+            "text": "Source code",
+            "url": "https://github.com/dotdani/fundadores"
+          }
+        ]
+      },
+      {
+        "date": "2022",
+        "title": "Inventory management system",
+        "description": "A web application for inventory management.",
+        "tags": ["Vue.js", "Laravel", "API Integration"],
+        "screenshot": "project-inventario.png",
+        "links": [
+          {
+            "text": "Source code",
+            "url": "https://github.com/dotdani/inventario"
+          }
+        ]
+      },
+      {
+        "date": "2020",
+        "title": "I'm Daniel",
+        "description": "A simple personal page where I share information about myself, links and favorite quotes.",
+        "tags": ["Vue.js", "API Integration"],
+        "screenshot": "project-soy-daniel.png",
+        "links": [
+          {
+            "text": "Demo",
+            "url": "https://soy-daniel.web.app/"
+          }
+        ]
+      },
+      {
+        "date": "2016",
+        "title": "Devitácora",
+        "description": "A personal blog about web development, blogs, and other IT topics in general. The XML template used is my own.",
+        "tags": ["Blogger tags", "XHTML", "CSS"],
+        "screenshot": "project-devitacora.png",
+        "links": [
+          {
+            "text": "Demo",
+            "url": "https://devitacora.blogspot.com/"
+          }
+        ]
+      }
+    ]
+  },
+  "blog": {
+    "id": "posts",
+    "title": "Posts in Spanish",
+    "api": {
+      "blogId": "8541091818058714641",
+      "key": "AIzaSyCyD4gKMmc6qTpDTUrnSbZDWqVqXZO8r2g",
+      "maxResults": 7
+    },
+    "more": "See more posts...",
+    "loading": "Getting posts...",
+    "error": "Could not fetch the posts. Please try again later."
+  },
+  "education": {
+    "id": "education",
+    "title": "Education",
+    "items": [
+      {
+        "date": "2023",
+        "title": "Technology Specialist in Information Systems Analysis and Development",
+        "description": "Servicio Nacional de Aprendizaje\nCertifies the competencies needed to specify the requirements for the development of an information system, perform its analysis, design and code the solution, and carry out the implementation of the system, applying good quality practices throughout the software development process."
+      },
+      {
+        "date": "2010",
+        "title": "IT Systems Technician",
+        "description": "Instituto Nacional de Formación Técnica Profesional \"Humberto Velásquez García\"\nCertifies the competencies required to manage and maintain the physical and logical components of a computer, as well as to support the technical processes of web and desktop application development."
+      }
+    ]
+  },
+  "links": {
+    "id": "links",
+    "title": "Links",
+    "items": [
+      {
+        "text": "LinkedIn",
+        "url": "https://linkedin.com/in/danifernao"
+      },
+      {
+        "text": "GitHub",
+        "url": "https://github.com/danifernao"
+      }
+    ]
+  },
+  "language": "Select language"
+}

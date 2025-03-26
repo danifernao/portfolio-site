@@ -24,7 +24,10 @@ function Links({ data }) {
                 <a href={link.url} target="_blank">
                   {formatUrl(link.url)}
                 </a>
-                <FontAwesomeIcon icon="fa-solid fa-arrow-up-right-from-square" />
+                <FontAwesomeIcon
+                  icon="fa-solid fa-arrow-up-right-from-square"
+                  aria-hidden={true}
+                />
               </dd>
             </Fragment>
           ))}

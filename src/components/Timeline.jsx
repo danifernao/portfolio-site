@@ -79,7 +79,10 @@ function Timeline({ id, items }) {
                         <a href={link.url} target="_blank">
                           {link.text}
                         </a>
-                        <FontAwesomeIcon icon="fa-solid fa-arrow-up-right-from-square" />
+                        <FontAwesomeIcon
+                          icon="fa-solid fa-arrow-up-right-from-square"
+                          aria-hidden={true}
+                        />
                       </li>
                     ))}
                   </ul>

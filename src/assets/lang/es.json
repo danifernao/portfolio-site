@@ -11,7 +11,7 @@
   },
   "skills": {
     "id": "tecnologias",
-    "title": "Tecnologías",
+    "title": "Tecnologías y herramientas",
     "items": [
       "XHTML",
       "CSS",
@@ -209,5 +209,6 @@
         "url": "https://github.com/danifernao"
       }
     ]
-  }
+  },
+  "language": "Elegir idioma"
 }

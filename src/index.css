@@ -2,6 +2,7 @@
   --color-bg: #0d1321;
   --color-bg-lighter: #1d2d44;
   --color-text: #f0ebd8;
+  --color-text-dark: #d9d6c6;
   --color-text-darker: #a4a093;
   --color-link: #748cab;
 }
@@ -317,6 +318,70 @@ p {
 
 .timeline .more {
   padding-left: 5.3rem;
+}
+
+.language {
+  position: absolute;
+  top: -2rem;
+  right: 1rem;
+}
+
+.language div {
+  position: relative;
+}
+
+.language button {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-left: auto;
+  padding: 0.3rem 0.5rem;
+  background-color: var(--color-text);
+  border: 0;
+  border-radius: 0.2rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.language button,
+.language a {
+  padding: 0.3rem 0.5rem;
+  font-size: 0.9rem;
+  color: var(--color-bg);
+}
+
+.language button:active,
+.language.menu-visible button,
+.language a.active,
+.language a:hover {
+  background-color: var(--color-text-dark) !important;
+}
+
+.language ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  top: calc(100% + 0.3rem);
+  margin: 0;
+  padding: 0.3rem 0;
+  list-style: none;
+  min-width: 7rem;
+  max-height: 10rem;
+  background-color: var(--color-text);
+  border-radius: 0.2rem;
+  overflow-y: auto;
+}
+
+.language:not(.menu-visible) ul {
+  display: none;
+}
+
+.language a {
+  display: block;
+}
+
+.language a:hover {
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 600px) {
