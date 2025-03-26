@@ -57,12 +57,16 @@ function Language({ handleData }) {
   useEffect(() => {
     const locale = new Intl.Locale(navigator.language);
     const savedLang = localStorage.getItem("lang");
+    const urlParams = new URL(location.href).searchParams;
 
-    const language = savedLang
-      ? savedLang
-      : locale.language in langs
-      ? locale.language
-      : currLang;
+    const language =
+      urlParams.has("lang") && urlParams.get("lang") in langs
+        ? urlParams.get("lang")
+        : savedLang
+        ? savedLang
+        : locale.language in langs
+        ? locale.language
+        : currLang;
 
     changeLang(language);
 
