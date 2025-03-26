@@ -32,7 +32,7 @@
       {
         "date": "2025",
         "title": "AniGuess",
-        "description": "Un simple juego en donde se tiene que adivinar el nombre de la animación, cómic o novela a la que pertenece un personaje.",
+        "description": "Un simple juego en el que se debe adivinar el nombre de la animación, cómic o novela a la que pertenece un personaje.",
         "tags": ["React", "TypeScript", "Integración API"],
         "screenshot": "project-aniguess.png",
         "links": [
@@ -49,7 +49,7 @@
       {
         "date": "2025",
         "title": "Player Card",
-        "description": "Proyecto personal para compartir en un solo lugar mis UID de los videojuegos multijugador en línea que juego.",
+        "description": "Página web para compartir en un solo lugar mis UID de los videojuegos multijugador en línea que juego.",
         "tags": ["React", "React Router"],
         "screenshot": "project-player-card.png",
         "links": [
@@ -66,7 +66,7 @@
       {
         "date": "2025",
         "title": "Sudoku",
-        "description": "Aplicación sencilla para jugar Sudoku, con dos niveles de dificultad: fácil y difícil, ideal para disfrutar de un reto rápido.",
+        "description": "Aplicación para jugar al sudoku, con dos niveles de dificultad: fácil y difícil, ideal para disfrutar de un reto rápido.",
         "tags": ["React"],
         "screenshot": "project-sudoku.png",
         "links": [
@@ -83,7 +83,7 @@
       {
         "date": "2025",
         "title": "Curriculum Vitae",
-        "description": "Una hoja de vida tradicional con la posibilidad de ofrecer el contenido en varios idiomas.",
+        "description": "Una hoja de vida tradicional, con la posibilidad de ofrecer el contenido en varios idiomas.",
         "tags": ["React"],
         "screenshot": "project-cv.png",
         "links": [
