@@ -3,6 +3,7 @@ import Skills from "./components/Skills";
 import Blog from "./components/Blog";
 import Links from "./components/Links";
 import Section from "./components/Section";
+import Loading from "./components/Loading";
 import Language from "./components/Language";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
@@ -20,7 +21,7 @@ function App() {
   };
   return (
     <div id="wrapper">
-      {data && (
+      {data ? (
         <>
           <Header data={data.header} />
           <div id="content">
@@ -32,6 +33,8 @@ function App() {
             <Links data={data.links} />
           </div>
         </>
+      ) : (
+        <Loading />
       )}
       <Language handleData={handleData} />
     </div>
