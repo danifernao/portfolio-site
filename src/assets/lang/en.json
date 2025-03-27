@@ -168,7 +168,7 @@
       }
     ]
   },
-  "blog": {
+  "hidden": {
     "id": "posts",
     "title": "Posts in Spanish",
     "api": {
@@ -207,6 +207,10 @@
       {
         "text": "GitHub",
         "url": "https://github.com/danifernao"
+      },
+      {
+        "text": "Blog",
+        "url": "https://devitacora.blogspot.com"
       }
     ]
   },

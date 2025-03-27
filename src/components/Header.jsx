@@ -35,7 +35,11 @@ function Header({ data }) {
         </div>
       )}
       <div>
-        {data.name && <h1>{data.name}</h1>}
+        {data.name && (
+          <h1>
+            <a href="/">{data.name}</a>
+          </h1>
+        )}
         {data.profession && <p>{data.profession}</p>}
         {data.address && <p>{data.address}</p>}
       </div>

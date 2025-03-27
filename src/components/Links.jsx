@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function Links({ data }) {
   const formatUrl = (param) => {
     const url = new URL(param);
-    return `${url.hostname}${url.pathname}`;
+    return `${url.hostname}${url.pathname.replace(/\/$/, "")}`;
   };
 
   return (

@@ -27,7 +27,7 @@ function App() {
             <Section data={data.about} />
             <Skills data={data.skills} />
             <Section data={data.projects} />
-            <Blog data={data.blog} />
+            {data.blog && <Blog data={data.blog} />}
             <Section data={data.education} />
             <Links data={data.links} />
           </div>
