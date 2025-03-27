@@ -43,7 +43,6 @@ function Language({ handleData }) {
 
     document.documentElement.lang = lang;
     document.title = data.header.name;
-    document.body.classList.add("loaded");
   };
 
   const hideMenu = () => {

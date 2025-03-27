@@ -39,9 +39,6 @@ body:after {
 body, #root {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;  
 }
 
 a {
@@ -88,7 +85,8 @@ p {
 #wrapper {
   position: relative;
   margin: 4rem auto 5rem;
-  padding: 1rem 2.5rem;
+  padding: 1rem 1.5rem;
+  width: 100%;
   max-width: 40rem;
   z-index: 20;
 }
@@ -172,9 +170,6 @@ p {
   display: flex;
   margin: 0.3rem 0;
   gap: 0.3rem;
-}
-
-.section.blog time {
 }
 
 .section.blog time:after {
@@ -345,10 +340,6 @@ p {
   transform: translateY(-100%);
 }
 
-body:not(.loaded) .language {
-  display: none;
-}
-
 .language div {
   position: relative;
 }
@@ -405,33 +396,6 @@ body:not(.loaded) .language {
 
 .language a:hover {
   text-decoration: none;
-}
-
-.loader {
-  display: grid;
-  width: 3.1rem;
-  aspect-ratio: 1;
-}
-
-.loader::before,
-.loader::after {    
-  content: "";
-  grid-area: 1/1;
-  --c: no-repeat radial-gradient(farthest-side, var(--color-text) 92%, #0000);
-  background: 
-    var(--c) 50%  0, 
-    var(--c) 50%  100%, 
-    var(--c) 100% 50%, 
-    var(--c) 0    50%;
-  background-size: 0.75rem 0.75rem;
-  animation: l12 1s infinite;
-}
-
-.loader::before {
-  margin: 0.25rem;
-  background-size: 0.5rem 0.5rem;
-  filter: hue-rotate(45deg);
-  animation-timing-function: linear;
 }
 
 @keyframes l12 { 
