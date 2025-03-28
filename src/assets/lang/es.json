@@ -5,13 +5,13 @@
     "photo": "me.jpg"
   },
   "about": {
-    "id": "acerca-de-mi",
+    "id": "about-me",
     "title": "Acerca de mí",
     "description": "Soy un colombiano apasionado por el desarrollo web, con una filosofía centrada en los diseños sencillos y adaptables, siguiendo las buenas prácticas en marcado y SEO, priorizando la eficiencia y legibilidad en la codificación, siempre en constante aprendizaje."
   },
   "skills": {
-    "id": "tecnologias",
-    "title": "Tecnologías y herramientas",
+    "id": "skills",
+    "title": "Conocimientos y aptitudes",
     "items": [
       "XHTML",
       "CSS",
@@ -26,7 +26,7 @@
     ]
   },
   "projects": {
-    "id": "proyectos",
+    "id": "projects",
     "title": "Proyectos",
     "items":[
       {
@@ -169,7 +169,7 @@
     ]
   },
   "blog": {
-    "id": "publicaciones",
+    "id": "posts",
     "title": "Publicaciones",
     "api": {
       "blogId": "8541091818058714641",
@@ -181,7 +181,7 @@
     "error": "No se pudo obtener las publicaciones. Por favor, inténtelo más tarde."
   },
   "education": {
-    "id": "educacion",
+    "id": "education",
     "title": "Educación",
     "items": [
       {
@@ -197,7 +197,7 @@
     ]
   },
   "links": {
-    "id": "enlaces",
+    "id": "links",
     "title": "Enlaces",
     "items": [
       {

@@ -44,6 +44,11 @@ function Blog({ data }) {
     return url.replace(/^(http)\:\/\//, "https://");
   };
 
+  const formatDate = (date) => {
+    const [year, month, day] = date.split("T")[0].split("-");
+    return `${day}/${month}/${year.slice(-2)}`;
+  };
+
   useEffect(() => {
     const controller = new AbortController();
     const signal = controller.signal;
@@ -63,8 +68,8 @@ function Blog({ data }) {
       <ul>
         {posts.map((post, i) => (
           <li key={i}>
-            <time dateTime={post.published}>
-              {new Date(post.published).toISOString().split("T")[0]}
+            <time dateTime={post.published} title={post.published}>
+              {formatDate(post.published)}
             </time>
             <a href={formatURL(post.url)} target="_blank">
               {post.title}
