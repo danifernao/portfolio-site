@@ -11,7 +11,7 @@
   },
   "skills": {
     "id": "skills",
-    "title": "Technologies and Tools",
+    "title": "Skills",
     "items": [
       "XHTML",
       "CSS",
@@ -192,7 +192,7 @@
       {
         "date": "2010",
         "title": "IT Systems Technician",
-        "description": "Instituto Nacional de Formación Técnica Profesional \"Humberto Velásquez García\"\nCertifies the competencies required to manage and maintain the physical and logical components of a computer, as well as to support the technical processes of web and desktop application development."
+        "description": "Instituto Nacional de Formacion Tecnica Profesional \"Humberto Velasquez Garcia\"\nCertifies the competencies required to manage and maintain the physical and logical components of a computer, as well as to support the technical processes of web and desktop application development."
       }
     ]
   },
