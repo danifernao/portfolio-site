@@ -2,7 +2,11 @@
   "header": {
     "name": "Daniel Fernandez",
     "profession": "Web Developer / IT Systems Technician",
-    "photo": "me.jpg"
+    "photo": {
+      "title": "Zoom in image",
+      "pathname": "me.jpg",
+      "alt": "Profile picture"
+    }
   },
   "about": {
     "id": "about-me",
@@ -28,145 +32,201 @@
   "projects": {
     "id": "projects",
     "title": "Projects",
-    "items":[
-      {
-        "date": "2025",
-        "title": "AniGuess",
-        "description": "A simple game where you have to guess the name of the animation, comic or novel to which a character belongs.",
-        "tags": ["React", "TypeScript", "API Integration"],
-        "screenshot": "project-aniguess.png",
-        "links": [
-          {
-            "text": "Demo",
-            "url": "https://wx3.netlify.app/aniguess/"
+    "list": {
+      "more": "See more projects...",
+      "items": [
+        {
+          "date": "2025",
+          "title": "URL Shortener",
+          "description": "A web app for shortening URLs.",
+          "tags": ["Docker", "PHP", "MySQL", "React", "TypeScript", "API Integration"],
+          "screenshot": {
+            "title": "Zoom in image",
+            "pathname": "project-url-shortener.png",
+            "alt": "Web project screenshot"
           },
-          {
-            "text": "Source code",
-            "url": "https://github.com/danifernao/aniguess"
-          }
-        ]
-      },
-      {
-        "date": "2025",
-        "title": "Player Card",
-        "description": "A personal project to share my UIDs from the online multiplayer games I play in one place.",
-        "tags": ["React", "React Router"],
-        "screenshot": "project-player-card.png",
-        "links": [
-          {
-            "text": "Demo",
-            "url": "https://wx3.netlify.app/player-card/"
+          "links": [
+            {
+              "text": "Source code",
+              "url": "https://github.com/danifernao/url-shortener"
+            }
+          ]
+        },
+        {
+          "date": "2025",
+          "title": "AniGuess",
+          "description": "A simple game where you have to guess the name of the animation, comic or novel to which a character belongs.",
+          "tags": ["React", "TypeScript", "API Integration"],
+          "screenshot": {
+            "title": "Zoom in image",
+            "pathname": "project-aniguess.png",
+            "alt":"Web project screenshot"
           },
-          {
-            "text": "Source code",
-            "url": "https://github.com/dotdani/player-card"
-          }
-        ]
-      },
-      {
-        "date": "2025",
-        "title": "Sudoku",
-        "description": "A simple app to play Sudoku, with two difficulty levels: easy and hard, ideal for enjoying a quick challenge.",
-        "tags": ["React"],
-        "screenshot": "project-sudoku.png",
-        "links": [
-          {
-            "text": "Demo",
-            "url": "https://wx3.netlify.app/sudoku/"
+          "links": [
+            {
+              "text": "Demo",
+              "url": "https://wx3.netlify.app/aniguess/"
+            },
+            {
+              "text": "Source code",
+              "url": "https://github.com/danifernao/aniguess"
+            }
+          ]
+        },
+        {
+          "date": "2025",
+          "title": "Player Card",
+          "description": "A personal project to share my UIDs from the online multiplayer games I play in one place.",
+          "tags": ["React", "React Router"],
+          "screenshot": {
+            "title": "Zoom in image",
+            "pathname": "project-player-card.png",
+            "alt": "Web project screenshot"
           },
-          {
-            "text": "Source code",
-            "url": "https://github.com/dotdani/sudoku"
-          }
-        ]
-      },
-      {
-        "date": "2025",
-        "title": "Curriculum Vitae",
-        "description": "A traditional resume with the possibility of offering its content in several languages.",
-        "tags": ["React"],
-        "screenshot": "project-cv.png",
-        "links": [
-          {
-            "text": "Demo",
-            "url": "https://wx3.netlify.app/cv/"
+          "links": [
+            {
+              "text": "Demo",
+              "url": "https://wx3.netlify.app/player-card/"
+            },
+            {
+              "text": "Source code",
+              "url": "https://github.com/dotdani/player-card"
+            }
+          ]
+        },
+        {
+          "date": "2025",
+          "title": "Sudoku",
+          "description": "A simple app to play Sudoku, with two difficulty levels: easy and hard, ideal for enjoying a quick challenge.",
+          "tags": ["React"],
+          "screenshot": {
+            "title": "Zoom in image",
+            "pathname": "project-sudoku.png",
+            "alt": "Web project screenshot"
           },
-          {
-            "text": "Source code",
-            "url": "https://github.com/dotdani/curriculum-vitae"
-          }
-        ]
-      },
-      {
-        "date": "2025",
-        "title": "Stopwatch",
-        "description": "A stopwatch based on the look and feel of the Google Clock application.",
-        "tags": ["React"],
-        "screenshot": "project-cronometro.png",
-        "links": [
-          {
-            "text": "Demo",
-            "url": "https://wx3.netlify.app/stopwatch/"
+          "links": [
+            {
+              "text": "Demo",
+              "url": "https://wx3.netlify.app/sudoku/"
+            },
+            {
+              "text": "Source code",
+              "url": "https://github.com/dotdani/sudoku"
+            }
+          ]
+        },
+        {
+          "date": "2025",
+          "title": "Curriculum Vitae",
+          "description": "A traditional resume with the possibility of offering its content in several languages.",
+          "tags": ["React"],
+          "screenshot": {
+            "title": "Zoom in image",
+            "pathname": "project-cv.png",
+            "alt": "Web project screenshot"
           },
-          {
-            "text": "Source code",
-            "url": "https://github.com/dotdani/stopwatch"
-          }
-        ]
-      },
-      {
-        "date": "2023",
-        "title": "Fundadores",
-        "description": "A WordPress theme for the Hogar Infantil Los Fundadores website.",
-        "tags": ["WordPress"],
-        "screenshot": "project-fundadores.png",
-        "links": [
-          {
-            "text": "Source code",
-            "url": "https://github.com/dotdani/fundadores"
-          }
-        ]
-      },
-      {
-        "date": "2022",
-        "title": "Inventory management system",
-        "description": "A web application for inventory management.",
-        "tags": ["Vue.js", "Laravel", "API Integration"],
-        "screenshot": "project-inventario.png",
-        "links": [
-          {
-            "text": "Source code",
-            "url": "https://github.com/dotdani/inventario"
-          }
-        ]
-      },
-      {
-        "date": "2020",
-        "title": "I'm Daniel",
-        "description": "A simple personal page where I share information about myself, links and favorite quotes.",
-        "tags": ["Vue.js", "API Integration"],
-        "screenshot": "project-soy-daniel.png",
-        "links": [
-          {
-            "text": "Demo",
-            "url": "https://soy-daniel.web.app/"
-          }
-        ]
-      },
-      {
-        "date": "2016",
-        "title": "Devitácora",
-        "description": "A personal blog about web development, blogs, and other IT topics in general. The XML template used is my own.",
-        "tags": ["Blogger tags", "XHTML", "CSS"],
-        "screenshot": "project-devitacora.png",
-        "links": [
-          {
-            "text": "Demo",
-            "url": "https://devitacora.blogspot.com/"
-          }
-        ]
-      }
-    ]
+          "links": [
+            {
+              "text": "Demo",
+              "url": "https://wx3.netlify.app/cv/"
+            },
+            {
+              "text": "Source code",
+              "url": "https://github.com/dotdani/curriculum-vitae"
+            }
+          ]
+        },
+        {
+          "date": "2025",
+          "title": "Stopwatch",
+          "description": "A stopwatch based on the look and feel of the Google Clock application.",
+          "tags": ["React"],
+          "screenshot": {
+            "title": "Zoom in image",
+            "pathname": "project-cronometro.png",
+            "alt":"Web project screenshot"
+          },
+          "links": [
+            {
+              "text": "Demo",
+              "url": "https://wx3.netlify.app/stopwatch/"
+            },
+            {
+              "text": "Source code",
+              "url": "https://github.com/dotdani/stopwatch"
+            }
+          ]
+        },
+        {
+          "date": "2023",
+          "title": "Fundadores",
+          "description": "A WordPress theme for the Hogar Infantil Los Fundadores website.",
+          "tags": ["WordPress"],
+          "screenshot": {
+            "title": "Zoom in image",
+            "pathname": "project-fundadores.png",
+            "alt":"Web project screenshot"
+          },
+          "links": [
+            {
+              "text": "Source code",
+              "url": "https://github.com/dotdani/fundadores"
+            }
+          ]
+        },
+        {
+          "date": "2022",
+          "title": "Inventory management system",
+          "description": "A web application for inventory management.",
+          "tags": ["Vue.js", "Laravel", "API Integration"],
+          "screenshot": {
+            "title": "Zoom in image",
+            "pathname": "project-inventario.png",
+            "alt":"Web project screenshot"
+          },
+          "links": [
+            {
+              "text": "Source code",
+              "url": "https://github.com/dotdani/inventario"
+            }
+          ]
+        },
+        {
+          "date": "2020",
+          "title": "I'm Daniel",
+          "description": "A simple personal page where I share information about myself, links and favorite quotes.",
+          "tags": ["Vue.js", "API Integration"],
+          "screenshot": {
+            "title": "Zoom in image",
+            "pathname": "project-soy-daniel.png",
+            "alt":"Web project screenshot"
+          },
+          "links": [
+            {
+              "text": "Demo",
+              "url": "https://soy-daniel.web.app/"
+            }
+          ]
+        },
+        {
+          "date": "2016",
+          "title": "Devitácora",
+          "description": "A personal blog about web development, blogs, and other IT topics in general. The XML template used is my own.",
+          "tags": ["Blogger tags", "XHTML", "CSS"],
+          "screenshot": {
+            "title": "Zoom in image",
+            "pathname": "project-devitacora.png",
+            "alt": "Web project screenshot"
+          },
+          "links": [
+            {
+              "text": "Demo",
+              "url": "https://devitacora.blogspot.com/"
+            }
+          ]
+        }
+      ]
+    }
   },
   "hidden": {
     "id": "posts",

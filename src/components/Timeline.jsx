@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
-function Timeline({ id, items }) {
+function Timeline({ id, list }) {
   const [isHidden, setIsHidden] = useState(true);
   const [imageSrc, setImageSrc] = useState(null);
 
@@ -30,7 +30,7 @@ function Timeline({ id, items }) {
 
   return (
     <div className={`timeline ${isHidden ? "" : "expanded"}`}>
-      {items.map((item, i) => (
+      {list.items.map((item, i) => (
         <div
           className={`achievement ${isHidden && i > 1 ? "hidden" : ""}`}
           key={i}
@@ -61,12 +61,14 @@ function Timeline({ id, items }) {
                   <div className="screenshot">
                     <a
                       href="#"
-                      title="Ampliar imagen"
-                      onClick={(e) => toggleLightbox(e, item.screenshot)}
+                      title={item.screenshot.title}
+                      onClick={(e) =>
+                        toggleLightbox(e, item.screenshot.pathname)
+                      }
                     >
                       <img
-                        src={`./images/${item.screenshot}`}
-                        alt="Captura de pantalla del proyecto"
+                        src={`./images/${item.screenshot.pathname}`}
+                        alt={item.screenshot.alt}
                       />
                     </a>
                   </div>
@@ -93,7 +95,7 @@ function Timeline({ id, items }) {
         </div>
       ))}
 
-      {isHidden && items.length > 2 && (
+      {isHidden && list.items.length > 2 && (
         <div className="more">
           <a
             href="#"
@@ -101,7 +103,7 @@ function Timeline({ id, items }) {
             aria-controls="projects"
             onClick={expand}
           >
-            Ver más proyectos...
+            {list.more}
           </a>
         </div>
       )}
@@ -121,21 +123,28 @@ function Timeline({ id, items }) {
 
 Timeline.PropTypes = {
   id: PropTypes.string,
-  items: PropTypes.arrayOf(
-    PropTypes.shape({
-      date: PropTypes.string,
-      title: PropTypes.string,
-      description: PropTypes.string,
-      tags: PropTypes.arrayOf(PropTypes.string),
-      screnshoot: PropTypes.string,
-      links: PropTypes.arrayOf(
-        PropTypes.shape({
-          url: PropTypes.string,
-          text: PropTypes.string,
-        })
-      ),
-    })
-  ),
+  list: PropTypes.shape({
+    more: PropTypes.string,
+    items: PropTypes.arrayOf(
+      PropTypes.shape({
+        date: PropTypes.string,
+        title: PropTypes.string,
+        description: PropTypes.string,
+        tags: PropTypes.arrayOf(PropTypes.string),
+        screnshoot: PropTypes.shape({
+          title: PropTypes.string,
+          pathname: PropTypes.string,
+          alt: PropTypes.string,
+        }),
+        links: PropTypes.arrayOf(
+          PropTypes.shape({
+            url: PropTypes.string,
+            text: PropTypes.string,
+          })
+        ),
+      })
+    ),
+  }),
 };
 
 export default Timeline;

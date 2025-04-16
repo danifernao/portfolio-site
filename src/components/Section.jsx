@@ -10,7 +10,7 @@ function Section({ data }) {
         </h2>
       )}
       {data.description && <p>{data.description}</p>}
-      {data.items && <Timeline id={data.id} items={data.items} />}
+      {data.list && <Timeline id={data.id} list={data.list} />}
     </div>
   );
 }
@@ -20,7 +20,7 @@ Section.PropTypes = {
     id: PropTypes.string,
     title: PropTypes.string,
     description: PropTypes.string,
-    items: PropTypes.arrayOf(PropTypes.object),
+    list: PropTypes.arrayOf(PropTypes.object),
   }),
 };
 

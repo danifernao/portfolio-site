@@ -17,16 +17,16 @@ function Header({ data }) {
         <div>
           <a
             href="#"
-            title="Ampliar imagen"
+            title={data.photo.title}
             onClick={viewFullImage}
             className="avatar"
           >
-            <img src={`./images/${data.photo}`} aly="Fotografía de perfil" />
+            <img src={`./images/${data.photo.pathname}`} aly={data.photo.alt} />
           </a>
           <Lightbox
             open={open}
             close={() => setOpen(false)}
-            slides={[{ src: `./images/${data.photo}` }]}
+            slides={[{ src: `./images/${data.photo.pathname}` }]}
             render={{
               buttonPrev: () => null,
               buttonNext: () => null,
@@ -52,7 +52,11 @@ Header.PropTypes = {
     name: PropTypes.string,
     profession: PropTypes.string,
     address: PropTypes.string,
-    photo: PropTypes.string,
+    photo: PropTypes.shape({
+      title: PropTypes.string,
+      pathname: PropTypes.string,
+      alt: PropTypes.string,
+    }),
   }),
 };
 
