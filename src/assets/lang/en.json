@@ -243,18 +243,21 @@
   "education": {
     "id": "education",
     "title": "Education",
-    "items": [
-      {
-        "date": "2023",
-        "title": "Technology Specialist in Information Systems Analysis and Development",
-        "description": "Servicio Nacional de Aprendizaje\nCertifies the competencies needed to specify the requirements for the development of an information system, perform its analysis, design and code the solution, and carry out the implementation of the system, applying good quality practices throughout the software development process."
-      },
-      {
-        "date": "2010",
-        "title": "IT Systems Technician",
-        "description": "Instituto Nacional de Formacion Tecnica Profesional \"Humberto Velasquez Garcia\"\nCertifies the competencies required to manage and maintain the physical and logical components of a computer, as well as to support the technical processes of web and desktop application development."
-      }
-    ]
+    "list": {
+      "more": "See more education...",
+      "items": [
+        {
+          "date": "2023",
+          "title": "Technology Specialist in Information Systems Analysis and Development",
+          "description": "Servicio Nacional de Aprendizaje\nCertifies the competencies needed to specify the requirements for the development of an information system, perform its analysis, design and code the solution, and carry out the implementation of the system, applying good quality practices throughout the software development process."
+        },
+        {
+          "date": "2010",
+          "title": "IT Systems Technician",
+          "description": "Instituto Nacional de Formacion Tecnica Profesional \"Humberto Velasquez Garcia\"\nCertifies the competencies required to manage and maintain the physical and logical components of a computer, as well as to support the technical processes of web and desktop application development."
+        }
+      ]
+    }
   },
   "links": {
     "id": "links",
