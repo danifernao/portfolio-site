@@ -75,27 +75,6 @@
         },
         {
           "date": "2025",
-          "title": "Player Card",
-          "description": "Página web para compartir en un solo lugar mis UID de los videojuegos multijugador en línea que juego.",
-          "tags": ["React", "React Router"],
-          "screenshot": {
-            "title": "Ampliar imagen",
-            "pathname": "project-player-card.png",
-            "alt": "Captura de pantalla del proyecto"
-          },
-          "links": [
-            {
-              "text": "Demostración",
-              "url": "https://wx3.netlify.app/player-card/"
-            },
-            {
-              "text": "Código fuente",
-              "url": "https://github.com/dotdani/player-card"
-            }
-          ]
-        },
-        {
-          "date": "2025",
           "title": "Sudoku",
           "description": "Aplicación para jugar al sudoku, con dos niveles de dificultad: fácil y difícil, ideal para disfrutar de un reto rápido.",
           "tags": ["React"],
@@ -112,27 +91,6 @@
             {
               "text": "Código fuente",
               "url": "https://github.com/dotdani/sudoku"
-            }
-          ]
-        },
-        {
-          "date": "2025",
-          "title": "Curriculum Vitae",
-          "description": "Una hoja de vida tradicional, con la posibilidad de ofrecer el contenido en varios idiomas.",
-          "tags": ["React"],
-          "screenshot": {
-            "title": "Ampliar imagen",
-            "pathname": "project-cv.png",
-            "alt": "Captura de pantalla del proyecto"
-          },
-          "links": [
-            {
-              "text": "Demostración",
-              "url": "https://wx3.netlify.app/cv/"
-            },
-            {
-              "text": "Código fuente",
-              "url": "https://github.com/dotdani/curriculum-vitae"
             }
           ]
         },

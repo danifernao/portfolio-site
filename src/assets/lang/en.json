@@ -75,27 +75,6 @@
         },
         {
           "date": "2025",
-          "title": "Player Card",
-          "description": "A personal project to share my UIDs from the online multiplayer games I play in one place.",
-          "tags": ["React", "React Router"],
-          "screenshot": {
-            "title": "Zoom in image",
-            "pathname": "project-player-card.png",
-            "alt": "Web project screenshot"
-          },
-          "links": [
-            {
-              "text": "Demo",
-              "url": "https://wx3.netlify.app/player-card/"
-            },
-            {
-              "text": "Source code",
-              "url": "https://github.com/dotdani/player-card"
-            }
-          ]
-        },
-        {
-          "date": "2025",
           "title": "Sudoku",
           "description": "A simple app to play Sudoku, with two difficulty levels: easy and hard, ideal for enjoying a quick challenge.",
           "tags": ["React"],
@@ -112,27 +91,6 @@
             {
               "text": "Source code",
               "url": "https://github.com/dotdani/sudoku"
-            }
-          ]
-        },
-        {
-          "date": "2025",
-          "title": "Curriculum Vitae",
-          "description": "A traditional resume with the possibility of offering its content in several languages.",
-          "tags": ["React"],
-          "screenshot": {
-            "title": "Zoom in image",
-            "pathname": "project-cv.png",
-            "alt": "Web project screenshot"
-          },
-          "links": [
-            {
-              "text": "Demo",
-              "url": "https://wx3.netlify.app/cv/"
-            },
-            {
-              "text": "Source code",
-              "url": "https://github.com/dotdani/curriculum-vitae"
             }
           ]
         },
