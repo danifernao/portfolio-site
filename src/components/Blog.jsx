@@ -65,6 +65,7 @@ function Blog({ data }) {
       <h2>
         <a href={`#${data.id}`}>{data.title}</a>
       </h2>
+      {data.description && <p>{data.description}</p>}
       <ul>
         {posts.map((post, i) => (
           <li key={i}>

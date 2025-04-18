@@ -32,6 +32,7 @@
   "projects": {
     "id": "projects",
     "title": "Proyectos",
+    "description": "Te comparto algunos de mis proyectos personales, creados con el propósito de poner en práctica mis conocimientos y mejorar mis habilidades en desarrollo web.",
     "list": {
       "more": "Ver más proyectos...",
       "items": [
@@ -189,6 +190,7 @@
   "blog": {
     "id": "posts",
     "title": "Publicaciones",
+    "description": "Te invito a explorar mi blog, donde hablo sobre desarrollo web, bitácoras digitales y otros temas relacionados con la informática.",
     "api": {
       "blogId": "8541091818058714641",
       "key": "AIzaSyCyD4gKMmc6qTpDTUrnSbZDWqVqXZO8r2g",
@@ -201,6 +203,7 @@
   "education": {
     "id": "education",
     "title": "Educación",
+    "description": "He tenido la oportunidad de alcanzar los siguientes logros académicos:",
     "list": {
       "more": "Ver más estudios...",
       "items": [

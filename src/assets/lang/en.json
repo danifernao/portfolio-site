@@ -32,6 +32,7 @@
   "projects": {
     "id": "projects",
     "title": "Projects",
+    "description": "Some of my personal projects, created with the purpose of putting my knowledge into practice and improving my skills in web development.",
     "list": {
       "more": "See more projects...",
       "items": [
@@ -201,6 +202,7 @@
   "education": {
     "id": "education",
     "title": "Education",
+    "description": "I've had the opportunity to achieve the following academic degrees:",
     "list": {
       "more": "See more education...",
       "items": [
