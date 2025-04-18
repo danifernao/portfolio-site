@@ -40,7 +40,7 @@
           "date": "2025",
           "title": "Acortador de URL",
           "description": "Aplicación web para el acortamiento de URL.",
-          "tags": ["Docker", "PHP", "MySQL", "React", "TypeScript", "Integración API"],
+          "tags": ["PHP", "MySQL", "React", "TypeScript", "Integración API", "Docker"],
           "screenshot": {
             "title": "Ampliar imagen",
             "pathname": "project-url-shortener.png",
@@ -137,7 +137,7 @@
           "date": "2022",
           "title": "Sistema de gestión de inventario",
           "description": "Aplicación web para la gestión de inventario.",
-          "tags": ["Vue.js", "Laravel", "Integración API"],
+          "tags": ["Laravel", "Vue.js", "Integración API"],
           "screenshot": {
             "title": "Ampliar imagen",
             "pathname": "project-inventario.png",
