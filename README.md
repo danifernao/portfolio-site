@@ -1,3 +1,3 @@
-# Página profesinal
+# Página web personal
 
-Una página profesional elaborado con React con un diseño minimalista basado en el [proyecto](https://bonhomme.lol/) de Maxime Bonhomme.
+Mi página web personal, donde detallo mi perfil profesional y comparto mi experiencia de aprendizaje en el desarrollo web, inspirada en el diseño minimalista del [proyecto](https://bonhomme.lol/) de Maxime Bonhomme.

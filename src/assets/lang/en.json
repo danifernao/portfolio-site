@@ -39,7 +39,7 @@
         {
           "date": "2025",
           "title": "URL Shortener",
-          "description": "A web app for shortening URLs.",
+          "description": "A URL shortening web app, inspired by the look and behavior of TinyURL.",
           "tags": ["PHP", "MySQL", "React", "TypeScript", "API Integration", "Docker"],
           "screenshot": {
             "title": "Zoom in image",
@@ -76,8 +76,25 @@
         },
         {
           "date": "2025",
+          "title": "DaniFernao",
+          "description": "The page you're currently on, where I share my professional profile and learning experience in web development.",
+          "tags": ["React"],
+          "screenshot": {
+            "title": "Zoom in image",
+            "pathname": "project-danifernao.png",
+            "alt":"Web project screenshot"
+          },
+          "links": [
+            {
+              "text": "Source code",
+              "url": "https://github.com/danifernao/danifernao"
+            }
+          ]
+        },
+        {
+          "date": "2025",
           "title": "Sudoku",
-          "description": "A simple app to play Sudoku, with two difficulty levels: easy and hard, ideal for enjoying a quick challenge.",
+          "description": "A web app to play sudoku, with two difficulty levels: easy and hard, ideal for enjoying a quick challenge.",
           "tags": ["React"],
           "screenshot": {
             "title": "Zoom in image",
@@ -137,7 +154,7 @@
           "date": "2022",
           "title": "Inventory management system",
           "description": "A web application for inventory management.",
-          "tags": ["Laravel", "Vue.js", "API Integration"],
+          "tags": ["Laravel", "Vue.js", "API Integration", "Docker"],
           "screenshot": {
             "title": "Zoom in image",
             "pathname": "project-inventario.png",

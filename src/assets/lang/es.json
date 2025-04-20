@@ -39,7 +39,7 @@
         {
           "date": "2025",
           "title": "Acortador de URL",
-          "description": "Aplicación web para el acortamiento de URL.",
+          "description": "Una aplicación web para el acortamiento de URL, inspirada en el diseño y comportamiento de TinyURL.",
           "tags": ["PHP", "MySQL", "React", "TypeScript", "Integración API", "Docker"],
           "screenshot": {
             "title": "Ampliar imagen",
@@ -71,6 +71,23 @@
             {
               "text": "Código fuente",
               "url": "https://github.com/danifernao/aniguess"
+            }
+          ]
+        },
+        {
+          "date": "2025",
+          "title": "DaniFernao",
+          "description": "La página que estás visitando, donde detallo mi perfil profesional y comparto mi experiencia de aprendizaje en el desarrollo web.",
+          "tags": ["React"],
+          "screenshot": {
+            "title": "Ampliar imagen",
+            "pathname": "project-danifernao.png",
+            "alt": "Captura de pantalla del proyecto"
+          },
+          "links": [
+            {
+              "text": "Código fuente",
+              "url": "https://github.com/danifernao/danifernao"
             }
           ]
         },
@@ -137,7 +154,7 @@
           "date": "2022",
           "title": "Sistema de gestión de inventario",
           "description": "Aplicación web para la gestión de inventario.",
-          "tags": ["Laravel", "Vue.js", "Integración API"],
+          "tags": ["Laravel", "Vue.js", "Integración API", "Docker"],
           "screenshot": {
             "title": "Ampliar imagen",
             "pathname": "project-inventario.png",
