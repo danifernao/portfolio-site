@@ -115,7 +115,7 @@
         {
           "date": "2025",
           "title": "Stopwatch",
-          "description": "A stopwatch based on the look and feel of the Google Clock application.",
+          "description": "A stopwatch based on the look and feel of the Google Clock app.",
           "tags": ["React"],
           "screenshot": {
             "title": "Zoom in image",
@@ -153,7 +153,7 @@
         {
           "date": "2022",
           "title": "Inventory management system",
-          "description": "A web application for inventory management.",
+          "description": "A web app for inventory management.",
           "tags": ["Laravel", "Vue.js", "API Integration", "Docker"],
           "screenshot": {
             "title": "Zoom in image",
