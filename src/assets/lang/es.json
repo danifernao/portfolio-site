@@ -37,7 +37,7 @@
       "more": "Ver más proyectos...",
       "items": [
         {
-          "date": "2025",
+          "date": ["2025", "16/04"],
           "title": "Acortador de URL",
           "description": "Una aplicación web para el acortamiento de URL, inspirada en el diseño y comportamiento de TinyURL.",
           "tags": ["PHP", "MySQL", "React", "TypeScript", "Integración API", "Docker"],
@@ -54,7 +54,7 @@
           ]
         },
         {
-          "date": "2025",
+          "date": ["2025", "20/03"],
           "title": "AniGuess",
           "description": "Un simple juego en el que se debe adivinar el nombre de la animación, cómic o novela a la que pertenece un personaje.",
           "tags": ["React", "TypeScript", "Integración API"],
@@ -75,7 +75,7 @@
           ]
         },
         {
-          "date": "2025",
+          "date": ["2025", "12/03"],
           "title": "DaniFernao",
           "description": "La página que estás visitando, donde detallo mi perfil profesional y comparto mi experiencia de aprendizaje en el desarrollo web.",
           "tags": ["React"],
@@ -92,7 +92,7 @@
           ]
         },
         {
-          "date": "2025",
+          "date": ["2025", "11/03"],
           "title": "Sudoku",
           "description": "Aplicación para jugar al sudoku, con dos niveles de dificultad: fácil y difícil, ideal para disfrutar de un reto rápido.",
           "tags": ["React"],
@@ -113,28 +113,7 @@
           ]
         },
         {
-          "date": "2025",
-          "title": "Cronómetro",
-          "description": "Un cronómetro basado en la apariencia y comportamiento de la aplicación Reloj de Google.",
-          "tags": ["React"],
-          "screenshot": {
-            "title": "Ampliar imagen",
-            "pathname": "project-cronometro.png",
-            "alt": "Captura de pantalla del proyecto"
-          },
-          "links": [
-            {
-              "text": "Demostración",
-              "url": "https://wx3.netlify.app/stopwatch/"
-            },
-            {
-              "text": "Código fuente",
-              "url": "https://github.com/dotdani/stopwatch"
-            }
-          ]
-        },
-        {
-          "date": "2023",
+          "date": ["2023", "06/12"],
           "title": "Fundadores",
           "description": "Tema de WordPress para el sitio web del Hogar Infantil Los Fundadores.",
           "tags": ["WordPress"],
@@ -151,10 +130,10 @@
           ]
         },
         {
-          "date": "2022",
+          "date": ["2022", "29/12"],
           "title": "Sistema de gestión de inventario",
           "description": "Aplicación web para la gestión de inventario.",
-          "tags": ["Laravel", "Vue.js", "Integración API", "Docker"],
+          "tags": ["Laravel", "MySQL", "Vue.js", "Integración RESTful API", "Docker"],
           "screenshot": {
             "title": "Ampliar imagen",
             "pathname": "project-inventario.png",
@@ -168,7 +147,7 @@
           ]
         },
         {
-          "date": "2020",
+          "date": ["2020", "16/03"],
           "title": "Soy Daniel",
           "description": "Una página personal sencilla en donde comparto información sobre mí, enlaces y citas favoritas.",
           "tags": ["Vue.js", "Integración API"],
@@ -185,7 +164,7 @@
           ]
         },
         {
-          "date": "2016",
+          "date": ["2016", "13/03"],
           "title": "Devitácora",
           "description": "Blog personal sobre desarrollo web, bitácoras digitales y otros temas informáticos en general. La plantilla XML empleada es de mi autoría.",
           "tags": ["Etiquetado de Blogger", "XHTML", "CSS"],

@@ -239,6 +239,9 @@ p {
 
 .timeline .date {
   grid-area: date;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
   font-size: 1.1rem;
 }
 
@@ -264,6 +267,10 @@ p {
   width: 0.06rem;
   height: 100%;
   background-color: var(--color-bg-lighter);
+}
+
+.timeline .date span:nth-child(n+2) {
+  font-size: 0.8rem;
 }
 
 .timeline .title {
@@ -422,6 +429,7 @@ p {
   }
 
   .timeline .date {
+    text-align: left;
     font-size: 1rem;
   }
 

@@ -9,15 +9,30 @@ import {
   faArrowUpRightFromSquare,
   faGlobe,
 } from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 library.add(faArrowUpRightFromSquare, faGlobe);
 
 function App() {
   const [data, setData] = useState(null);
+  const [isDataSet, setIsDataSet] = useState(false);
+
   const handleData = (langData) => {
     setData(langData);
   };
+
+  useEffect(() => {
+    if (data && !isDataSet) {
+      setIsDataSet(true);
+      if (location.hash.length > 1) {
+        const elem = document.querySelector(location.hash);
+        if (elem) {
+          elem.scrollIntoView();
+        }
+      }
+    }
+  }, [data]);
+
   return (
     <div id="wrapper">
       {data && (

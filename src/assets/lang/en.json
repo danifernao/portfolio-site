@@ -37,7 +37,7 @@
       "more": "See more projects...",
       "items": [
         {
-          "date": "2025",
+          "date": ["2025", "16/04"],
           "title": "URL Shortener",
           "description": "A URL shortening web app, inspired by the look and behavior of TinyURL.",
           "tags": ["PHP", "MySQL", "React", "TypeScript", "API Integration", "Docker"],
@@ -54,7 +54,7 @@
           ]
         },
         {
-          "date": "2025",
+          "date": ["2025", "20/03"],
           "title": "AniGuess",
           "description": "A simple game where you have to guess the name of the animation, comic or novel to which a character belongs.",
           "tags": ["React", "TypeScript", "API Integration"],
@@ -75,7 +75,7 @@
           ]
         },
         {
-          "date": "2025",
+          "date": ["2025", "12/03"],
           "title": "DaniFernao",
           "description": "The page you're currently on, where I share my professional profile and learning experience in web development.",
           "tags": ["React"],
@@ -92,7 +92,7 @@
           ]
         },
         {
-          "date": "2025",
+          "date": ["2025", "11/03"],
           "title": "Sudoku",
           "description": "A web app to play sudoku, with two difficulty levels: easy and hard, ideal for enjoying a quick challenge.",
           "tags": ["React"],
@@ -113,28 +113,7 @@
           ]
         },
         {
-          "date": "2025",
-          "title": "Stopwatch",
-          "description": "A stopwatch based on the look and feel of the Google Clock app.",
-          "tags": ["React"],
-          "screenshot": {
-            "title": "Zoom in image",
-            "pathname": "project-cronometro.png",
-            "alt":"Web project screenshot"
-          },
-          "links": [
-            {
-              "text": "Demo",
-              "url": "https://wx3.netlify.app/stopwatch/"
-            },
-            {
-              "text": "Source code",
-              "url": "https://github.com/dotdani/stopwatch"
-            }
-          ]
-        },
-        {
-          "date": "2023",
+          "date": ["2023", "06/12"],
           "title": "Fundadores",
           "description": "A WordPress theme for the Hogar Infantil Los Fundadores website.",
           "tags": ["WordPress"],
@@ -151,10 +130,10 @@
           ]
         },
         {
-          "date": "2022",
+          "date": ["2022", "29/12"],
           "title": "Inventory management system",
           "description": "A web app for inventory management.",
-          "tags": ["Laravel", "Vue.js", "API Integration", "Docker"],
+          "tags": ["Laravel", "MySQL", "Vue.js", "RESTful API Integration", "Docker"],
           "screenshot": {
             "title": "Zoom in image",
             "pathname": "project-inventario.png",
@@ -168,7 +147,7 @@
           ]
         },
         {
-          "date": "2020",
+          "date": ["2020", "16/03"],
           "title": "I'm Daniel",
           "description": "A simple personal page where I share information about myself, links and favorite quotes.",
           "tags": ["Vue.js", "API Integration"],
@@ -185,7 +164,7 @@
           ]
         },
         {
-          "date": "2016",
+          "date": ["2016", "13/03"],
           "title": "Devitacora",
           "description": "A personal blog about web development, blogs, and other IT topics in general. The XML template used is my own.",
           "tags": ["Blogger tags", "XHTML", "CSS"],

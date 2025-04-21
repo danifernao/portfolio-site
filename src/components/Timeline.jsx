@@ -35,7 +35,13 @@ function Timeline({ id, list }) {
           className={`achievement ${isHidden && i > 1 ? "hidden" : ""}`}
           key={i}
         >
-          {item.date && <div className="date">{item.date}</div>}
+          {item.date && (
+            <div className="date">
+              {typeof item.date === "object"
+                ? item.date.map((d, i) => <span key={i}>{d}</span>)
+                : item.date}
+            </div>
+          )}
           {item.title && <h3 className="title">{item.title}</h3>}
 
           <div className="details">
