@@ -269,7 +269,7 @@ p {
   background-color: var(--color-bg-lighter);
 }
 
-.timeline .date span:nth-child(n+2) {
+.timeline .date span:last-of-type {
   font-size: 0.8rem;
 }
 
@@ -429,13 +429,23 @@ p {
   }
 
   .timeline .date {
-    text-align: left;
+    flex-direction: row;
+    align-items: center;
     font-size: 1rem;
   }
 
   .timeline .date:before,
   .timeline .date:after {
     display: none;
+  }
+
+  .timeline .date span:last-of-type {
+    font-size: 0.9rem;
+  }
+
+  .timeline .date span:last-of-type:before {
+    content: "•";
+    margin: 0 0.3rem;
   }
 
   .timeline .more {
