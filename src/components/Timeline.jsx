@@ -42,6 +42,7 @@ function Timeline({ id, list }) {
                 : item.date}
             </div>
           )}
+
           {item.title && <h3 className="title">{item.title}</h3>}
 
           <div className="details">
