@@ -17,15 +17,14 @@
     "id": "skills",
     "title": "Skills",
     "items": [
-      "XHTML",
+      "HTML",
       "CSS",
       "JavaScript",
+      "TypeScript",
       "React",
-      "Vue.js",
       "PHP",
       "MySQL",
-      "Laravel",
-      "WordPress",
+      "Docker",
       "Git"
     ]
   },
@@ -167,7 +166,7 @@
           "date": ["2016", "13/03"],
           "title": "Devitacora",
           "description": "A personal blog about web development, blogs, and other IT topics in general. The XML template used is my own.",
-          "tags": ["Blogger tags", "XHTML", "CSS"],
+          "tags": ["Blogger tags", "XHTML", "CSS", "JavaScript"],
           "screenshot": {
             "title": "Zoom in image",
             "pathname": "project-devitacora.png",

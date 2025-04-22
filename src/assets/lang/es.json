@@ -17,15 +17,14 @@
     "id": "skills",
     "title": "Conocimientos y aptitudes",
     "items": [
-      "XHTML",
+      "HTML",
       "CSS",
       "JavaScript",
+      "TypeScript",
       "React",
-      "Vue.js",
       "PHP",
       "MySQL",
-      "Laravel",
-      "WordPress",
+      "Docker",
       "Git"
     ]
   },
@@ -167,7 +166,7 @@
           "date": ["2016", "13/03"],
           "title": "Devitácora",
           "description": "Blog personal sobre desarrollo web, bitácoras digitales y otros temas informáticos en general. La plantilla XML empleada es de mi autoría.",
-          "tags": ["Etiquetado de Blogger", "XHTML", "CSS"],
+          "tags": ["Etiquetado de Blogger", "XHTML", "CSS", "JavaScript"],
           "screenshot": {
             "title": "Ampliar imagen",
             "pathname": "project-devitacora.png",
