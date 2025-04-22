@@ -20,14 +20,14 @@ function Blog({ data }) {
         if (json.items) {
           setPosts((p) => [...p, ...json.items]);
           setPageToken(json.nextPageToken);
-          setErrorFound(false);
         } else {
           setErrorFound(true);
         }
       })
       .catch((error) => {
-        const mute = error;
-        setErrorFound(true);
+        if (error.name !== "AbortError") {
+          setErrorFound(true);
+        }
       })
       .finally(() => {
         setIsLoading(false);
@@ -35,6 +35,7 @@ function Blog({ data }) {
   };
 
   const getMore = (event) => {
+    setErrorFound(false);
     setIsLoading(true);
     getEntries();
     event.preventDefault();
@@ -53,16 +54,15 @@ function Blog({ data }) {
     const controller = new AbortController();
     const signal = controller.signal;
     if (posts.length === 0) {
-      setIsLoading(true);
       getEntries(signal);
     }
     return () => {
       controller.abort();
     };
-  }, [blogRef.current]);
+  }, []);
 
   return (
-    <div id={data.id} ref={blogRef} className="section blog loading">
+    <div id={data.id} ref={blogRef} className="section blog">
       <h2>
         <a href={`#${data.id}`}>{data.title}</a>
       </h2>
