@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from "react";
-import PropTypes from "prop-types";
 
 function Blog({ data }) {
   const [posts, setPosts] = useState([]);
   const [pageToken, setPageToken] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
   const [errorFound, setErrorFound] = useState(false);
   const blogRef = useRef();
 
@@ -30,12 +30,12 @@ function Blog({ data }) {
         setErrorFound(true);
       })
       .finally(() => {
-        blogRef.current.classList.remove("loading");
+        setIsLoading(false);
       });
   };
 
   const getMore = (event) => {
-    blogRef.current.classList.add("loading");
+    setIsLoading(true);
     getEntries();
     event.preventDefault();
   };
@@ -53,6 +53,7 @@ function Blog({ data }) {
     const controller = new AbortController();
     const signal = controller.signal;
     if (posts.length === 0) {
+      setIsLoading(true);
       getEntries(signal);
     }
     return () => {
@@ -82,32 +83,21 @@ function Blog({ data }) {
         <p className="error">{data.error}</p>
       ) : (
         <>
-          <p className="loading">{data.loading}</p>
-          {typeof pageToken !== "undefined" && (
-            <p className="more">
-              <a href="#" onClick={getMore}>
-                {data.more}
-              </a>
-            </p>
+          {isLoading ? (
+            <p className="loading">{data.loading}</p>
+          ) : (
+            typeof pageToken !== "undefined" && (
+              <p className="more">
+                <a href="#" onClick={getMore}>
+                  {data.more}
+                </a>
+              </p>
+            )
           )}
         </>
       )}
     </div>
   );
 }
-
-Blog.PropTypes = {
-  data: PropTypes.shape({
-    id: PropTypes.string,
-    api: PropTypes.shape({
-      blogId: PropTypes.string,
-      key: PropTypes.string,
-      maxResults: PropTypes.number,
-    }),
-    more: PropTypes.string,
-    loading: PropTypes.string,
-    error: PropTypes.string,
-  }),
-};
 
 export default Blog;

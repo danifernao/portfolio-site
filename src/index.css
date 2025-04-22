@@ -161,11 +161,6 @@ p {
   font-size: 0.9rem;
 }
 
-.section.blog.loading .more,
-.section.blog:not(.loading) .loading {
-  display: none !important;
-}
-
 .section.blog li {
   display: flex;
   margin: 0.3rem 0;
@@ -177,7 +172,7 @@ p {
   margin-left: 0.3rem;
 }
 
-.section.blog.loading .loading {
+.section.blog .loading {
   font-style: italic;
 }
 

@@ -1,5 +1,4 @@
 import Timeline from "./Timeline";
-import PropTypes from "prop-types";
 
 function Section({ data }) {
   return (
@@ -14,14 +13,5 @@ function Section({ data }) {
     </div>
   );
 }
-
-Section.PropTypes = {
-  data: PropTypes.shape({
-    id: PropTypes.string,
-    title: PropTypes.string,
-    description: PropTypes.string,
-    list: PropTypes.arrayOf(PropTypes.object),
-  }),
-};
 
 export default Section;

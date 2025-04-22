@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import PropTypes from "prop-types";
 import ReactMarkdown from "react-markdown";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Lightbox from "yet-another-react-lightbox";
@@ -127,31 +126,5 @@ function Timeline({ id, list }) {
     </div>
   );
 }
-
-Timeline.PropTypes = {
-  id: PropTypes.string,
-  list: PropTypes.shape({
-    more: PropTypes.string,
-    items: PropTypes.arrayOf(
-      PropTypes.shape({
-        date: PropTypes.string,
-        title: PropTypes.string,
-        description: PropTypes.string,
-        tags: PropTypes.arrayOf(PropTypes.string),
-        screnshoot: PropTypes.shape({
-          title: PropTypes.string,
-          pathname: PropTypes.string,
-          alt: PropTypes.string,
-        }),
-        links: PropTypes.arrayOf(
-          PropTypes.shape({
-            url: PropTypes.string,
-            text: PropTypes.string,
-          })
-        ),
-      })
-    ),
-  }),
-};
 
 export default Timeline;

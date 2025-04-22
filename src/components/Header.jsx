@@ -1,5 +1,4 @@
 import { useState } from "react";
-import PropTypes from "prop-types";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
@@ -46,18 +45,5 @@ function Header({ data }) {
     </div>
   );
 }
-
-Header.PropTypes = {
-  data: PropTypes.shape({
-    name: PropTypes.string,
-    profession: PropTypes.string,
-    address: PropTypes.string,
-    photo: PropTypes.shape({
-      title: PropTypes.string,
-      pathname: PropTypes.string,
-      alt: PropTypes.string,
-    }),
-  }),
-};
 
 export default Header;

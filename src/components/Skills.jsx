@@ -1,5 +1,3 @@
-import PropTypes from "prop-types";
-
 function Skills({ data }) {
   return (
     <div id={data.id} className="section skills">
@@ -18,13 +16,5 @@ function Skills({ data }) {
     </div>
   );
 }
-
-Skills.PropTypes = {
-  data: PropTypes.shape({
-    id: PropTypes.string,
-    title: PropTypes.string,
-    items: PropTypes.arrayOf(PropTypes.string),
-  }),
-};
 
 export default Skills;

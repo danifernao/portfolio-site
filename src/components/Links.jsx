@@ -1,5 +1,4 @@
 import { Fragment } from "react";
-import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Links({ data }) {
@@ -36,18 +35,5 @@ function Links({ data }) {
     </div>
   );
 }
-
-Links.PropTypes = {
-  data: PropTypes.shape({
-    id: PropTypes.string,
-    title: PropTypes.string,
-    items: PropTypes.arrayOf(
-      PropTypes.shape({
-        text: PropTypes.string,
-        url: PropTypes.string,
-      })
-    ),
-  }),
-};
 
 export default Links;
