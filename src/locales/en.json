@@ -233,5 +233,6 @@
       }
     ]
   },
-  "language": "Select language"
+  "language": "Select language",
+  "scrollToTop": "Scroll to top"
 }

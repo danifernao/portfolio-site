@@ -7,6 +7,7 @@ export interface DataType {
   education: SectionType;
   links: LinksType;
   language: string;
+  scrollToTop: string;
 }
 
 export interface HeaderType {

@@ -8,11 +8,13 @@ import Language from "./components/Language";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faArrowUpRightFromSquare,
+  faChevronUp,
   faGlobe,
 } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useState } from "react";
+import ScrollToTop from "./components/ScrollToTop";
 
-library.add(faArrowUpRightFromSquare, faGlobe);
+library.add(faArrowUpRightFromSquare, faChevronUp, faGlobe);
 
 function App() {
   const [data, setData] = useState<DataType | null>(null);
@@ -50,6 +52,7 @@ function App() {
         </>
       )}
       <Language handleData={handleData} />
+      {data && <ScrollToTop btnText={data.scrollToTop} />}
     </div>
   );
 }

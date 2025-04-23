@@ -400,6 +400,28 @@ p {
   text-decoration: none;
 }
 
+.scroll-to-top {
+  all: unset;
+  display: flex;
+  position: fixed;
+  right: 1.5rem;
+  bottom: 0.5rem;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.scroll-to-top svg {
+  all: unset;
+  height: 3rem;
+  color: var(--color-bg-lighter);
+  cursor: pointer;
+  transition: color ease 300ms;
+}
+
+.scroll-to-top:hover svg {
+  color: var(--color-text-dark);
+}
+
 @keyframes l12 { 
   100% { transform: rotate(0.5turn); }
 }
