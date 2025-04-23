@@ -78,7 +78,7 @@
           "date": ["2025", "12/03"],
           "title": "DaniFernao",
           "description": "The page you're currently on, where I share my professional profile and learning experience in web development.",
-          "tags": ["React"],
+          "tags": ["React", "TypeScript"],
           "screenshot": {
             "title": "Zoom in image",
             "pathname": "project-danifernao.png",
