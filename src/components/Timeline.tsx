@@ -78,7 +78,7 @@ function Timeline({ id, list }: TimelineProps) {
                       href="#"
                       title={item.screenshot.title}
                       onClick={(e) =>
-                        toggleLightbox(e, item.screenshot.pathname)
+                        toggleLightbox(e, item.screenshot!.pathname)
                       }
                     >
                       <img
