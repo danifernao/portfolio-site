@@ -18,7 +18,7 @@ function ScrollToTop({ btnText }: ScrollToTopProps) {
     };
     window.addEventListener("scroll", toggleVisibility);
     return () => window.removeEventListener("scroll", toggleVisibility);
-  });
+  }, []);
 
   return (
     isVisible && (
