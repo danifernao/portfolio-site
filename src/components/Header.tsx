@@ -1,13 +1,18 @@
+import type { HeaderType } from "../types/types";
 import { useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
-function Header({ data }) {
-  const [open, setOpen] = useState(false);
+interface HeaderProps {
+  data: HeaderType;
+}
 
-  const viewFullImage = (e) => {
+function Header({ data }: HeaderProps) {
+  const [open, setOpen] = useState<boolean>(false);
+
+  const viewFullImage = (event: React.MouseEvent<HTMLAnchorElement>) => {
     setOpen(true);
-    e.preventDefault();
+    event.preventDefault();
   };
 
   return (
@@ -20,7 +25,7 @@ function Header({ data }) {
             onClick={viewFullImage}
             className="avatar"
           >
-            <img src={`./images/${data.photo.pathname}`} aly={data.photo.alt} />
+            <img src={`./images/${data.photo.pathname}`} alt={data.photo.alt} />
           </a>
           <Lightbox
             open={open}

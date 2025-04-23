@@ -1,8 +1,13 @@
+import type { LinksType } from "../types/types";
 import { Fragment } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-function Links({ data }) {
-  const formatUrl = (param) => {
+interface LinksProps {
+  data: LinksType;
+}
+
+function Links({ data }: LinksProps) {
+  const formatUrl = (param: string) => {
     const url = new URL(param);
     return `${url.hostname}${url.pathname.replace(/\/$/, "")}`;
   };
@@ -24,7 +29,7 @@ function Links({ data }) {
                   {formatUrl(link.url)}
                 </a>
                 <FontAwesomeIcon
-                  icon="fa-solid fa-arrow-up-right-from-square"
+                  icon="arrow-up-right-from-square"
                   aria-hidden={true}
                 />
               </dd>

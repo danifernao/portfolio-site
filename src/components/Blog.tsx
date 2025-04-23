@@ -1,13 +1,24 @@
+import type { BlogType } from "../types/types";
 import { useEffect, useRef, useState } from "react";
 
-function Blog({ data }) {
-  const [posts, setPosts] = useState([]);
-  const [pageToken, setPageToken] = useState(null);
-  const [isLoading, setIsLoading] = useState(true);
-  const [errorFound, setErrorFound] = useState(false);
-  const blogRef = useRef();
+interface BlogProps {
+  data: BlogType;
+}
 
-  const getEntries = (signal = null) => {
+interface Post {
+  title: string;
+  url: string;
+  published: string;
+}
+
+function Blog({ data }: BlogProps) {
+  const [posts, setPosts] = useState<Post[]>([]);
+  const [pageToken, setPageToken] = useState<null | string | undefined>(null);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [errorFound, setErrorFound] = useState<boolean>(false);
+  const blogRef = useRef<HTMLDivElement>(null);
+
+  const getEntries = (signal: AbortSignal | null = null) => {
     const url = `https://www.googleapis.com/blogger/v3/blogs/${
       data.api.blogId
     }/posts?maxResults=${data.api.maxResults}&key=${data.api.key}${
@@ -34,18 +45,18 @@ function Blog({ data }) {
       });
   };
 
-  const getMore = (event) => {
+  const getMore = (event: React.MouseEvent<HTMLAnchorElement>) => {
     setErrorFound(false);
     setIsLoading(true);
     getEntries();
     event.preventDefault();
   };
 
-  const formatURL = (url) => {
+  const formatURL = (url: string) => {
     return url.replace(/^(http)\:\/\//, "https://");
   };
 
-  const formatDate = (date) => {
+  const formatDate = (date: string) => {
     const [year, month, day] = date.split("T")[0].split("-");
     return `${day}/${month}/${year.slice(-2)}`;
   };

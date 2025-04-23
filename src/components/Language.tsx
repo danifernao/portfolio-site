@@ -1,15 +1,20 @@
-import langEn from "../assets/lang/en.json";
-import langEs from "../assets/lang/es.json";
+import type { DataType } from "../types/types";
+import langEn from "../locales/en.json";
+import langEs from "../locales/es.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useId, useRef, useState } from "react";
 
-function Language({ handleData }) {
+interface LanguageProps {
+  handleData: (langData: DataType) => void;
+}
+
+function Language({ handleData }: LanguageProps) {
   const [currLang, setCurrLang] = useState("es");
   const [isMenuVisible, setIsMenuVisible] = useState(false);
-  const langElemRef = useRef();
+  const langElemRef = useRef<HTMLDivElement>(null);
   const menuElemId = useId();
 
-  const langs = {
+  const langs: Record<string, Record<string, string>> = {
     es: {
       name: "Español",
       select: "Cambiar de idioma",
@@ -20,12 +25,15 @@ function Language({ handleData }) {
     },
   };
 
-  const selectLang = (event, lang) => {
+  const selectLang = (
+    event: React.MouseEvent<HTMLAnchorElement>,
+    lang: string
+  ) => {
     changeLang(lang);
     event.preventDefault();
   };
 
-  const changeLang = (lang) => {
+  const changeLang = (lang: string) => {
     let data = null;
 
     switch (lang) {
@@ -49,7 +57,7 @@ function Language({ handleData }) {
     setIsMenuVisible(false);
   };
 
-  const toggleMenu = (event) => {
+  const toggleMenu = (event: React.MouseEvent<HTMLButtonElement>) => {
     setIsMenuVisible((v) => (v ? false : true));
     event.stopPropagation();
   };
@@ -57,11 +65,11 @@ function Language({ handleData }) {
   useEffect(() => {
     const locale = new Intl.Locale(navigator.language);
     const savedLang = localStorage.getItem("lang");
-    const urlParams = new URL(location.href).searchParams;
+    const langParam = new URL(location.href).searchParams.get("lang");
 
     const language =
-      urlParams.has("lang") && urlParams.get("lang") in langs
-        ? urlParams.get("lang")
+      langParam && langParam in langs
+        ? langParam
         : savedLang
         ? savedLang
         : locale.language in langs
@@ -89,7 +97,7 @@ function Language({ handleData }) {
           aria-expanded={isMenuVisible}
           onClick={toggleMenu}
         >
-          <FontAwesomeIcon icon="fa-solid fa-globe" aria-hidden={true} />
+          <FontAwesomeIcon icon="globe" aria-hidden={true} />
           <span className="name">{langs[currLang].name}</span>
         </button>
         <ul id={menuElemId}>

@@ -1,4 +1,10 @@
-function Skills({ data }) {
+import type { SkillsType } from "../types/types";
+
+interface SkillsProps {
+  data: SkillsType;
+}
+
+function Skills({ data }: SkillsProps) {
   return (
     <div id={data.id} className="section skills">
       {data.title && (

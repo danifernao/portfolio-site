@@ -1,3 +1,4 @@
+import type { DataType } from "./types/types";
 import Header from "./components/Header";
 import Skills from "./components/Skills";
 import Blog from "./components/Blog";
@@ -14,10 +15,10 @@ import { useEffect, useState } from "react";
 library.add(faArrowUpRightFromSquare, faGlobe);
 
 function App() {
-  const [data, setData] = useState(null);
-  const [isDataSet, setIsDataSet] = useState(false);
+  const [data, setData] = useState<DataType | null>(null);
+  const [isDataSet, setIsDataSet] = useState<boolean>(false);
 
-  const handleData = (langData) => {
+  const handleData = (langData: DataType) => {
     setData(langData);
   };
 

@@ -1,22 +1,31 @@
+import type { TimelineType } from "../types/types";
 import { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
-function Timeline({ id, list }) {
-  const [isHidden, setIsHidden] = useState(true);
-  const [imageSrc, setImageSrc] = useState(null);
+interface TimelineProps {
+  id: string;
+  list: TimelineType;
+}
 
-  const expand = (e) => {
+function Timeline({ id, list }: TimelineProps) {
+  const [isHidden, setIsHidden] = useState<boolean>(true);
+  const [imageSrc, setImageSrc] = useState<string>("");
+
+  const expand = (event: React.MouseEvent<HTMLAnchorElement>) => {
     setIsHidden(false);
-    e.preventDefault();
+    event.preventDefault();
   };
 
-  const toggleLightbox = (e, src = null) => {
-    setImageSrc(src ? `./images/${src}` : null);
-    if (e) {
-      e.preventDefault();
+  const toggleLightbox = (
+    event: React.MouseEvent<HTMLAnchorElement> | void,
+    src: string | null = null
+  ) => {
+    setImageSrc(src ? `./images/${src}` : "");
+    if (event) {
+      event.preventDefault();
     }
   };
 
@@ -88,7 +97,7 @@ function Timeline({ id, list }) {
                           {link.text}
                         </a>
                         <FontAwesomeIcon
-                          icon="fa-solid fa-arrow-up-right-from-square"
+                          icon="arrow-up-right-from-square"
                           aria-hidden={true}
                         />
                       </li>
@@ -115,7 +124,7 @@ function Timeline({ id, list }) {
       )}
 
       <Lightbox
-        open={imageSrc}
+        open={!!imageSrc}
         close={toggleLightbox}
         slides={[{ src: imageSrc }]}
         render={{

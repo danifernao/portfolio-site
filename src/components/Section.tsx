@@ -1,6 +1,11 @@
+import type { SectionType } from "../types/types";
 import Timeline from "./Timeline";
 
-function Section({ data }) {
+interface SectionProps {
+  data: SectionType;
+}
+
+function Section({ data }: SectionProps) {
   return (
     <div id={data.id} className="section">
       {data.title && (
