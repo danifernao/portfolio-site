@@ -1,6 +1,6 @@
 import type { DataType } from "../types/types";
-import langEn from "../locales/en.json";
-import langEs from "../locales/es.json";
+import contentEn from "../locales/en.json";
+import contentEs from "../locales/es.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useId, useRef, useState } from "react";
 
@@ -38,10 +38,10 @@ function Language({ handleData }: LanguageProps) {
 
     switch (lang) {
       case "en":
-        data = langEn;
+        data = contentEn;
         break;
       default:
-        data = langEs;
+        data = contentEs;
         break;
     }
 
