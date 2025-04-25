@@ -95,7 +95,7 @@
           "date": ["2025", "11/03"],
           "title": "Sudoku",
           "description": "A web app to play sudoku, with two difficulty levels: easy and hard, ideal for enjoying a quick challenge.",
-          "tags": ["React"],
+          "tags": ["React", "TypeScript"],
           "screenshot": {
             "title": "Zoom in image",
             "pathname": "project-sudoku.png",

@@ -95,7 +95,7 @@
           "date": ["2025", "11/03"],
           "title": "Sudoku",
           "description": "Aplicación para jugar al sudoku, con dos niveles de dificultad: fácil y difícil, ideal para disfrutar de un reto rápido.",
-          "tags": ["React"],
+          "tags": ["React", "TypeScript"],
           "screenshot": {
             "title": "Ampliar imagen",
             "pathname": "project-sudoku.png",
