@@ -160,6 +160,10 @@
             {
               "text": "Demo",
               "url": "https://soy-daniel.web.app/"
+            },
+            {
+              "text": "Source code",
+              "url": "https://github.com/danifernao/soy-daniel"
             }
           ]
         },
