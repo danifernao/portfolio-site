@@ -1,6 +1,6 @@
-# Página web personal
+# DaniFernao
 
-Mi página web personal, donde detallo mi perfil profesional y comparto mi experiencia de aprendizaje en el desarrollo web, inspirada en el diseño minimalista del [proyecto](https://bonhomme.lol/) de Maxime Bonhomme.
+Mi página web profesional, en la que detallo mi perfil y comparto mi experiencia de aprendizaje en el desarrollo web, inspirada en el diseño minimalista del [proyecto](https://bonhomme.lol/) de Maxime Bonhomme.
 
 ### Instalación
 
@@ -18,4 +18,12 @@ Ubícate en la raíz del proyecto, abre el terminal en dicha ubicación y ejecut
 
 ```
 npm run dev
+```
+
+### Producción
+
+Ubícate en la raíz del proyecto, abre el terminal en dicha ubicación y ejecuta lo siguiente para generar los archivos destinados a un entorno de producción:
+
+```
+npm run build
 ```
