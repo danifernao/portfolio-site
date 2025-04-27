@@ -149,7 +149,7 @@
         {
           "date": ["2020", "16/03"],
           "title": "I'm Daniel",
-          "description": "A simple personal page where I share information about myself, links and favorite quotes.",
+          "description": "My personal website, where I share my social media, information about myself, my favorite quotes, and other interests.",
           "tags": ["Vue.js", "API Integration"],
           "screenshot": {
             "title": "Zoom in image",
