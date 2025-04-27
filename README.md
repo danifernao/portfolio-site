@@ -27,3 +27,5 @@ Ubícate en la raíz del proyecto, abre el terminal en dicha ubicación y ejecut
 ```
 npm run build
 ```
+
+Estos se guardarán en una nueva carpeta llamada `dist`.
