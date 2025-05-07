@@ -25,12 +25,8 @@ function Language({ handleData }: LanguageProps) {
     },
   };
 
-  const selectLang = (
-    event: React.MouseEvent<HTMLButtonElement>,
-    lang: string
-  ) => {
+  const selectLang = (lang: string) => {
     changeLang(lang);
-    event.preventDefault();
   };
 
   const changeLang = (lang: string) => {
@@ -110,9 +106,7 @@ function Language({ handleData }: LanguageProps) {
               aria-selected={key === currLang}
               key={i}
             >
-              <button onClick={(event) => selectLang(event, key)}>
-                {langs[key].name}
-              </button>
+              <button onClick={() => selectLang(key)}>{langs[key].name}</button>
             </li>
           ))}
         </ul>
