@@ -119,6 +119,7 @@ p {
 #header ul {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 0.5rem;
   margin: 0.3rem 0;
   padding: 0;
@@ -449,6 +450,11 @@ p {
   #header {
     flex-direction: column;
     text-align: center;
+  }
+
+  #header ul {
+    justify-content: center;
+    gap: 1rem;
   }
 
   .section.links dd {
