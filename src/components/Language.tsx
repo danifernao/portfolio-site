@@ -98,7 +98,7 @@ function Language({ handleData }: LanguageProps) {
           onClick={toggleMenu}
         >
           <FontAwesomeIcon icon="globe" aria-hidden={true} />
-          <span className="name">{langs[currLang].name}</span>
+          <span className="name">{currLang}</span>
         </button>
         <ul id={menuElemId}>
           {Object.keys(langs).map((key, i) => (

@@ -77,5 +77,5 @@ export interface LinksItemType {
   text: string;
   url: string;
   title?: string;
-  icon: string;
+  icon?: string;
 }

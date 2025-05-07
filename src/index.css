@@ -84,8 +84,8 @@ p {
 
 #wrapper {
   position: relative;
-  margin: 4rem auto 5rem;
-  padding: 1rem 1.5rem;
+  margin: 2.5rem auto 5rem;
+  padding: 1.5rem;
   width: 100%;
   max-width: 40rem;
   z-index: 20;
@@ -94,7 +94,7 @@ p {
 #wrapper, #content {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 #header {
@@ -120,7 +120,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.7rem;
   margin: 0.3rem 0;
   padding: 0;
   list-style: none;
@@ -153,8 +153,18 @@ p {
   gap: 1rem;
 }
 
-#content h2 {
+.section h2 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   font-size: 1.3rem;
+}
+
+.section h2:after {
+  content: "";
+  flex: 1;
+  background-color: rgb(from var(--color-bg-lighter) r g b / 0.4);
+  padding: 0.04rem 0;
 }
 
 .section.skills ul {
@@ -169,7 +179,6 @@ p {
   content: "•";
   margin: 0 0.5rem;
 }
-
 
 .section.blog ul {
   margin: 0;
@@ -268,7 +277,7 @@ p {
 
 .timeline .date:before {
   top: 0.6rem;
-  left: 100%;
+  left: calc(100% + 0.03rem);
   width: 0.8rem;
   height: 0.8rem;
   background-color: var(--color-bg-lighter);
@@ -357,9 +366,9 @@ p {
 
 .language {
   position: absolute;
-  top: -1rem;
+  top: 0;
   right: 1.5rem;
-  transform: translateY(-100%);
+  transform: translateY(-50%);
 }
 
 .language div {
@@ -367,29 +376,38 @@ p {
 }
 
 .language button {
+  all: unset;
   display: flex;
   align-items: center;
   gap: 0.3rem;
   margin-left: auto;
   padding: 0.3rem 0.5rem;
-  background-color: var(--color-text);
   border: 0;
   border-radius: 0.2rem;
   font-family: "Roboto", sans-serif;
+  color: var(--color-text);
+  text-transform: uppercase;
+  transition: background-color, color 100ms ease;
+  cursor: pointer;
 }
 
 .language button,
 .language a {
   padding: 0.3rem 0.5rem;
   font-size: 1rem;
+}
+
+.language button:hover,
+.language button:active,
+.language.menu-visible button,
+.language ul {
+  background-color: var(--color-text);
   color: var(--color-bg);
 }
 
-.language button:active,
-.language.menu-visible button,
 .language a.active,
 .language a:hover {
-  background-color: var(--color-text-dark) !important;
+  background-color: rgb(from var(--color-text-darker) r g b / 0.4);
 }
 
 .language ul {
@@ -403,7 +421,6 @@ p {
   list-style: none;
   min-width: 7rem;
   max-height: 10rem;
-  background-color: var(--color-text);
   border-radius: 0.2rem;
   overflow-y: auto;
 }
@@ -414,6 +431,7 @@ p {
 
 .language a {
   display: block;
+  color: var(--color-bg);
 }
 
 .language a:hover {
@@ -455,6 +473,7 @@ p {
   #header ul {
     justify-content: center;
     gap: 1rem;
+    font-size: 1.5rem;
   }
 
   .section.links dd {
