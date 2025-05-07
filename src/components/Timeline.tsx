@@ -1,5 +1,5 @@
 import type { TimelineType } from "../types/types";
-import { useEffect, useState } from "react";
+import { useEffect, useId, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Lightbox from "yet-another-react-lightbox";
@@ -13,10 +13,10 @@ interface TimelineProps {
 function Timeline({ id, list }: TimelineProps) {
   const [isHidden, setIsHidden] = useState<boolean>(true);
   const [imageSrc, setImageSrc] = useState<string>("");
+  const timelineId = useId();
 
-  const expand = (event: React.MouseEvent<HTMLAnchorElement>) => {
+  const expand = () => {
     setIsHidden(false);
-    event.preventDefault();
   };
 
   const toggleLightbox = (
@@ -37,7 +37,11 @@ function Timeline({ id, list }: TimelineProps) {
   }, []);
 
   return (
-    <div className={`timeline ${isHidden ? "" : "expanded"}`}>
+    <div
+      id={timelineId}
+      className={`timeline ${isHidden ? "" : "expanded"}`}
+      aria-live="polite"
+    >
       {list.items.map((item, i) => (
         <div
           className={`achievement ${isHidden && i > 1 ? "hidden" : ""}`}
@@ -112,14 +116,9 @@ function Timeline({ id, list }: TimelineProps) {
 
       {isHidden && list.items.length > 2 && (
         <div className="more">
-          <a
-            href="#"
-            aria-expanded={!isHidden}
-            aria-controls="projects"
-            onClick={expand}
-          >
+          <button onClick={expand} aria-controls={timelineId}>
             {list.more}
-          </a>
+          </button>
         </div>
       )}
 

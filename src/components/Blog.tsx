@@ -45,11 +45,10 @@ function Blog({ data }: BlogProps) {
       });
   };
 
-  const getMore = (event: React.MouseEvent<HTMLAnchorElement>) => {
+  const getMore = () => {
     setErrorFound(false);
     setIsLoading(true);
     getEntries();
-    event.preventDefault();
   };
 
   const formatURL = (url: string) => {
@@ -78,7 +77,7 @@ function Blog({ data }: BlogProps) {
         <a href={`#${data.id}`}>{data.title}</a>
       </h2>
       {data.description && <p>{data.description}</p>}
-      <ul>
+      <ul id="entries" aria-live="polite">
         {posts.map((post, i) => (
           <li key={i}>
             <time dateTime={post.published} title={post.published}>
@@ -98,11 +97,11 @@ function Blog({ data }: BlogProps) {
             <p className="loading">{data.loading}</p>
           ) : (
             typeof pageToken !== "undefined" && (
-              <p className="more">
-                <a href="#" onClick={getMore}>
+              <div className="more">
+                <button onClick={getMore} aria-controls="entries">
                   {data.more}
-                </a>
-              </p>
+                </button>
+              </div>
             )
           )}
         </>

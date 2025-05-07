@@ -26,7 +26,7 @@ function Language({ handleData }: LanguageProps) {
   };
 
   const selectLang = (
-    event: React.MouseEvent<HTMLAnchorElement>,
+    event: React.MouseEvent<HTMLButtonElement>,
     lang: string
   ) => {
     changeLang(lang);
@@ -92,24 +92,27 @@ function Language({ handleData }: LanguageProps) {
     >
       <div>
         <button
-          aria-controls={menuElemId}
+          className="select"
           title={langs[currLang].select}
+          aria-label={langs[currLang].select}
+          aria-controls={menuElemId}
           aria-expanded={isMenuVisible}
           onClick={toggleMenu}
         >
           <FontAwesomeIcon icon="globe" aria-hidden={true} />
           <span className="name">{currLang}</span>
         </button>
-        <ul id={menuElemId}>
+        <ul id={menuElemId} role="listbox">
           {Object.keys(langs).map((key, i) => (
-            <li key={i}>
-              <a
-                href="#"
-                className={key === currLang ? "active" : ""}
-                onClick={(event) => selectLang(event, key)}
-              >
+            <li
+              className={key === currLang ? "active" : ""}
+              role="option"
+              aria-selected={key === currLang}
+              key={i}
+            >
+              <button onClick={(event) => selectLang(event, key)}>
                 {langs[key].name}
-              </a>
+              </button>
             </li>
           ))}
         </ul>

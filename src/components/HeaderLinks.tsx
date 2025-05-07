@@ -11,7 +11,12 @@ function HeaderLinks({ links }: LinksProps) {
     <ul>
       {links.map((link, i) => (
         <li key={i}>
-          <a href={link.url} title={link.title} target="_blank">
+          <a
+            href={link.url}
+            title={link.title}
+            aria-label={link.title}
+            target="_blank"
+          >
             <FontAwesomeIcon
               icon={["fab", link.icon] as IconProp}
               aria-hidden={true}
