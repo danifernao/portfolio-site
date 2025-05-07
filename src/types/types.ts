@@ -70,8 +70,12 @@ export interface BlogType {
 export interface LinksType {
   id: string;
   title: string;
-  items: {
-    text: string;
-    url: string;
-  }[];
+  items: LinksItemType[];
+}
+
+export interface LinksItemType {
+  text: string;
+  url: string;
+  title?: string;
+  icon: string;
 }

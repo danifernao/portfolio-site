@@ -1,20 +1,29 @@
-import type { DataType } from "./types/types";
+import type { DataType, LinksType, LinksItemType } from "./types/types";
 import Header from "./components/Header";
 import Skills from "./components/Skills";
 import Blog from "./components/Blog";
 import Links from "./components/Links";
 import Section from "./components/Section";
 import Language from "./components/Language";
+import { useEffect, useState } from "react";
+import ScrollToTop from "./components/ScrollToTop";
 import { library } from "@fortawesome/fontawesome-svg-core";
+
 import {
   faArrowUpRightFromSquare,
   faChevronUp,
   faGlobe,
 } from "@fortawesome/free-solid-svg-icons";
-import { useEffect, useState } from "react";
-import ScrollToTop from "./components/ScrollToTop";
 
-library.add(faArrowUpRightFromSquare, faChevronUp, faGlobe);
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+
+library.add(
+  faArrowUpRightFromSquare,
+  faChevronUp,
+  faGlobe,
+  faLinkedin,
+  faGithub
+);
 
 function App() {
   const [data, setData] = useState<DataType | null>(null);
@@ -22,6 +31,10 @@ function App() {
 
   const handleData = (langData: DataType) => {
     setData(langData);
+  };
+
+  const getHeaderLinks = (links: LinksType): LinksItemType[] => {
+    return links && links.items ? links.items.filter((item) => item.icon) : [];
   };
 
   useEffect(() => {
@@ -40,7 +53,10 @@ function App() {
     <div id="wrapper">
       {data && (
         <>
-          <Header data={data.header} />
+          <Header
+            dataHeader={data.header}
+            dataLinks={getHeaderLinks(data.links)}
+          />
           <div id="content">
             <Section data={data.about} />
             <Skills data={data.skills} />

@@ -1,13 +1,15 @@
-import type { HeaderType } from "../types/types";
+import type { HeaderType, LinksItemType } from "../types/types";
+import HeaderLinks from "./HeaderLinks";
 import { useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
 interface HeaderProps {
-  data: HeaderType;
+  dataHeader: HeaderType;
+  dataLinks: LinksItemType[];
 }
 
-function Header({ data }: HeaderProps) {
+function Header({ dataHeader, dataLinks }: HeaderProps) {
   const [open, setOpen] = useState<boolean>(false);
 
   const viewFullImage = (event: React.MouseEvent<HTMLAnchorElement>) => {
@@ -17,20 +19,23 @@ function Header({ data }: HeaderProps) {
 
   return (
     <div id="header">
-      {data.photo && (
+      {dataHeader.photo && (
         <div>
           <a
             href="#"
-            title={data.photo.title}
+            title={dataHeader.photo.title}
             onClick={viewFullImage}
             className="avatar"
           >
-            <img src={`./images/${data.photo.pathname}`} alt={data.photo.alt} />
+            <img
+              src={`./images/${dataHeader.photo.pathname}`}
+              alt={dataHeader.photo.alt}
+            />
           </a>
           <Lightbox
             open={open}
             close={() => setOpen(false)}
-            slides={[{ src: `./images/${data.photo.pathname}` }]}
+            slides={[{ src: `./images/${dataHeader.photo.pathname}` }]}
             render={{
               buttonPrev: () => null,
               buttonNext: () => null,
@@ -39,13 +44,14 @@ function Header({ data }: HeaderProps) {
         </div>
       )}
       <div>
-        {data.name && (
+        {dataHeader.name && (
           <h1>
-            <a href="/">{data.name}</a>
+            <a href="/">{dataHeader.name}</a>
           </h1>
         )}
-        {data.profession && <p>{data.profession}</p>}
-        {data.address && <p>{data.address}</p>}
+        {dataHeader.profession && <p>{dataHeader.profession}</p>}
+        {dataHeader.address && <p>{dataHeader.address}</p>}
+        {dataLinks.length > 0 && <HeaderLinks links={dataLinks} />}
       </div>
     </div>
   );

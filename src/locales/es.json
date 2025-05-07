@@ -226,11 +226,15 @@
     "items": [
       {
         "text": "LinkedIn",
-        "url": "https://linkedin.com/in/danifernao"
+        "url": "https://linkedin.com/in/danifernao",
+        "title": "Visitar mi perfil en LinkedIn",
+        "icon": "linkedin"
       },
       {
         "text": "GitHub",
-        "url": "https://github.com/danifernao"
+        "url": "https://github.com/danifernao",
+        "title": "Visitar mi perfil en GitHub",
+        "icon": "github"
       }
     ]
   },
