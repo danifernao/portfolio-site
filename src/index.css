@@ -163,7 +163,7 @@ p {
 .section h2:after {
   content: "";
   flex: 1;
-  background-color: rgb(from var(--color-bg-lighter) r g b / 0.4);
+  background-color: rgb(from var(--color-bg-lighter) r g b / 0.5);
   padding: 0.04rem 0;
 }
 
