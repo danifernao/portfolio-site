@@ -76,7 +76,7 @@
         },
         {
           "date": ["2025", "12/03"],
-          "title": "DaniFernao",
+          "title": "Página web profesional",
           "description": "La página que estás visitando, donde detallo mi perfil profesional y comparto mi experiencia de aprendizaje en el desarrollo web.",
           "tags": ["React", "TypeScript"],
           "screenshot": {
@@ -87,7 +87,7 @@
           "links": [
             {
               "text": "Código fuente",
-              "url": "https://github.com/danifernao/danifernao"
+              "url": "https://github.com/danifernao/portfolio-site"
             }
           ]
         },
@@ -125,7 +125,7 @@
           "links": [
             {
               "text": "Código fuente",
-              "url": "https://github.com/danifernao/fundadores"
+              "url": "https://github.com/danifernao/fundadores-wp-theme"
             }
           ]
         },
@@ -142,13 +142,13 @@
           "links": [
             {
               "text": "Código fuente",
-              "url": "https://github.com/danifernao/inventario"
+              "url": "https://github.com/danifernao/inventory-manager"
             }
           ]
         },
         {
           "date": ["2020", "16/03"],
-          "title": "Soy Daniel",
+          "title": "Pagina web personal",
           "description": "Mi página web personal, en la que comparto mis redes sociales, información sobre mí, mis citas favoritas y otros intereses.",
           "tags": ["Vue.js", "Integración API"],
           "screenshot": {
@@ -163,7 +163,7 @@
             },
             {
               "text": "Código fuente",
-              "url": "https://github.com/danifernao/soy-daniel"
+              "url": "https://github.com/danifernao/personal-site"
             }
           ]
         },
