@@ -25,6 +25,7 @@
       "React",
       "PHP",
       "MySQL",
+      "Laravel",
       "Docker",
       "Git"
     ]
@@ -36,6 +37,23 @@
     "list": {
       "more": "See more projects...",
       "items": [
+        {
+          "date": ["2025", "31/05"],
+          "title": "Social",
+          "description": "In development. A minimalist social network focused on the essentials: connecting and sharing between users without distractions.",
+          "tags": ["PHP", "MySQL", "Laravel", "Inertia.js", "React", "TypeScript", "Docker"],
+          "screenshot": {
+            "title": "Zoom in image",
+            "pathname": "project-social.png",
+            "alt": "Web project screenshot"
+          },
+          "links": [
+            {
+              "text": "Source code",
+              "url": "https://github.com/danifernao/social"
+            }
+          ]
+        },
         {
           "date": ["2025", "16/04"],
           "title": "URL Shortener",

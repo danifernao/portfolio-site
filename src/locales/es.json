@@ -25,6 +25,7 @@
       "React",
       "PHP",
       "MySQL",
+      "Laravel",
       "Docker",
       "Git"
     ]
@@ -36,6 +37,23 @@
     "list": {
       "more": "Ver más proyectos...",
       "items": [
+        {
+          "date": ["2025", "31/05"],
+          "title": "Social",
+          "description": "En desarrollo. Una red social minimalista centrada en lo esencial: conectar y compartir entre usuarios sin distracciones.",
+          "tags": ["PHP", "MySQL", "Laravel", "Inertia.js", "React", "TypeScript", "Docker"],
+          "screenshot": {
+            "title": "Ampliar imagen",
+            "pathname": "project-social.png",
+            "alt": "Captura de pantalla del proyecto"
+          },
+          "links": [
+            {
+              "text": "Código fuente",
+              "url": "https://github.com/danifernao/social"
+            }
+          ]
+        },
         {
           "date": ["2025", "16/04"],
           "title": "Acortador de URL",
@@ -187,7 +205,7 @@
       ]
     }
   },
-  "blog": {
+  "hidden": {
     "id": "posts",
     "title": "Publicaciones",
     "description": "Te invito a explorar mi blog, donde hablo sobre desarrollo web, bitácoras digitales y otros temas relacionados con la informática.",
