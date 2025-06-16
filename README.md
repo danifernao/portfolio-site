@@ -4,7 +4,7 @@ Mi página web profesional, en la que detallo mi perfil y comparto mi experienci
 
 ## Instalación
 
-1. Asegúrate de tener instalado [Node.js](https://nodejs.org/es/download) y npm.
+1. Asegúrate de tener instalados [Node.js](https://nodejs.org/es/download) y npm.
 2. Descarga o clona este repositorio y accede a la carpeta del proyecto.
 3. Abre la terminal en dicha ubicación y ejecuta lo siguiente para instalar las dependencias:
 
