@@ -1,0 +1,243 @@
+{
+  "header": {
+    "name": "Daniel Fernandez",
+    "profession": "Web Developer / IT Systems Technician",
+    "address": "Ciénaga, Magdalena, Colombia",
+    "photo": {
+      "title": "Zoom in image",
+      "pathname": "me.jpg",
+      "alt": "Profile picture"
+    }
+  },
+  "about": {
+    "id": "about-me",
+    "title": "About Me",
+    "description": "I am a Colombian passionate about web development, with a philosophy focused on simple and adaptable designs, following good practices in markup and SEO, prioritizing efficiency and readability in coding, always in constant learning."
+  },
+  "skills": {
+    "id": "skills",
+    "title": "Skills",
+    "items": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "PHP",
+      "MySQL",
+      "Laravel",
+      "Docker",
+      "Git"
+    ]
+  },
+  "projects": {
+    "id": "projects",
+    "title": "Projects",
+    "description": "Some of my personal projects, created with the purpose of putting my knowledge into practice and improving my skills in web development.",
+    "list": {
+      "more": "See more projects...",
+      "items": [
+        {
+          "date": ["2025", "31/05"],
+          "title": "Social",
+          "description": "In development. A minimalist social network focused on the essentials: connecting and sharing between users without distractions.",
+          "tags": ["PHP", "MySQL", "Laravel", "Inertia.js", "React", "TypeScript", "Docker"],
+          "screenshot": {
+            "title": "Zoom in image",
+            "pathname": "project-social.png",
+            "alt": "Web project screenshot"
+          },
+          "links": [
+            {
+              "text": "Source code",
+              "url": "https://github.com/danifernao/social"
+            }
+          ]
+        },
+        {
+          "date": ["2025", "16/04"],
+          "title": "URL Shortener",
+          "description": "A URL shortening web app, inspired by the look and behavior of TinyURL.",
+          "tags": ["PHP", "MySQL", "React", "TypeScript", "API Integration", "Docker"],
+          "screenshot": {
+            "title": "Zoom in image",
+            "pathname": "project-url-shortener.png",
+            "alt": "Web project screenshot"
+          },
+          "links": [
+            {
+              "text": "Source code",
+              "url": "https://github.com/danifernao/url-shortener"
+            }
+          ]
+        },
+        {
+          "date": ["2025", "20/03"],
+          "title": "AniGuess",
+          "description": "A simple game where you have to guess the name of the animation, comic or novel to which a character belongs.",
+          "tags": ["React", "TypeScript", "API Integration"],
+          "screenshot": {
+            "title": "Zoom in image",
+            "pathname": "project-aniguess.png",
+            "alt":"Web project screenshot"
+          },
+          "links": [
+            {
+              "text": "Demo",
+              "url": "https://wx3.netlify.app/aniguess/"
+            },
+            {
+              "text": "Source code",
+              "url": "https://github.com/danifernao/aniguess"
+            }
+          ]
+        },
+        {
+          "date": ["2025", "12/03"],
+          "title": "Portfolio site",
+          "description": "The page you're currently on, where I share my professional profile and learning experience in web development.",
+          "tags": ["React", "TypeScript"],
+          "screenshot": {
+            "title": "Zoom in image",
+            "pathname": "project-danifernao.png",
+            "alt":"Web project screenshot"
+          },
+          "links": [
+            {
+              "text": "Source code",
+              "url": "https://github.com/danifernao/portfolio-site"
+            }
+          ]
+        },
+        {
+          "date": ["2025", "11/03"],
+          "title": "Sudoku",
+          "description": "A web app to play sudoku, with two difficulty levels: easy and hard, ideal for enjoying a quick challenge.",
+          "tags": ["React", "TypeScript"],
+          "screenshot": {
+            "title": "Zoom in image",
+            "pathname": "project-sudoku.png",
+            "alt": "Web project screenshot"
+          },
+          "links": [
+            {
+              "text": "Demo",
+              "url": "https://wx3.netlify.app/sudoku/"
+            },
+            {
+              "text": "Source code",
+              "url": "https://github.com/danifernao/sudoku"
+            }
+          ]
+        },
+        {
+          "date": ["2023", "06/12"],
+          "title": "Fundadores",
+          "description": "A WordPress theme for the Hogar Infantil Los Fundadores website.",
+          "tags": ["WordPress"],
+          "screenshot": {
+            "title": "Zoom in image",
+            "pathname": "project-fundadores.png",
+            "alt": "Web project screenshot"
+          },
+          "links": [
+            {
+              "text": "Source code",
+              "url": "https://github.com/danifernao/fundadores-wp-theme"
+            }
+          ]
+        },
+        {
+          "date": ["2022", "29/12"],
+          "title": "Inventory management system",
+          "description": "A web app for inventory management.",
+          "tags": ["Laravel", "MySQL", "Vue.js", "RESTful API Integration", "Docker"],
+          "screenshot": {
+            "title": "Zoom in image",
+            "pathname": "project-inventario.png",
+            "alt":"Web project screenshot"
+          },
+          "links": [
+            {
+              "text": "Source code",
+              "url": "https://github.com/danifernao/inventory-manager"
+            }
+          ]
+        },
+        {
+          "date": ["2016", "13/03"],
+          "title": "Devitacora",
+          "description": "A personal blog about web development, blogs, and other IT topics in general. The XML template used is my own.",
+          "tags": ["Blogger tags", "XHTML", "CSS", "JavaScript"],
+          "screenshot": {
+            "title": "Zoom in image",
+            "pathname": "project-devitacora.png",
+            "alt": "Web project screenshot"
+          },
+          "links": [
+            {
+              "text": "Demo",
+              "url": "https://devitacora.blogspot.com/"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "education": {
+    "id": "education",
+    "title": "Education",
+    "description": "I've had the opportunity to achieve the following academic degrees:",
+    "list": {
+      "more": "See more education...",
+      "items": [
+        {
+          "date": "2023",
+          "title": "Technology Specialist in Information Systems Analysis and Development",
+          "description": "Servicio Nacional de Aprendizaje\nCertifies the competencies needed to specify the requirements for the development of an information system, perform its analysis, design and code the solution, and carry out the implementation of the system, applying good quality practices throughout the software development process."
+        },
+        {
+          "date": "2010",
+          "title": "IT Systems Technician",
+          "description": "Instituto Nacional de Formacion Tecnica Profesional \"Humberto Velasquez Garcia\"\nCertifies the competencies required to manage and maintain the physical and logical components of a computer, as well as to support the technical processes of web and desktop application development."
+        }
+      ]
+    }
+  },
+  "contact": {
+    "id": "contact",
+    "title": "Contact",
+    "description": "If you have any questions or inquiries, feel free to get in touch using the form below.",
+    "placeholders": {
+      "name": "Full name",
+      "email": "Email address",
+      "message": "Your message"
+    },
+    "button": "Send message",
+    "loading": {
+      "form": "Sending form...",
+      "button": "Sending..."
+    },
+    "gBranding": "This site is protected by reCAPTCHA and the Google [Privacy Policy](https://policies.google.com/privacy) and [Terms of Service](https://policies.google.com/terms) apply."
+  },
+  "links": {
+    "id": "links",
+    "title": "Online Presence",
+    "items": [
+      {
+        "text": "LinkedIn",
+        "url": "https://linkedin.com/in/danifernao",
+        "title": "Visit my profile on LinkedIn",
+        "icon": "linkedin"
+      },
+      {
+        "text": "GitHub",
+        "url": "https://github.com/danifernao",
+        "title": "Visit my profile on GitHub",
+        "icon": "github"
+      }
+    ]
+  },
+  "language": "Select language",
+  "scrollToTop": "Scroll to top"
+}
