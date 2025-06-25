@@ -116,7 +116,7 @@ function Timeline({ id, list }: TimelineProps) {
 
       {isHidden && list.items.length > 2 && (
         <div className="more">
-          <FontAwesomeIcon icon="plus" aria-hidden={true} />
+          <FontAwesomeIcon icon="chevron-down" aria-hidden={true} />
           <button onClick={expand} aria-controls={timelineId}>
             {list.more}
           </button>

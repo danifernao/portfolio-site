@@ -459,6 +459,7 @@ p {
 
 .more svg {
   color: var(--color-text);
+  font-size: 0.9rem;
 }
 
 .more button {
