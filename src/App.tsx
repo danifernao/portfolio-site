@@ -12,9 +12,9 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faArrowUpRightFromSquare,
   faChevronUp,
+  faChevronDown,
   faCircleNotch,
   faGlobe,
-  faPlus,
 } from "@fortawesome/free-solid-svg-icons";
 
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -23,11 +23,11 @@ import Contact from "./components/Contact";
 library.add(
   faArrowUpRightFromSquare,
   faChevronUp,
+  faChevronDown,
   faCircleNotch,
   faGithub,
   faGlobe,
-  faLinkedin,
-  faPlus
+  faLinkedin
 );
 
 function App() {
