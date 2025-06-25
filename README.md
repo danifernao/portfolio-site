@@ -16,7 +16,7 @@ npm install
 
 ## Visualización
 
-Ubícate en la raíz del proyecto, abre la terminal en dicha ubicación y ejecuta lo siguiente para iniciar el entorno de desarrollo y visualizarlo en el explorador web:
+Abre la terminal en el directorio raíz y ejecuta lo siguiente para iniciar el entorno de desarrollo y visualizarlo en el explorador web:
 
 ```
 npm run dev
@@ -24,7 +24,7 @@ npm run dev
 
 ## Producción
 
-Ubícate en la raíz del proyecto, abre la terminal en dicha ubicación y ejecuta lo siguiente para generar los archivos destinados a un entorno de producción:
+Abre la terminal en el directorio raíz y ejecuta lo siguiente para generar los archivos destinados a un entorno de producción:
 
 ```
 npm run build
