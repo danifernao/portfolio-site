@@ -16,18 +16,48 @@
   },
   "skills": {
     "id": "skills",
-    "title": "Conocimientos y aptitudes",
+    "title": "Competencias técnicas",
     "items": [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "TypeScript",
-      "React",
-      "PHP",
-      "MySQL",
-      "Laravel",
-      "Docker",
-      "Git"
+      {
+        "title": "HTML",
+        "icon": "html5"
+      },
+      {
+        "title": "CSS",
+        "icon": "css3"
+      },
+      {
+        "title": "JavaScript",
+        "icon": "javascript"
+      },
+      {
+        "title": "TypeScript",
+        "icon": "typescript"
+      },
+      {
+        "title": "React",
+        "icon": "react"
+      },
+      {
+        "title": "PHP",
+        "icon": "php"
+      },
+      {
+        "title": "MySQL",
+        "icon": "mysql"
+      },
+      {
+        "title": "Laravel",
+        "icon": "laravel"
+      },
+      {
+        "title": "Docker",
+        "icon": "docker"
+      },
+      {
+        "title": "Git",
+        "icon": "git"
+      }
     ]
   },
   "projects": {

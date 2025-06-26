@@ -8,6 +8,7 @@ import Language from "./components/Language";
 import { useEffect, useState } from "react";
 import ScrollToTop from "./components/ScrollToTop";
 import { library } from "@fortawesome/fontawesome-svg-core";
+import "devicon/devicon.min.css";
 
 import {
   faArrowUpRightFromSquare,

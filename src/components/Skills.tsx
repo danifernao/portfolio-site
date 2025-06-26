@@ -1,5 +1,6 @@
 import type { SkillsType } from "../types/types";
 import Title from "./SectionTitle";
+import SkillsItem from "./SkillsIItem";
 
 interface SkillsProps {
   data: SkillsType;
@@ -12,7 +13,7 @@ function Skills({ data }: SkillsProps) {
       {data.items && (
         <ul>
           {data.items.map((item, i) => (
-            <li key={i}>{item}</li>
+            <SkillsItem key={i} item={item} />
           ))}
         </ul>
       )}
