@@ -15,6 +15,11 @@ jobs:
   build_and_preview:
     if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
     runs-on: ubuntu-latest
+    env:
+      VITE_BLOGGER_BLOG_ID: ${{ vars.VITE_BLOGGER_BLOG_ID }}
+      VITE_GOOGLE_API_KEY: ${{ vars.VITE_GOOGLE_API_KEY }}
+      VITE_FORMSPREE_ID: ${{ vars.VITE_FORMSPREE_ID }}
+      VITE_RECAPTCHA_SITE_KEY: ${{ vars.VITE_RECAPTCHA_SITE_KEY }}
     steps:
       - uses: actions/checkout@v4
       - run: npm ci && npm run build
