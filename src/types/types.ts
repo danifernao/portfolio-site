@@ -51,7 +51,12 @@ export interface TimelineType {
 export interface SkillsType {
   id: string,
   title: string,
-  items: string[]
+  items: SkillsItemType[];
+}
+
+export interface SkillsItemType {
+    title: string,
+    icon: string,
 }
 
 export interface BlogType {

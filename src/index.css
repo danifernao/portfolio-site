@@ -152,14 +152,34 @@ p {
 .section.skills ul {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 1.5rem;
+  row-gap: 1rem;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.section.skills li:not(:last-of-type):after {
-  content: "•";
-  margin: 0 0.5rem;
+.section.skills li {
+  display: flex;
+}
+
+.section.skills a {
+  text-decoration: none;
+  cursor: default;
+}
+
+.section.skills a:not(:hover) {
+  color: var(--color-text-dark);
+}
+
+.section.skills i[class^="devicon-"] {
+  font-size: 2rem;
+}
+
+.section.skills .light {
+  background-color: var(--rt-color-white);
+  color: var(--rt-color-dark);
 }
 
 .section.blog ul {
