@@ -48,34 +48,42 @@ function Contact({ data }: ContactProps) {
     setIsProcessing(true);
 
     try {
-      await grecaptcha.ready(async () => {
-        const token = await grecaptcha.execute(
-          import.meta.env.VITE_RECAPTCHA_SITE_KEY,
-          {
-            action: "submit",
+      await new Promise<void>((resolve, reject) => {
+        grecaptcha.ready(async () => {
+          try {
+            const token = await grecaptcha.execute(
+              import.meta.env.VITE_RECAPTCHA_SITE_KEY,
+              {
+                action: "submit",
+              }
+            );
+
+            formData.append("g-recaptcha-response", token);
+
+            const response = await fetch(form.action, {
+              method: "POST",
+              body: formData,
+              headers: {
+                Accept: "application/json",
+              },
+            });
+
+            if (response.ok) {
+              setStatus({ type: "success", message: "Mensaje enviado." });
+              form.reset();
+              resize();
+            } else {
+              setStatus({
+                type: "error",
+                message:
+                  "Hubo un problema al enviar el mensaje. Intenta de nuevo.",
+              });
+            }
+            resolve();
+          } catch (error) {
+            reject(error);
           }
-        );
-
-        formData.append("g-recaptcha-response", token);
-
-        const response = await fetch(form.action, {
-          method: "POST",
-          body: formData,
-          headers: {
-            Accept: "application/json",
-          },
         });
-
-        if (response.ok) {
-          setStatus({ type: "success", message: "Mensaje enviado." });
-          form.reset();
-          resize();
-        } else {
-          setStatus({
-            type: "error",
-            message: "Hubo un problema al enviar el mensaje. Intenta de nuevo.",
-          });
-        }
       });
     } catch (error) {
       setStatus({ type: "error", message: "Error de red. Intenta más tarde." });
