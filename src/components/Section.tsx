@@ -1,6 +1,6 @@
 import type { SectionType } from "../types/types";
 import Title from "./SectionTitle";
-import Timeline from "./Timeline";
+import Timeline from "./SectionTimeline";
 
 interface SectionProps {
   data: SectionType;
