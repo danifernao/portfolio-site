@@ -77,7 +77,6 @@ export interface ContactType {
   id: string;
   title: string;
   description: string;
-  formId: string;
   placeholders: {
     name: string;
     email: string;
