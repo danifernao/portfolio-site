@@ -265,6 +265,11 @@
         "url": "https://github.com/danifernao",
         "title": "Visit my profile on GitHub",
         "icon": "github"
+      },
+      {
+        "text": "HackerRank",
+        "url": "https://hackerrank.com/profile/danifernao",
+        "title": "Visit my profile on HackerRank"
       }
     ]
   },
