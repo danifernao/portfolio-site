@@ -18,7 +18,11 @@ import {
   faGlobe,
 } from "@fortawesome/free-solid-svg-icons";
 
-import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import {
+  faGithub,
+  faHackerrank,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 import Contact from "./components/Contact";
 
 library.add(
@@ -28,6 +32,7 @@ library.add(
   faCircleNotch,
   faGithub,
   faGlobe,
+  faHackerrank,
   faLinkedin
 );
 

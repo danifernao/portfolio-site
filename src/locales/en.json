@@ -269,7 +269,8 @@
       {
         "text": "HackerRank",
         "url": "https://hackerrank.com/profile/danifernao",
-        "title": "Visit my profile on HackerRank"
+        "title": "Visit my profile on HackerRank",
+        "icon": "hackerrank"
       }
     ]
   },
