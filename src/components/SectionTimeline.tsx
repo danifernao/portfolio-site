@@ -1,8 +1,8 @@
 import type { TimelineType } from "../types/types";
+import Screenshot from "./SectionTimelineScreenshot";
 import { useEffect, useId, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
 interface TimelineProps {
@@ -12,21 +12,10 @@ interface TimelineProps {
 
 function Timeline({ id, list }: TimelineProps) {
   const [isHidden, setIsHidden] = useState<boolean>(true);
-  const [imageSrc, setImageSrc] = useState<string>("");
   const timelineId = useId();
 
   const expand = () => {
     setIsHidden(false);
-  };
-
-  const toggleLightbox = (
-    event: React.MouseEvent<HTMLAnchorElement> | void,
-    src: string | null = null
-  ) => {
-    setImageSrc(src ? `./images/${src}` : "");
-    if (event) {
-      event.preventDefault();
-    }
   };
 
   useEffect(() => {
@@ -77,20 +66,11 @@ function Timeline({ id, list }: TimelineProps) {
             {(item.screenshot || item.links) && (
               <div className="source">
                 {item.screenshot && (
-                  <div className="screenshot">
-                    <a
-                      href="#"
-                      title={item.screenshot.title}
-                      onClick={(e) =>
-                        toggleLightbox(e, item.screenshot!.pathname)
-                      }
-                    >
-                      <img
-                        src={`./images/${item.screenshot.pathname}`}
-                        alt={item.screenshot.alt}
-                      />
-                    </a>
-                  </div>
+                  <Screenshot
+                    pathname={item.screenshot.pathname}
+                    alt={item.screenshot.alt}
+                    title={item.screenshot.title}
+                  />
                 )}
 
                 {item.links && (
@@ -122,16 +102,6 @@ function Timeline({ id, list }: TimelineProps) {
           </button>
         </div>
       )}
-
-      <Lightbox
-        open={!!imageSrc}
-        close={toggleLightbox}
-        slides={[{ src: imageSrc }]}
-        render={{
-          buttonPrev: () => null,
-          buttonNext: () => null,
-        }}
-      />
     </div>
   );
 }

@@ -446,13 +446,18 @@ p {
 
 .timeline .screenshot {
   position: relative;
+}
+
+.timeline .screenshot .thumbnail {
+  position: relative;
   width: 10rem;
   height: 5rem;
   border-radius: 0.5rem;
   overflow: hidden;
 }
 
-.timeline .screenshot img {
+.timeline .screenshot .thumbnail img {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -460,8 +465,29 @@ p {
   transition: transform 0.5s ease;
 }
 
-.timeline .source img:hover {
+.timeline .screenshot .thumbnail img:hover {
   transform: scale(1.1);
+}
+
+.timeline .screenshot .preview {
+  position: absolute;
+  top: 50%;
+  left: 105%;
+  opacity: 0;
+  transform: translateY(-60%);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  z-index: 30;
+}
+
+.timeline .screenshot .preview.visible {
+  opacity: 1;
+  transform: translateY(-50%);
+}
+
+.timeline .screenshot .preview img {
+  width: 35vw;
+  border: 0.06rem solid var(--color-bg-lighter);
+  border-radius: 0.5rem;
 }
 
 .timeline .links {
@@ -648,5 +674,11 @@ p {
 
   .timeline .more {
     padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .timeline .screenshot .preview {
+    display: none;
   }
 }
