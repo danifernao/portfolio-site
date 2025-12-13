@@ -274,6 +274,9 @@
       }
     ]
   },
-  "language": "Select language",
-  "scrollToTop": "Scroll to top"
+  "common": {
+    "closeMenu": "Close menu",
+    "openMenu": "Open menu",
+    "scrollToTop": "Scroll to top"
+  }
 }
