@@ -24,6 +24,7 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import Contact from "./components/Contact";
+import Menu from "./components/Menu";
 
 library.add(
   faArrowUpRightFromSquare,
@@ -76,6 +77,9 @@ function App() {
             <Section data={data.education} />
             <Contact data={data.contact} />
             <Links data={data.links} />
+          </div>
+          <div id="sidebar">
+            <Menu data={data} />
           </div>
         </>
       )}
