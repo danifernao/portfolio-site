@@ -12,10 +12,12 @@ import "devicon/devicon.min.css";
 
 import {
   faArrowUpRightFromSquare,
+  faBars,
   faChevronUp,
   faChevronDown,
   faCircleNotch,
   faGlobe,
+  faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 
 import {
@@ -28,13 +30,15 @@ import Menu from "./components/Menu";
 
 library.add(
   faArrowUpRightFromSquare,
+  faBars,
   faChevronUp,
   faChevronDown,
   faCircleNotch,
   faGithub,
   faGlobe,
   faHackerrank,
-  faLinkedin
+  faLinkedin,
+  faXmark
 );
 
 function App() {

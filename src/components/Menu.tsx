@@ -1,11 +1,15 @@
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 import { DataType } from "../types/types";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 interface MenuProps {
   data: DataType;
 }
 
 function Menu({ data }: MenuProps) {
+  const [isMenuVisible, setIsMenuVisible] = useState(false);
+  const buttonRef = useRef<HTMLButtonElement>(null);
+
   const isValidItem = (obj: unknown): obj is { id: string; title: string } => {
     if (
       typeof obj === "object" &&
@@ -23,6 +27,15 @@ function Menu({ data }: MenuProps) {
       behavior: "smooth",
     });
     e.preventDefault();
+  };
+
+  const hideMenu = () => {
+    setIsMenuVisible(false);
+  };
+
+  const toggleMenu = (event: React.MouseEvent<HTMLButtonElement>) => {
+    setIsMenuVisible((v) => (v ? false : true));
+    event.stopPropagation();
   };
 
   useEffect(() => {
@@ -51,28 +64,62 @@ function Menu({ data }: MenuProps) {
       });
     };
 
-    window.addEventListener("scroll", onScroll);
+    window.addEventListener("scroll", () => {
+      onScroll();
+      buttonRef.current?.classList.toggle("at-top", window.scrollY === 0);
+    });
+
     onScroll();
 
-    return () => window.removeEventListener("scroll", onScroll);
+    document.addEventListener("click", hideMenu);
+
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      document.removeEventListener("click", hideMenu);
+    };
   }, []);
 
   return (
-    <ul id="menu">
-      {Object.entries(data).map(
-        ([key, value]) =>
-          isValidItem(value) && (
-            <li key={key}>
-              <a
-                href={`#${value["id"]}`}
-                onClick={(e) => scrollInto(e, value["id"])}
-              >
-                {value["title"]}
-              </a>
-            </li>
-          )
-      )}
-    </ul>
+    <div id="menu" className={`${isMenuVisible ? "visible" : ""}`}>
+      <button
+        onClick={toggleMenu}
+        ref={buttonRef}
+        className="open at-top"
+        title={data.common.openMenu}
+        aria-label={data.common.openMenu}
+        aria-controls="main-menu"
+        aria-expanded={isMenuVisible}
+      >
+        <FontAwesomeIcon icon="bars" aria-hidden={true} />
+      </button>
+      <div id="main-menu" className="main">
+        <button
+          className="close"
+          title={data.common.closeMenu}
+          aria-label={data.common.closeMenu}
+          aria-controls="main-menu"
+          aria-expanded={isMenuVisible}
+        >
+          <FontAwesomeIcon icon="xmark" aria-hidden={true} />
+        </button>
+        <ul>
+          {Object.entries(data).map(
+            ([key, value]) =>
+              key !== "hidden" &&
+              isValidItem(value) && (
+                <li key={key}>
+                  <a
+                    href={`#${value["id"]}`}
+                    onClick={(e) => scrollInto(e, value["id"])}
+                  >
+                    {value["title"]}
+                  </a>
+                </li>
+              )
+          )}
+        </ul>
+      </div>
+    </div>
   );
 }
 
