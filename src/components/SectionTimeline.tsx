@@ -55,14 +55,6 @@ function Timeline({ id, list }: TimelineProps) {
               </div>
             )}
 
-            {item.tags && (
-              <ul className="tags">
-                {item.tags.map((tag, k) => (
-                  <li key={k}>{tag}</li>
-                ))}
-              </ul>
-            )}
-
             {(item.screenshot || item.links) && (
               <div className="source">
                 {item.screenshot && (
@@ -72,22 +64,31 @@ function Timeline({ id, list }: TimelineProps) {
                     title={item.screenshot.title}
                   />
                 )}
+                <div className="info">
+                  {item.links && (
+                    <ul className="links">
+                      {item.links.map((link, l) => (
+                        <li key={l}>
+                          <a href={link.url} target="_blank">
+                            {link.text}
+                          </a>
+                          <FontAwesomeIcon
+                            icon="arrow-up-right-from-square"
+                            aria-hidden={true}
+                          />
+                        </li>
+                      ))}
+                    </ul>
+                  )}
 
-                {item.links && (
-                  <ul className="links">
-                    {item.links.map((link, l) => (
-                      <li key={l}>
-                        <a href={link.url} target="_blank">
-                          {link.text}
-                        </a>
-                        <FontAwesomeIcon
-                          icon="arrow-up-right-from-square"
-                          aria-hidden={true}
-                        />
-                      </li>
-                    ))}
-                  </ul>
-                )}
+                  {item.tags && (
+                    <ul className="tags">
+                      {item.tags.map((tag, k) => (
+                        <li key={k}>{tag}</li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
               </div>
             )}
           </div>
