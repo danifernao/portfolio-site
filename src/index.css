@@ -440,7 +440,7 @@ p {
   height: 100%;
   object-fit: cover;
   cursor: zoom-in;
-  transition: transform 0.5s ease;
+  transition: transform 0.25s ease;
 }
 
 .timeline .screenshot .thumbnail img:hover {
