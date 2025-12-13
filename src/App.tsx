@@ -86,7 +86,7 @@ function App() {
         </>
       )}
       <Language handleData={handleData} />
-      {data && <ScrollToTop btnText={data.scrollToTop} />}
+      {data && <ScrollToTop btnText={data.common.scrollToTop} />}
     </div>
   );
 }

@@ -7,8 +7,7 @@ export interface DataType {
   education: SectionType;
   contact: ContactType;
   links: LinksType;
-  language: string;
-  scrollToTop: string;
+  common: Record<string, string>;
 }
 
 export interface HeaderType {
