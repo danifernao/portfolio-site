@@ -422,28 +422,6 @@ p {
   margin-bottom: 0.5rem !important;
 }
 
-.timeline .tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.timeline .tags li {
-  padding: 0.05rem 0.5rem;
-  border: 0.06rem solid var(--color-bg-lighter);
-  border-radius: 0.5rem;
-  font-size: 0.8rem;
-  color: var(--color-text-darker);
-}
-
-.timeline .source {
-  display: flex;
-  gap: 0.5rem;
-}
-
 .timeline .screenshot {
   position: relative;
 }
@@ -476,12 +454,13 @@ p {
   opacity: 0;
   transform: translateY(-60%);
   transition: opacity 0.25s ease, transform 0.25s ease;
-  z-index: 30;
+  z-index: -30;
 }
 
 .timeline .screenshot .preview.visible {
   opacity: 1;
   transform: translateY(-50%);
+  z-index: 30;
 }
 
 .timeline .screenshot .preview img {
@@ -490,13 +469,44 @@ p {
   border-radius: 0.5rem;
 }
 
-.timeline .links {
+.timeline .source {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.timeline .source .info {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1rem;
+}
+
+.timeline .source .links {
+  display: flex;
+  gap: 1rem;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.timeline .source .links svg {
+  height: 0.8rem;
+}
+
+.timeline .source .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.timeline .source .tags li {
+  padding: 0.05rem 0.5rem;
+  border: 0.06rem solid var(--color-bg-lighter);
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--color-text-darker);
 }
 
 .timeline .more {
@@ -670,6 +680,16 @@ p {
   .timeline .date span:last-of-type:before {
     content: "•";
     margin: 0 0.3rem;
+  }
+
+  .timeline .source {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .timeline .source .info {
+    flex-direction: column-reverse;
+    gap: 0.8rem;
   }
 
   .timeline .more {
