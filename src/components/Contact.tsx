@@ -116,7 +116,7 @@ function Contact({ data }: ContactProps) {
   }, []);
 
   return (
-    <div className="contact section">
+    <div id="contact" className="contact section">
       {data.title && <Title id={data.id} title={data.title} />}
 
       {data.description && <p>{data.description}</p>}
