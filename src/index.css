@@ -343,6 +343,11 @@ p {
   font-size: 0.9rem;
 }
 
+.section.links dd svg,
+.timeline .links li svg {
+  font-size: 0.8rem;
+}
+
 .timeline h3 {
   font-size: 1.1rem;
 }
@@ -486,10 +491,6 @@ p {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.timeline .source .links svg {
-  height: 0.8rem;
 }
 
 .timeline .source .tags {
