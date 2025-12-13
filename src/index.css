@@ -666,16 +666,12 @@ p {
   .timeline .date {
     flex-direction: row;
     align-items: center;
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   .timeline .date:before,
   .timeline .date:after {
     display: none;
-  }
-
-  .timeline .date span:last-of-type {
-    font-size: 1rem;
   }
 
   .timeline .date span:last-of-type:before {
