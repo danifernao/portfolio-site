@@ -43,24 +43,25 @@ function Menu({ data }: MenuProps) {
     const links = document.querySelectorAll("#menu a");
 
     const onScroll = () => {
-      let activeSection = null;
+      const viewportHeight = window.innerHeight;
+      let activeSections = [];
 
       for (const section of sections) {
         const rect = section.getBoundingClientRect();
 
-        if (rect.top >= 0 || rect.bottom > 0) {
-          activeSection = section;
-          break;
+        if (rect.top < viewportHeight && rect.bottom > 0) {
+          activeSections.push(section.id);
         }
       }
 
-      if (!activeSection) return;
+      if (!activeSections.length) return;
 
       links.forEach((link) => {
-        link.classList.toggle(
-          "active",
-          link.getAttribute("href") === `#${activeSection.id}`
-        );
+        const id = link.getAttribute("href")?.substring(1);
+
+        if (!id) return;
+
+        link.classList.toggle("active", activeSections.includes(id));
       });
     };
 
