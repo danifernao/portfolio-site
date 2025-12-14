@@ -102,13 +102,13 @@ function Menu({ data }: MenuProps) {
         className="open at-top"
         title={data.common.openMenu}
         aria-label={data.common.openMenu}
-        aria-controls="main-menu"
+        aria-controls="menu-panel"
         aria-expanded={isMenuVisible}
       >
         <FontAwesomeIcon icon="bars" aria-hidden={true} />
       </button>
       <div
-        id="main-menu"
+        id="menu-panel"
         ref={menuRef}
         className="main"
         aria-hidden={!isMenuVisible}
