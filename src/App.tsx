@@ -82,11 +82,9 @@ function App() {
             <Contact data={data.contact} />
             <Links data={data.links} />
           </div>
-          {import.meta.env.VITE_EXPERIMENTAL_MODE === "true" && (
-            <div id="sidebar">
-              <Menu data={data} />
-            </div>
-          )}
+          <div id="sidebar">
+            <Menu data={data} />
+          </div>
         </>
       )}
       <Language handleData={handleData} />
