@@ -21,16 +21,14 @@ function ScrollToTop({ btnText }: ScrollToTopProps) {
   }, []);
 
   return (
-    isVisible && (
-      <button
-        className="scroll-to-top"
-        onClick={scrollToTop}
-        title={btnText}
-        aria-label={btnText}
-      >
-        <FontAwesomeIcon icon="chevron-up" aria-hidden={true} />
-      </button>
-    )
+    <button
+      className={`scroll-to-top ${isVisible ? "visible" : ""}`}
+      onClick={scrollToTop}
+      title={btnText}
+      aria-label={btnText}
+    >
+      <FontAwesomeIcon icon="chevron-up" aria-hidden={true} />
+    </button>
   );
 }
 
