@@ -31,6 +31,8 @@ function Menu({ data }: MenuProps) {
       behavior: "smooth",
     });
 
+    history.pushState(null, "", `#${id}`);
+
     setIsMenuVisible(false);
 
     event.preventDefault();
