@@ -109,12 +109,7 @@ function Menu({ data }: MenuProps) {
       >
         <FontAwesomeIcon icon="bars" aria-hidden={true} />
       </button>
-      <div
-        id="menu-panel"
-        ref={menuRef}
-        className="main"
-        aria-hidden={!isMenuVisible}
-      >
+      <div id="menu-panel" ref={menuRef} aria-hidden={!isMenuVisible}>
         <button
           onClick={() => setIsMenuVisible(false)}
           className="close"
