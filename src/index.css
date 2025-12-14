@@ -746,6 +746,10 @@ p {
     color: var(--color-bg);
   }
 
+  #menu button {
+    cursor: pointer !important;
+  }
+
   #menu ul {
     gap: 0;
     font-size: 1rem;
