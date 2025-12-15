@@ -98,7 +98,7 @@ function Blog({ data }: BlogProps) {
   }, []);
 
   return (
-    <div id={data.id} ref={blogRef} className="section blog">
+    <section id={data.id} ref={blogRef} className="section blog">
       <Title id={data.id} title={data.title} />
       {data.description && <p>{data.description}</p>}
       <div id="entries" aria-live="polite">
@@ -144,7 +144,7 @@ function Blog({ data }: BlogProps) {
           )}
         </>
       )}
-    </div>
+    </section>
   );
 }
 

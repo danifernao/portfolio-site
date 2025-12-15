@@ -6,9 +6,11 @@ interface TitleProps {
 function Title({ id, title }: TitleProps) {
   {
     return (
-      <h2>
-        <a href={`#${id}`}>{title}</a>
-      </h2>
+      <header>
+        <h2>
+          <a href={`#${id}`}>{title}</a>
+        </h2>
+      </header>
     );
   }
 }

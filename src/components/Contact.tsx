@@ -116,7 +116,7 @@ function Contact({ data }: ContactProps) {
   }, []);
 
   return (
-    <div id="contact" className="contact section">
+    <section id="contact" className="contact section">
       {data.title && <Title id={data.id} title={data.title} />}
 
       {data.description && <p>{data.description}</p>}
@@ -178,7 +178,7 @@ function Contact({ data }: ContactProps) {
           </button>
         </div>
       </form>
-    </div>
+    </section>
   );
 }
 
