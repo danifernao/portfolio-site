@@ -218,7 +218,7 @@
     }
   },
   "blog": {
-    "showInMenu": false,
+    "showInMenu": true,
     "id": "posts",
     "title": "Blog",
     "description": "Te invito a explorar mi blog, donde hablo sobre desarrollo web, bitácoras digitales y otros temas relacionados con la informática.",

@@ -77,9 +77,7 @@ function App() {
             <Section data={data.about} />
             <Skills data={data.skills} />
             <Section data={data.projects} />
-            {import.meta.env.VITE_EXPERIMENTAL_MODE === "true" && data.blog && (
-              <Blog data={data.blog} />
-            )}
+            {data.blog && <Blog data={data.blog} />}
             <Section data={data.education} />
             <Contact data={data.contact} />
             <Links data={data.links} />
