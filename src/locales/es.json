@@ -214,17 +214,6 @@
       ]
     }
   },
-  "blog": {
-    "id": "posts",
-    "title": "Publicaciones",
-    "description": "Te invito a explorar mi blog, donde hablo sobre desarrollo web, bitácoras digitales y otros temas relacionados con la informática.",
-    "api": {
-      "maxResults": 7
-    },
-    "more": "Ver más publicaciones...",
-    "loading": "Obteniendo publicaciones...",
-    "error": "No se pudo obtener las publicaciones. Por favor, inténtelo más tarde."
-  },
   "education": {
     "id": "education",
     "title": "Educación",
@@ -284,6 +273,17 @@
         "icon": "hackerrank"
       }
     ]
+  },
+  "blog": {
+    "id": "posts",
+    "title": "Blog",
+    "description": "Te invito a explorar mi blog, donde hablo sobre desarrollo web, bitácoras digitales y otros temas relacionados con la informática.",
+    "api": {
+      "maxResults": 3
+    },
+    "more": "Ver más publicaciones...",
+    "loading": "Obteniendo publicaciones...",
+    "error": "No se pudo obtener las publicaciones. Por favor, inténtelo más tarde."
   },
   "common": {
     "closeMenu": "Cerrar menú",

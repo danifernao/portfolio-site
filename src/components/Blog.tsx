@@ -8,8 +8,8 @@ interface BlogProps {
 
 interface Post {
   title: string;
+  content: string;
   url: string;
-  published: string;
 }
 
 function Blog({ data }: BlogProps) {
@@ -56,9 +56,19 @@ function Blog({ data }: BlogProps) {
     return url.replace(/^(http)\:\/\//, "https://");
   };
 
-  const formatDate = (date: string) => {
-    const [year, month, day] = date.split("T")[0].split("-");
-    return `${day}/${month}/${year.slice(-2)}`;
+  function getThumbnail(content: string) {
+    const match = content.match(/<img[^>]+src=["']([^"']+)["']/i);
+    return match
+      ? match[1].replace("/s20/", "/s300/")
+      : "/images/default-thumbnail.png";
+  }
+
+  const formatContent = (content: string) => {
+    const words = content.replace(/<[^>]+>/g, "").split(/\s+/);
+    if (words.length > 20) {
+      return words.slice(0, 20).join(" ") + "...";
+    }
+    return content;
   };
 
   useEffect(() => {
@@ -76,18 +86,30 @@ function Blog({ data }: BlogProps) {
     <div id={data.id} ref={blogRef} className="section blog">
       <Title id={data.id} title={data.title} />
       {data.description && <p>{data.description}</p>}
-      <ul id="entries" aria-live="polite">
+      <div id="entries" aria-live="polite">
         {posts.map((post, i) => (
-          <li key={i}>
-            <time dateTime={post.published} title={post.published}>
-              {formatDate(post.published)}
-            </time>
-            <a href={formatURL(post.url)} target="_blank">
-              {post.title}
+          <div className="post" key={i}>
+            <h3 className="title">
+              <a href={formatURL(post.url)} target="_blank">
+                {post.title}
+              </a>
+            </h3>
+            <p className="summary">
+              <a href={formatURL(post.url)} target="_blank">
+                {formatContent(post.content)}
+              </a>
+            </p>
+            <a
+              href={formatURL(post.url)}
+              className="thumbnail"
+              aria-hidden={true}
+              target="_blank"
+            >
+              <img src={getThumbnail(post.content)} />
             </a>
-          </li>
+          </div>
         ))}
-      </ul>
+      </div>
       {errorFound ? (
         <p className="error">{data.error}</p>
       ) : (
