@@ -11,10 +11,14 @@ function Menu({ data }: MenuProps) {
   const menuRef = useRef<HTMLDivElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
 
-  const isValidItem = (obj: unknown): obj is { id: string; title: string } => {
+  const isValidItem = (
+    obj: unknown
+  ): obj is { showInMenu: boolean; id: string; title: string } => {
     if (
       typeof obj === "object" &&
       obj !== null &&
+      "showInMenu" in obj &&
+      obj.showInMenu === true &&
       "id" in obj &&
       "title" in obj
     ) {
@@ -122,7 +126,6 @@ function Menu({ data }: MenuProps) {
           <ul>
             {Object.entries(data).map(
               ([key, value]) =>
-                key !== "hidden" &&
                 isValidItem(value) && (
                   <li key={key}>
                     <a

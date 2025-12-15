@@ -22,6 +22,7 @@ export interface HeaderType {
 }
 
 export interface SectionType {
+  showInMenu?: boolean;
   id: string;
   title: string;
   description: string;
@@ -48,6 +49,7 @@ export interface TimelineType {
 }
 
 export interface SkillsType {
+  showInMenu?: boolean;
   id: string,
   title: string,
   items: SkillsItemType[];
@@ -59,6 +61,7 @@ export interface SkillsItemType {
 }
 
 export interface BlogType {
+  showInMenu?: boolean;
   id: string;
   title: string;
   description: string;
@@ -73,6 +76,7 @@ export interface BlogType {
 }
 
 export interface ContactType {
+  showInMenu?: boolean;
   id: string;
   title: string;
   description: string;
@@ -90,6 +94,7 @@ export interface ContactType {
 }
 
 export interface LinksType {
+  showInMenu?: boolean;
   id: string;
   title: string;
   items: LinksItemType[];
