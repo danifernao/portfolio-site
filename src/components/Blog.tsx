@@ -56,19 +56,33 @@ function Blog({ data }: BlogProps) {
     return url.replace(/^(http)\:\/\//, "https://");
   };
 
-  function getThumbnail(content: string) {
-    const match = content.match(/<img[^>]+src=["']([^"']+)["']/i);
-    return match
-      ? match[1].replace("/s20/", "/s300/")
-      : "/images/default-thumbnail.png";
-  }
-
   const formatContent = (content: string) => {
-    const words = content.replace(/<[^>]+>/g, "").split(/\s+/);
+    const doc = new DOMParser().parseFromString(content, "text/html");
+    const text = doc.body.textContent || "";
+    const words = text.split(/\s+/);
+
     if (words.length > 20) {
       return words.slice(0, 20).join(" ") + "...";
     }
-    return content;
+
+    return text;
+  };
+
+  const getThumbnail = (content: string) => {
+    const doc = new DOMParser().parseFromString(content, "text/html");
+    const img = doc.querySelector("img");
+
+    if (!img) {
+      return "/images/default-thumbnail.png";
+    }
+
+    const src = img.getAttribute("src");
+
+    if (!src) {
+      return "/images/default-thumbnail.png";
+    }
+
+    return src.replace("/s20/", "/s300/");
   };
 
   useEffect(() => {
