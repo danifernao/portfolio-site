@@ -7,6 +7,7 @@ interface BlogProps {
 }
 
 interface Post {
+  id: string;
   title: string;
   content: string;
   url: string;
@@ -101,13 +102,15 @@ function Blog({ data }: BlogProps) {
       <Title id={data.id} title={data.title} />
       {data.description && <p>{data.description}</p>}
       <div id="entries" aria-live="polite">
-        {posts.map((post, i) => (
-          <div className="post" key={i}>
-            <h3 className="title">
-              <a href={formatURL(post.url)} target="_blank">
-                {post.title}
-              </a>
-            </h3>
+        {posts.map((post) => (
+          <article key={post.id}>
+            <header>
+              <h3 className="title">
+                <a href={formatURL(post.url)} target="_blank">
+                  {post.title}
+                </a>
+              </h3>
+            </header>
             <p className="summary">
               <a href={formatURL(post.url)} target="_blank">
                 {formatContent(post.content)}
@@ -121,7 +124,7 @@ function Blog({ data }: BlogProps) {
             >
               <img src={getThumbnail(post.content)} />
             </a>
-          </div>
+          </article>
         ))}
       </div>
       {errorFound ? (

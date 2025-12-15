@@ -246,7 +246,7 @@ p {
   gap: 1rem;
 }
 
-.section.blog .post {
+.section.blog article {
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-rows: auto 1fr;
@@ -254,6 +254,25 @@ p {
                        "thumbnail summary";
   column-gap: 0.5rem;
   row-gap: 0.3rem;
+}
+
+.section.blog header {
+  grid-area: title;
+}
+
+.section.blog header h3 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.section.blog .summary {
+  grid-area: summary;
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.section.blog .summary a {
+  color: var(--color-text-darker);
 }
 
 .section.blog .thumbnail {
@@ -275,22 +294,6 @@ p {
 
 .section.blog .thumbnail img:hover {
   transform: scale(1.1);
-}
-
-.section.blog .title {
-  grid-area: title;
-  font-size: 1rem;
-  font-weight: bold;
-}
-
-.section.blog .summary {
-  grid-area: summary;
-  margin: 0;
-  font-size: 0.8rem;
-}
-
-.section.blog .summary a {
-  color: var(--color-text-darker);
 }
 
 .section.blog .loading {
