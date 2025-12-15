@@ -8,7 +8,7 @@ interface SkillsProps {
 
 function Skills({ data }: SkillsProps) {
   return (
-    <div id={data.id} className="section skills">
+    <section id={data.id} className="section skills">
       {data.title && <Title id={data.id} title={data.title} />}
       {data.items && (
         <ul>
@@ -17,7 +17,7 @@ function Skills({ data }: SkillsProps) {
           ))}
         </ul>
       )}
-    </div>
+    </section>
   );
 }
 

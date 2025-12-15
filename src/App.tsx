@@ -73,7 +73,7 @@ function App() {
             dataHeader={data.header}
             dataLinks={getHeaderLinks(data.links)}
           />
-          <div id="content">
+          <main id="content">
             <Section data={data.about} />
             <Skills data={data.skills} />
             <Section data={data.projects} />
@@ -81,10 +81,10 @@ function App() {
             <Section data={data.education} />
             <Contact data={data.contact} />
             <Links data={data.links} />
-          </div>
-          <div id="sidebar">
+          </main>
+          <aside id="sidebar">
             <Menu data={data} />
-          </div>
+          </aside>
         </>
       )}
       <Language handleData={handleData} />

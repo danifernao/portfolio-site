@@ -19,7 +19,7 @@ function Header({ dataHeader, dataLinks }: HeaderProps) {
   };
 
   return (
-    <div id="header">
+    <header id="header">
       {/* Columna del avatar */}
       {dataHeader.photo && (
         <div>
@@ -77,7 +77,7 @@ function Header({ dataHeader, dataLinks }: HeaderProps) {
           </ul>
         )}
       </div>
-    </div>
+    </header>
   );
 }
 

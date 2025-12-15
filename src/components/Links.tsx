@@ -14,7 +14,7 @@ function Links({ data }: LinksProps) {
   };
 
   return (
-    <div id={data.id} className="section links">
+    <section id={data.id} className="section links">
       {data.title && <Title id={data.id} title={data.title} />}
       {data.items && (
         <dl>
@@ -34,7 +34,7 @@ function Links({ data }: LinksProps) {
           ))}
         </dl>
       )}
-    </div>
+    </section>
   );
 }
 
