@@ -69,14 +69,13 @@ function Contact({ data }: ContactProps) {
             });
 
             if (response.ok) {
-              setStatus({ type: "success", message: "Mensaje enviado." });
+              setStatus({ type: "success", message: data.status.success });
               form.reset();
               resize();
             } else {
               setStatus({
                 type: "error",
-                message:
-                  "Hubo un problema al enviar el mensaje. Intenta de nuevo.",
+                message: data.status.error.response,
               });
             }
             resolve();
@@ -86,7 +85,7 @@ function Contact({ data }: ContactProps) {
         });
       });
     } catch (error) {
-      setStatus({ type: "error", message: "Error de red. Intenta más tarde." });
+      setStatus({ type: "error", message: data.status.error.network });
       console.error(error);
     } finally {
       setIsProcessing(false);
@@ -128,7 +127,7 @@ function Contact({ data }: ContactProps) {
         aria-busy={isProcessing}
       >
         <p aria-live="polite" className="sr-only">
-          {isProcessing ? data.loading.form : ""}
+          {isProcessing ? data.status.loading.form : ""}
         </p>
 
         <input
@@ -174,7 +173,7 @@ function Contact({ data }: ContactProps) {
                 className="spinner"
               />
             )}
-            {isProcessing ? data.loading.button : data.button}
+            {isProcessing ? data.status.loading.button : data.button}
           </button>
         </div>
       </form>

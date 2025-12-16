@@ -243,15 +243,22 @@
     "id": "contact",
     "title": "Contact",
     "description": "If you have any questions or inquiries, feel free to get in touch using the form below.",
+    "button": "Send message",
     "placeholders": {
       "name": "Full name",
       "email": "Email address",
       "message": "Your message"
     },
-    "button": "Send message",
-    "loading": {
-      "form": "Sending form...",
-      "button": "Sending..."
+    "status": {
+      "loading": {
+        "button": "Sending...",
+        "form": "Submitting form..."
+      },
+      "error": {
+        "response": "There was a problem sending the message. Please try again.",
+        "network": "Network error. Please try again later."
+      },
+      "success": "Message sent."
     },
     "gBranding": "This site is protected by reCAPTCHA and the Google [Privacy Policy](https://policies.google.com/privacy) and [Terms of Service](https://policies.google.com/terms) apply."
   },
