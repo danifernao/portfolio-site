@@ -50,14 +50,14 @@ export interface TimelineType {
 
 export interface SkillsType {
   showInMenu?: boolean;
-  id: string,
-  title: string,
+  id: string;
+  title: string;
   items: SkillsItemType[];
 }
 
 export interface SkillsItemType {
-    title: string,
-    icon: string,
+    title: string;
+    icon: string;
 }
 
 export interface BlogType {
@@ -80,16 +80,27 @@ export interface ContactType {
   id: string;
   title: string;
   description: string;
+  button: string;
   placeholders: {
     name: string;
     email: string;
     message: string;
-  },
-  button: string;
+  };
+  status: {
+    loading: {
+      button: string;
+      form: string;
+    };
+    error: {
+      response: string;
+      network: string;
+    };
+    success: string;
+  };
   loading: {
     form: string;
     button: string;
-  },
+  };
   gBranding: string;
 }
 

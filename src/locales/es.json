@@ -255,15 +255,22 @@
     "id": "contact",
     "title": "Contactar",
     "description": "Para cualquier duda o consulta, puedes comunicarte mediante el siguiente formulario.",
+    "button": "Enviar mensaje",
     "placeholders": {
       "name": "Nombre completo",
       "email": "Correo electrónico",
       "message": "Tu mensaje"
-    },
-    "button": "Enviar mensaje",
-    "loading": {
-      "form": "Enviando formulario...",
-      "button": "Enviando..."
+    },    
+    "status": {
+      "loading": {
+        "button": "Enviando...",
+        "form": "Enviando formulario..."
+      },
+      "error": {
+        "response": "Hubo un problema al enviar el mensaje. Intenta de nuevo.",
+        "network": "Error de red. Intenta más tarde."
+      },
+      "success": "Mensaje enviado."
     },
     "gBranding": "Este sitio está protegido por reCAPTCHA y se aplican la [Política de privacidad](https://policies.google.com/privacy) y los [Términos del servicio](https://policies.google.com/terms) de Google."
   },
