@@ -1,6 +1,7 @@
 import type { BlogType } from "../types/types";
 import { useEffect, useRef, useState } from "react";
 import Title from "./SectionTitle";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 interface BlogProps {
   data: BlogType;
@@ -130,10 +131,18 @@ function Blog({ data }: BlogProps) {
       ) : (
         <>
           {isLoading ? (
-            <p className="loading">{data.loading}</p>
+            <p className="loading">
+              <FontAwesomeIcon
+                icon="circle-notch"
+                aria-hidden={true}
+                className="spinner"
+              />
+              {data.loading}
+            </p>
           ) : (
             typeof pageToken !== "undefined" && (
               <div className="more">
+                <FontAwesomeIcon icon="chevron-down" aria-hidden={true} />
                 <button onClick={getMore} aria-controls="entries">
                   {data.more}
                 </button>
