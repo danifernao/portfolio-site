@@ -296,10 +296,6 @@ p {
   transform: scale(1.1);
 }
 
-.section.blog .loading {
-  font-style: italic;
-}
-
 .section.contact form {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -391,7 +387,7 @@ p {
   background-color: rgb(from var(--color-link) r g b / 0.8);
 }
 
-.section.contact .spinner {
+.spinner {
   animation: spin infinite 1s linear;
 }
 
@@ -604,10 +600,13 @@ p {
 }
 
 .timeline .more {
+  padding-left: 5.3rem;
+}
+
+.more, .loading {
   display: flex;
   gap: 0.3rem;
   align-items: center;
-  padding-left: 5.3rem;
 }
 
 .more svg {
