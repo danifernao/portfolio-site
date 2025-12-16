@@ -129,7 +129,7 @@
           "date": ["2025", "12/03"],
           "title": "Portfolio site",
           "description": "The page you're currently on, where I share my professional profile and learning experience in web development.",
-          "tags": ["React", "TypeScript"],
+          "tags": ["React", "TypeScript", "API Integration"],
           "screenshot": {
             "title": "Zoom in image",
             "pathname": "project-danifernao.png",
