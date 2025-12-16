@@ -98,7 +98,7 @@ function Menu({ data }: MenuProps) {
       window.removeEventListener("scroll", handleScroll);
       document.removeEventListener("click", handleClickOutside);
     };
-  }, []);
+  }, [data]);
 
   return (
     <div id="menu" className={`${isMenuVisible ? "visible" : ""}`}>
