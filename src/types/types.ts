@@ -70,6 +70,7 @@ export interface BlogType {
     key: string;
     maxResults: number;
   };
+  imgAlt: string;
   more: string;
   loading: string;
   error: string;
