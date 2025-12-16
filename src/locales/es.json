@@ -225,6 +225,7 @@
     "api": {
       "maxResults": 3
     },
+    "imgAlt": "Entrada del blog:",
     "more": "Ver más publicaciones...",
     "loading": "Obteniendo publicaciones...",
     "error": "No se pudo obtener las publicaciones. Por favor, inténtelo más tarde."

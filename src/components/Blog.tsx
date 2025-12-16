@@ -116,13 +116,11 @@ function Blog({ data }: BlogProps) {
                 {formatContent(post.content)}
               </a>
             </p>
-            <a
-              href={formatURL(post.url)}
-              className="thumbnail"
-              aria-hidden={true}
-              target="_blank"
-            >
-              <img src={getThumbnail(post.content)} />
+            <a href={formatURL(post.url)} className="thumbnail" target="_blank">
+              <img
+                src={getThumbnail(post.content)}
+                alt={`${data.imgAlt} ${post.title}`}
+              />
             </a>
           </article>
         ))}
