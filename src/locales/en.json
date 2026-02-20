@@ -88,82 +88,6 @@
           ]
         },
         {
-          "date": ["2025", "16/04"],
-          "title": "URL Shortener",
-          "description": "A URL shortening web app, inspired by the look and behavior of TinyURL.",
-          "tags": ["PHP", "MySQL", "React", "TypeScript", "API Integration", "Docker"],
-          "screenshot": {
-            "title": "Zoom in image",
-            "pathname": "project-url-shortener.png",
-            "alt": "Web project screenshot"
-          },
-          "links": [
-            {
-              "text": "Source code",
-              "url": "https://github.com/danifernao/url-shortener"
-            }
-          ]
-        },
-        {
-          "date": ["2025", "20/03"],
-          "title": "AniGuess",
-          "description": "A simple game where you have to guess the name of the animation, comic or novel to which a character belongs.",
-          "tags": ["React", "TypeScript", "API Integration"],
-          "screenshot": {
-            "title": "Zoom in image",
-            "pathname": "project-aniguess.png",
-            "alt":"Web project screenshot"
-          },
-          "links": [
-            {
-              "text": "Demo",
-              "url": "https://wx3.netlify.app/aniguess/"
-            },
-            {
-              "text": "Source code",
-              "url": "https://github.com/danifernao/aniguess"
-            }
-          ]
-        },
-        {
-          "date": ["2025", "12/03"],
-          "title": "Portfolio site",
-          "description": "The page you're currently on, where I share my professional profile and learning experience in web development.",
-          "tags": ["React", "TypeScript", "API Integration"],
-          "screenshot": {
-            "title": "Zoom in image",
-            "pathname": "project-danifernao.png",
-            "alt":"Web project screenshot"
-          },
-          "links": [
-            {
-              "text": "Source code",
-              "url": "https://github.com/danifernao/portfolio-site"
-            }
-          ]
-        },
-        {
-          "date": ["2025", "11/03"],
-          "title": "Sudoku",
-          "description": "A web app to play sudoku, with two difficulty levels: easy and hard, ideal for enjoying a quick challenge.",
-          "tags": ["React", "TypeScript"],
-          "screenshot": {
-            "title": "Zoom in image",
-            "pathname": "project-sudoku.png",
-            "alt": "Web project screenshot"
-          },
-          "links": [
-            {
-              "text": "Demo",
-              "url": "https://wx3.netlify.app/sudoku/"
-            },
-            {
-              "text": "Source code",
-              "url": "https://github.com/danifernao/sudoku"
-            }
-          ]
-        },
-        {
           "date": ["2023", "06/12"],
           "title": "Fundadores",
           "description": "A WordPress theme for the Hogar Infantil Los Fundadores website.",
@@ -177,40 +101,6 @@
             {
               "text": "Source code",
               "url": "https://github.com/danifernao/fundadores-wp-theme"
-            }
-          ]
-        },
-        {
-          "date": ["2022", "29/12"],
-          "title": "Inventory management system",
-          "description": "A web app for inventory management.",
-          "tags": ["Laravel", "MySQL", "Vue.js", "RESTful API Integration", "Docker"],
-          "screenshot": {
-            "title": "Zoom in image",
-            "pathname": "project-inventario.png",
-            "alt":"Web project screenshot"
-          },
-          "links": [
-            {
-              "text": "Source code",
-              "url": "https://github.com/danifernao/inventory-manager"
-            }
-          ]
-        },
-        {
-          "date": ["2016", "13/03"],
-          "title": "Devitacora",
-          "description": "A personal blog about web development, blogs, and other IT topics in general. The XML template used is my own.",
-          "tags": ["Blogger tags", "XHTML", "CSS", "JavaScript"],
-          "screenshot": {
-            "title": "Zoom in image",
-            "pathname": "project-devitacora.png",
-            "alt": "Web project screenshot"
-          },
-          "links": [
-            {
-              "text": "Demo",
-              "url": "https://devitacora.blogspot.com/"
             }
           ]
         }

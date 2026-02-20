@@ -88,82 +88,6 @@
           ]
         },
         {
-          "date": ["2025", "16/04"],
-          "title": "Acortador de URL",
-          "description": "Una aplicación web para el acortamiento de URL, inspirada en el diseño y comportamiento de TinyURL.",
-          "tags": ["PHP", "MySQL", "React", "TypeScript", "Integración API", "Docker"],
-          "screenshot": {
-            "title": "Ampliar imagen",
-            "pathname": "project-url-shortener.png",
-            "alt": "Captura de pantalla del proyecto"
-          },
-          "links": [
-            {
-              "text": "Código fuente",
-              "url": "https://github.com/danifernao/url-shortener"
-            }
-          ]
-        },
-        {
-          "date": ["2025", "20/03"],
-          "title": "AniGuess",
-          "description": "Un simple juego en el que se debe adivinar el nombre de la animación, cómic o novela a la que pertenece un personaje.",
-          "tags": ["React", "TypeScript", "Integración API"],
-          "screenshot": {
-            "title": "Ampliar imagen",
-            "pathname": "project-aniguess.png",
-            "alt": "Captura de pantalla del proyecto"
-          },
-          "links": [
-            {
-              "text": "Demostración",
-              "url": "https://wx3.netlify.app/aniguess/"
-            },
-            {
-              "text": "Código fuente",
-              "url": "https://github.com/danifernao/aniguess"
-            }
-          ]
-        },
-        {
-          "date": ["2025", "12/03"],
-          "title": "Página web profesional",
-          "description": "La página que estás visitando, donde detallo mi perfil profesional y comparto mi experiencia de aprendizaje en el desarrollo web.",
-          "tags": ["React", "TypeScript", "Integración API"],
-          "screenshot": {
-            "title": "Ampliar imagen",
-            "pathname": "project-danifernao.png",
-            "alt": "Captura de pantalla del proyecto"
-          },
-          "links": [
-            {
-              "text": "Código fuente",
-              "url": "https://github.com/danifernao/portfolio-site"
-            }
-          ]
-        },
-        {
-          "date": ["2025", "11/03"],
-          "title": "Sudoku",
-          "description": "Aplicación para jugar al sudoku, con dos niveles de dificultad: fácil y difícil, ideal para disfrutar de un reto rápido.",
-          "tags": ["React", "TypeScript"],
-          "screenshot": {
-            "title": "Ampliar imagen",
-            "pathname": "project-sudoku.png",
-            "alt": "Captura de pantalla del proyecto"
-          },
-          "links": [
-            {
-              "text": "Demostración",
-              "url": "https://wx3.netlify.app/sudoku/"
-            },
-            {
-              "text": "Código fuente",
-              "url": "https://github.com/danifernao/sudoku"
-            }
-          ]
-        },
-        {
           "date": ["2023", "06/12"],
           "title": "Fundadores",
           "description": "Tema de WordPress para el sitio web del Hogar Infantil Los Fundadores.",
@@ -177,40 +101,6 @@
             {
               "text": "Código fuente",
               "url": "https://github.com/danifernao/fundadores-wp-theme"
-            }
-          ]
-        },
-        {
-          "date": ["2022", "29/12"],
-          "title": "Sistema de gestión de inventario",
-          "description": "Aplicación web para la gestión de inventario.",
-          "tags": ["Laravel", "MySQL", "Vue.js", "Integración RESTful API", "Docker"],
-          "screenshot": {
-            "title": "Ampliar imagen",
-            "pathname": "project-inventario.png",
-            "alt": "Captura de pantalla del proyecto"
-          },
-          "links": [
-            {
-              "text": "Código fuente",
-              "url": "https://github.com/danifernao/inventory-manager"
-            }
-          ]
-        },
-        {
-          "date": ["2016", "13/03"],
-          "title": "Devitácora",
-          "description": "Blog personal sobre desarrollo web, bitácoras digitales y otros temas informáticos en general. La plantilla XML empleada es de mi autoría.",
-          "tags": ["Etiquetado de Blogger", "XHTML", "CSS", "JavaScript"],
-          "screenshot": {
-            "title": "Ampliar imagen",
-            "pathname": "project-devitacora.png",
-            "alt": "Captura de pantalla del proyecto"
-          },
-          "links": [
-            {
-              "text": "Demostración",
-              "url": "https://devitacora.blogspot.com/"
             }
           ]
         }
