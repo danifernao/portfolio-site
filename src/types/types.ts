@@ -98,10 +98,6 @@ export interface ContactType {
     };
     success: string;
   };
-  loading: {
-    form: string;
-    button: string;
-  };
   gBranding: string;
 }
 

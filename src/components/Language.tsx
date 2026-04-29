@@ -67,10 +67,10 @@ function Language({ handleData }: LanguageProps) {
       langParam && langParam in langs
         ? langParam
         : savedLang
-        ? savedLang
-        : locale.language in langs
-        ? locale.language
-        : currLang;
+          ? savedLang
+          : locale.language in langs
+            ? locale.language
+            : currLang;
 
     changeLang(language);
 
@@ -79,6 +79,7 @@ function Language({ handleData }: LanguageProps) {
     return () => {
       document.removeEventListener("click", hideMenu);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
