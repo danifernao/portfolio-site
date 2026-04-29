@@ -55,7 +55,7 @@ function Contact({ data }: ContactProps) {
               import.meta.env.VITE_RECAPTCHA_SITE_KEY,
               {
                 action: "submit",
-              }
+              },
             );
 
             formData.append("g-recaptcha-response", token);
@@ -157,7 +157,7 @@ function Contact({ data }: ContactProps) {
         <div className="recaptcha-branding">
           <ReactMarkdown
             components={{
-              a: ({ node, ...props }) => <a {...props} target="_blank" />,
+              a: (props) => <a {...props} target="_blank" />,
             }}
             children={data.gBranding}
           />
