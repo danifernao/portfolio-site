@@ -55,7 +55,7 @@ function Blog({ data }: BlogProps) {
   };
 
   const formatURL = (url: string) => {
-    return url.replace(/^(http)\:\/\//, "https://");
+    return url.replace(/^(http):\/\//, "https://");
   };
 
   const formatContent = (content: string) => {
@@ -90,12 +90,15 @@ function Blog({ data }: BlogProps) {
   useEffect(() => {
     const controller = new AbortController();
     const signal = controller.signal;
+
     if (posts.length === 0) {
       getEntries(signal);
     }
+
     return () => {
       controller.abort();
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
