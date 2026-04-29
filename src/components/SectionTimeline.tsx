@@ -23,7 +23,7 @@ function Timeline({ id, list }: TimelineProps) {
     if (fragment === id) {
       setIsHidden(false);
     }
-  }, []);
+  }, [id]);
 
   return (
     <div
