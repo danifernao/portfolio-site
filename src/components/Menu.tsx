@@ -12,7 +12,7 @@ function Menu({ data }: MenuProps) {
   const buttonRef = useRef<HTMLButtonElement>(null);
 
   const isValidItem = (
-    obj: unknown
+    obj: unknown,
   ): obj is { showInMenu: boolean; id: string; title: string } => {
     if (
       typeof obj === "object" &&
@@ -29,7 +29,7 @@ function Menu({ data }: MenuProps) {
 
   const scrollInto = (
     event: React.MouseEvent<HTMLAnchorElement>,
-    id: string
+    id: string,
   ) => {
     document.getElementById(id)?.scrollIntoView({
       behavior: "smooth",
@@ -63,7 +63,7 @@ function Menu({ data }: MenuProps) {
 
     const onScroll = () => {
       const viewportHeight = window.innerHeight;
-      let activeSections = [];
+      const activeSections: string[] = [];
 
       for (const section of sections) {
         const rect = section.getBoundingClientRect();
@@ -135,7 +135,7 @@ function Menu({ data }: MenuProps) {
                       {value["title"]}
                     </a>
                   </li>
-                )
+                ),
             )}
           </ul>
         </nav>
