@@ -38,12 +38,11 @@ library.add(
   faGlobe,
   faHackerrank,
   faLinkedin,
-  faXmark
+  faXmark,
 );
 
 function App() {
   const [data, setData] = useState<DataType | null>(null);
-  const [isDataSet, setIsDataSet] = useState<boolean>(false);
 
   const handleData = (langData: DataType) => {
     setData(langData);
@@ -54,13 +53,12 @@ function App() {
   };
 
   useEffect(() => {
-    if (data && !isDataSet) {
-      setIsDataSet(true);
-      if (location.hash.length > 1) {
-        const elem = document.querySelector(location.hash);
-        if (elem) {
-          elem.scrollIntoView();
-        }
+    if (!data) return;
+
+    if (location.hash.length > 1) {
+      const elem = document.querySelector(location.hash);
+      if (elem) {
+        elem.scrollIntoView();
       }
     }
   }, [data]);
