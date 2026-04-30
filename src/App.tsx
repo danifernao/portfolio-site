@@ -20,11 +20,7 @@ import {
   faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 
-import {
-  faGithub,
-  faHackerrank,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import Contact from "./components/Contact";
 import Menu from "./components/Menu";
 
@@ -36,7 +32,6 @@ library.add(
   faCircleNotch,
   faGithub,
   faGlobe,
-  faHackerrank,
   faLinkedin,
   faXmark,
 );
