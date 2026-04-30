@@ -513,11 +513,11 @@ p {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
-  padding-bottom: 1.5rem !important;
+  padding-bottom: 1.5rem;
 }
 
 .timeline .description > p:not(:last-of-type) {
-  margin-bottom: 0.5rem !important;
+  margin-bottom: 0.5rem;
 }
 
 .timeline .screenshot {
@@ -850,6 +850,9 @@ p {
   .timeline .achievement {
     display: flex;
     flex-direction: column;
+    padding-left: 1rem;
+    margin-bottom: 1.5rem;
+    border-left: 0.3rem solid rgb(from var(--color-bg-lighter) r g b / 0.5);
   }
 
   .timeline .achievement > * {
@@ -859,6 +862,7 @@ p {
   .timeline .date {
     flex-direction: row;
     align-items: center;
+    padding-bottom: 0;
     font-size: 0.8rem;
   }
 
@@ -873,13 +877,30 @@ p {
   }
 
   .timeline .source {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    align-items: start;
     gap: 0.8rem;
   }
 
+  .timeline .source .screenshot {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
   .timeline .source .info {
-    flex-direction: column-reverse;
-    gap: 0.8rem;
+    display: contents;
+  }
+
+  .timeline .source .tags {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .timeline .source .links {
+    grid-column: 1 / -1;
+    grid-row: 2;
   }
 
   .timeline .more {
