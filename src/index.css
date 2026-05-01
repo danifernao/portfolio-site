@@ -92,6 +92,10 @@ p {
   margin: 0;
 }
 
+button:focus-visible {
+    outline: auto !important;
+}
+
 #wrapper {
   position: relative;
   margin: 2.5rem auto 5rem;

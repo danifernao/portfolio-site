@@ -131,6 +131,7 @@ function Contact({ data }: ContactProps) {
         </p>
 
         <input
+          aria-label={data.placeholders.name}
           type="text"
           name="name"
           placeholder={data.placeholders.name}
@@ -139,6 +140,7 @@ function Contact({ data }: ContactProps) {
         />
 
         <input
+          aria-label={data.placeholders.email}
           type="email"
           name="email"
           placeholder={data.placeholders.email}
@@ -147,6 +149,7 @@ function Contact({ data }: ContactProps) {
         />
 
         <textarea
+          aria-label={data.placeholders.message}
           name="message"
           placeholder={data.placeholders.message}
           disabled={isProcessing}
