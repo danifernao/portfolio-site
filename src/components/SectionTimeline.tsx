@@ -72,10 +72,6 @@ function Timeline({ id, list }: TimelineProps) {
                           <a href={link.url} target="_blank">
                             {link.text}
                           </a>
-                          <FontAwesomeIcon
-                            icon="arrow-up-right-from-square"
-                            aria-hidden={true}
-                          />
                         </li>
                       ))}
                     </ul>

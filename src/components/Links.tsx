@@ -1,6 +1,5 @@
 import type { LinksType } from "../types/types";
 import { Fragment } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Title from "./SectionTitle";
 
 interface LinksProps {
@@ -25,10 +24,6 @@ function Links({ data }: LinksProps) {
                 <a href={link.url} target="_blank">
                   {formatUrl(link.url)}
                 </a>
-                <FontAwesomeIcon
-                  icon="arrow-up-right-from-square"
-                  aria-hidden={true}
-                />
               </dd>
             </Fragment>
           ))}
