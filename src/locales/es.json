@@ -73,7 +73,7 @@
         {
           "date": ["2025", "31/05"],
           "title": "Social",
-          "description": "En desarrollo. Una red social minimalista centrada en lo esencial: conectar y compartir entre usuarios sin distracciones.",
+          "description": "Una red social minimalista enfocada en una experiencia de interacción simple y directa. Incorpora edición de contenido con Markdown, control granular de visibilidad y reacciones con emojis para enriquecer la comunicación.",
           "tags": ["PHP", "MySQL", "Laravel", "Inertia.js", "React", "TypeScript", "Docker"],
           "screenshot": {
             "title": "Ampliar imagen",
@@ -88,9 +88,26 @@
           ]
         },
         {
+          "date": ["2025", "12/03"],
+          "title": "Danifernao",
+          "description": "Página web personal diseñada para presentar mi perfil profesional, proyectos y evolución en el aprendizaje del desarrollo web.",
+          "tags": ["React", "TypeScript", "Integración API"],
+          "screenshot": {
+            "title": "Ampliar imagen",
+            "pathname": "project-danifernao.png",
+            "alt": "Captura de pantalla del proyecto"
+          },
+          "links": [
+            {
+              "text": "Código fuente",
+              "url": "https://github.com/danifernao/portfolio-site"
+            }
+          ]
+        },
+        {
           "date": ["2023", "06/12"],
           "title": "Fundadores",
-          "description": "Tema de WordPress para el sitio web del Hogar Infantil Los Fundadores.",
+          "description": "Tema de WordPress desarrollado a medida para el sitio web del Hogar Infantil Los Fundadores, orientado a fortalecer su presencia digital y difundir su identidad institucional, servicios, actividades y canales de contacto.",
           "tags": ["WordPress"],
           "screenshot": {
             "title": "Ampliar imagen",

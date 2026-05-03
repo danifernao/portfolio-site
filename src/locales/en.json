@@ -73,7 +73,7 @@
         {
           "date": ["2025", "31/05"],
           "title": "Social",
-          "description": "In development. A minimalist social network focused on the essentials: connecting and sharing between users without distractions.",
+          "description": "A minimalist social network focused on delivering a simple and direct interaction experience. It features Markdown-based content editing, granular visibility controls, and emoji reactions to enhance communication.",
           "tags": ["PHP", "MySQL", "Laravel", "Inertia.js", "React", "TypeScript", "Docker"],
           "screenshot": {
             "title": "Zoom in image",
@@ -88,9 +88,26 @@
           ]
         },
         {
+          "date": ["2025", "12/03"],
+          "title": "Danifernao",
+          "description": "A personal website designed to showcase my professional profile, projects, and growth throughout my web development learning journey.",
+          "tags": ["React", "TypeScript", "API Integration"],
+          "screenshot": {
+            "title": "Zoom in image",
+            "pathname": "project-danifernao.png",
+            "alt": "Web project screenshot"
+          },
+          "links": [
+            {
+              "text": "Source code",
+              "url": "https://github.com/danifernao/portfolio-site"
+            }
+          ]
+        },
+        {
           "date": ["2023", "06/12"],
           "title": "Fundadores",
-          "description": "A WordPress theme for the Hogar Infantil Los Fundadores website.",
+          "description": "A custom WordPress theme developed for the Hogar Infantil Los Fundadores website, aimed at strengthening its digital presence and promoting its institutional identity, services, activities, and contact channels.",
           "tags": ["WordPress"],
           "screenshot": {
             "title": "Zoom in image",
