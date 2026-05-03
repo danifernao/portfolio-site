@@ -473,7 +473,7 @@ button:focus-visible {
   padding: 0.3rem 1rem;
 }
 
-.timeline .date {
+.timeline .date-wrapper {
   grid-area: date;
   display: flex;
   flex-direction: column;
@@ -481,13 +481,13 @@ button:focus-visible {
   font-size: 1.1rem;
 }
 
-.timeline .date:before,
-.timeline .date:after {
+.timeline .date-wrapper:before,
+.timeline .date-wrapper:after {
   content: "";
   position: absolute;
 }
 
-.timeline .date:before {
+.timeline .date-wrapper:before {
   top: 0.6rem;
   left: calc(100% + 0.03rem);
   width: 0.8rem;
@@ -497,7 +497,7 @@ button:focus-visible {
   transform: translateX(-0.46rem);
 }
 
-.timeline .date:after {
+.timeline .date-wrapper:after {
   top: 0;
   right: 0;
   width: 0.06rem;
@@ -505,8 +505,38 @@ button:focus-visible {
   background-color: var(--color-bg-lighter);
 }
 
-.timeline .date span:last-of-type {
+.timeline .date  {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  justify-content: end;
+}
+
+.timeline .date span:first-child {
+  grid-column: 1 / -1;
+}
+
+.timeline .date span:nth-child(n + 2) {
   font-size: 0.8rem;
+}
+
+.timeline .date span:nth-child(2):after {
+  content: "/";
+}
+
+html:not([lang="en"]) .timeline .date span:nth-child(2) {
+  order: 2;
+}
+
+html:not([lang="en"]) .timeline .date span:nth-child(2):after {
+  content: "";
+}
+
+html:not([lang="en"]) .timeline .date span:nth-child(3) {
+  order: 1;
+}
+
+html:not([lang="en"]) .timeline .date span:nth-child(3):after {
+  content: "/";
 }
 
 .timeline .title {
@@ -867,21 +897,56 @@ button:focus-visible {
     padding: 0.3rem 0;
   }
 
-  .timeline .date {
+  .timeline .date-wrapper {
     flex-direction: row;
     align-items: center;
     padding-bottom: 0;
     font-size: 0.8rem;
   }
 
-  .timeline .date:before,
-  .timeline .date:after {
+  .timeline .date-wrapper:before,
+  .timeline .date-wrapper:after {
     display: none;
   }
 
-  .timeline .date span:last-of-type:before {
-    content: "•";
-    margin: 0 0.3rem;
+  .timeline .date  {
+    display: flex;
+  }
+
+  html[lang="en"] .timeline .date span:nth-child(1) {
+    order: 3;
+  }
+
+  html[lang="en"] .timeline .date span:nth-child(2) {
+    order: 1;
+  }
+
+  html[lang="en"] .timeline .date span:nth-child(3) {
+    order: 2;
+  }
+
+  html:not([lang="en"]) .timeline .date span:nth-child(1) {
+    order: 3;
+  }
+
+  html:not([lang="en"]) .timeline .date span:nth-child(2) {
+    order: 2;
+  }
+
+  html:not([lang="en"]) .timeline .date span:nth-child(3) {
+    order: 1;
+  }
+
+  .timeline .date span:after {
+    content: "" !important;
+  }
+
+  html[lang="en"] .timeline .date span:not(:only-child):not(:nth-child(1)):after {
+    content: "/" !important;
+  }
+
+  html:not([lang="en"]) .timeline .date span:not(:only-child):not(:nth-child(1)):after {
+    content: "/" !important;
   }
 
   .timeline .source {

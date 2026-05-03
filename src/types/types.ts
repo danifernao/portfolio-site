@@ -32,7 +32,7 @@ export interface SectionType {
 export interface TimelineType {
   more: string;
   items: {
-    date: string | string[];
+    date: string;
     title: string;
     description: string;
     tags?: string[];

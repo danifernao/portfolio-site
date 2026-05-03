@@ -37,10 +37,12 @@ function Timeline({ id, list }: TimelineProps) {
           key={i}
         >
           {item.date && (
-            <div className="date">
-              {typeof item.date === "object"
-                ? item.date.map((d, i) => <span key={i}>{d}</span>)
-                : item.date}
+            <div className="date-wrapper">
+              <time className="date" dateTime={item.date}>
+                {item.date.split("-").map((part, j) => (
+                  <span key={j}>{part}</span>
+                ))}
+              </time>
             </div>
           )}
 
