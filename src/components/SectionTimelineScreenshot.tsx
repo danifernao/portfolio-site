@@ -6,15 +6,21 @@ interface ScreenshotProps {
   pathname: string;
   alt: string;
   title: string;
+  className?: string;
 }
 
-function Screenshot({ pathname = "", alt = "", title = "" }: ScreenshotProps) {
+function Screenshot({
+  pathname = "",
+  alt = "",
+  title = "",
+  className,
+}: ScreenshotProps) {
   const [imageSrc, setImageSrc] = useState<string>("");
   const [isPreviewVisible, setIsPreviewVisible] = useState<boolean>(false);
 
   const toggleLightbox = (
     event: React.MouseEvent<HTMLAnchorElement> | void,
-    src: string | null = null
+    src: string | null = null,
   ) => {
     setImageSrc(src ? `./images/${src}` : "");
     if (event) {
@@ -26,7 +32,7 @@ function Screenshot({ pathname = "", alt = "", title = "" }: ScreenshotProps) {
     <>
       {pathname && (
         <div className="screenshot">
-          <div className="thumbnail">
+          <div className={`thumbnail ${className ?? ""}`}>
             <a
               href="#"
               title={title}

@@ -40,6 +40,7 @@ export interface TimelineType {
       title: string;
       pathname: string;
       alt: string;
+      className?: string;
     };
     links?: {
       text: string;

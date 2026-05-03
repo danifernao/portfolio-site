@@ -62,6 +62,7 @@ function Timeline({ id, list }: TimelineProps) {
                     pathname={item.screenshot.pathname}
                     alt={item.screenshot.alt}
                     title={item.screenshot.title}
+                    className={item.screenshot.className}
                   />
                 )}
                 <div className="info">

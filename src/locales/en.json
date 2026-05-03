@@ -95,7 +95,8 @@
           "screenshot": {
             "title": "Zoom in image",
             "pathname": "project-danifernao.png",
-            "alt": "Web project screenshot"
+            "alt": "Web project screenshot",
+            "className": "with-border"
           },
           "links": [
             {

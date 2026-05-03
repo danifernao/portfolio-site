@@ -536,6 +536,10 @@ button:focus-visible {
   overflow: hidden;
 }
 
+.timeline .screenshot .thumbnail.with-border {
+ border: 0.06rem solid var(--color-bg-lighter);
+}
+
 .timeline .screenshot .thumbnail img {
   display: block;
   width: 100%;

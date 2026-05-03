@@ -95,7 +95,8 @@
           "screenshot": {
             "title": "Ampliar imagen",
             "pathname": "project-danifernao.png",
-            "alt": "Captura de pantalla del proyecto"
+            "alt": "Captura de pantalla del proyecto",
+            "className": "with-border"
           },
           "links": [
             {
