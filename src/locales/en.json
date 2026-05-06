@@ -88,6 +88,28 @@
           ]
         },
         {
+          "date": "2025-03-20",
+          "title": "AniGuess",
+          "description": "A quiz game where players identify the correct work a character belongs to based on its image.",
+          "tags": ["React", "TypeScript", "API Integration"],
+          "screenshot": {
+            "title": "Zoom in image",
+            "pathname": "project-aniguess.png",
+            "alt":"Web project screenshot",
+            "className": "with-border"
+          },
+          "links": [
+            {
+              "text": "Demo",
+              "url": "https://wx3.netlify.app/aniguess/"
+            },
+            {
+              "text": "Source code",
+              "url": "https://github.com/danifernao/aniguess"
+            }
+          ]
+        },
+        {
           "date": "2025-03-12",
           "title": "Danifernao",
           "description": "A personal website designed to showcase my professional profile, projects, and growth throughout my web development learning journey.",
