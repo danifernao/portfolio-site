@@ -74,7 +74,15 @@
           "date": "2025-05-31",
           "title": "Social",
           "description": "Una red social minimalista enfocada en una experiencia de interacción simple y directa. Incorpora edición de contenido con Markdown, control granular de visibilidad y reacciones con emojis para enriquecer la comunicación.",
-          "tags": ["PHP", "MySQL", "Laravel", "Inertia.js", "React", "TypeScript", "Docker"],
+          "tags": [
+            "PHP",
+            "MySQL",
+            "Laravel",
+            "Inertia.js",
+            "React",
+            "TypeScript",
+            "Docker"
+          ],
           "screenshot": {
             "title": "Ampliar imagen",
             "pathname": "project-social.png",
@@ -95,7 +103,7 @@
           "screenshot": {
             "title": "Ampliar imagen",
             "pathname": "project-aniguess.png",
-            "alt":"Captura de pantalla del proyecto",
+            "alt": "Captura de pantalla del proyecto",
             "className": "with-border"
           },
           "links": [
@@ -147,7 +155,7 @@
       ]
     }
   },
-  "blog": {
+  "blog_disabled": {
     "showInMenu": true,
     "id": "posts",
     "title": "Blog",
@@ -191,7 +199,7 @@
       "name": "Nombre completo",
       "email": "Correo electrónico",
       "message": "Tu mensaje"
-    },    
+    },
     "status": {
       "loading": {
         "button": "Enviando...",
