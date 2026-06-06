@@ -155,7 +155,7 @@
       ]
     }
   },
-  "blog_disabled": {
+  "blog": {
     "showInMenu": true,
     "id": "posts",
     "title": "Blog",
