@@ -74,7 +74,15 @@
           "date": "2025-05-31",
           "title": "Social",
           "description": "A minimalist social network focused on delivering a simple and direct interaction experience. It features Markdown-based content editing, granular visibility controls, and emoji reactions to enhance communication.",
-          "tags": ["PHP", "MySQL", "Laravel", "Inertia.js", "React", "TypeScript", "Docker"],
+          "tags": [
+            "PHP",
+            "MySQL",
+            "Laravel",
+            "Inertia.js",
+            "React",
+            "TypeScript",
+            "Docker"
+          ],
           "screenshot": {
             "title": "Zoom in image",
             "pathname": "project-social.png",
@@ -91,11 +99,11 @@
           "date": "2025-03-20",
           "title": "AniGuess",
           "description": "A quiz game where players identify the correct work a character belongs to based on its image.",
-          "tags": ["React", "TypeScript", "API Integration"],
+          "tags": ["React", "TypeScript", "API Integration", "PWA"],
           "screenshot": {
             "title": "Zoom in image",
             "pathname": "project-aniguess.png",
-            "alt":"Web project screenshot",
+            "alt": "Web project screenshot",
             "className": "with-border"
           },
           "links": [
