@@ -1,5 +1,5 @@
-import type { LinksType } from "../types/types";
 import { Fragment } from "react";
+import type { LinksType } from "../types/types";
 import Title from "./SectionTitle";
 
 interface LinksProps {
@@ -7,6 +7,10 @@ interface LinksProps {
 }
 
 function Links({ data }: LinksProps) {
+  if (!data.isVisible) {
+    return null;
+  }
+
   const formatUrl = (param: string) => {
     const url = new URL(param);
     return `${url.hostname}${url.pathname.replace(/\/$/, "")}`;

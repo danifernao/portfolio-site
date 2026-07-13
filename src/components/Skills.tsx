@@ -7,6 +7,10 @@ interface SkillsProps {
 }
 
 function Skills({ data }: SkillsProps) {
+  if (!data.isVisible) {
+    return null;
+  }
+
   return (
     <section id={data.id} className="section skills">
       {data.title && <Title id={data.id} title={data.title} />}

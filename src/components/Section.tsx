@@ -1,12 +1,16 @@
 import type { SectionType } from "../types/types";
-import Title from "./SectionTitle";
 import Timeline from "./SectionTimeline";
+import Title from "./SectionTitle";
 
 interface SectionProps {
   data: SectionType;
 }
 
 function Section({ data }: SectionProps) {
+  if (!data.isVisible) {
+    return null;
+  }
+
   return (
     <section id={data.id} className="section">
       {data.title && <Title id={data.id} title={data.title} />}

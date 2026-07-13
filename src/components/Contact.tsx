@@ -1,8 +1,8 @@
-import { useEffect, useRef, useState } from "react";
-import Title from "./SectionTitle";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { ContactType } from "../types/types";
+import { useEffect, useRef, useState } from "react";
 import ReactMarkdown from "react-markdown";
+import { ContactType } from "../types/types";
+import Title from "./SectionTitle";
 
 interface ContactProps {
   data: ContactType;
@@ -113,6 +113,10 @@ function Contact({ data }: ContactProps) {
 
     return () => el.removeEventListener("input", resize);
   }, []);
+
+  if (!data.isVisible) {
+    return null;
+  }
 
   return (
     <section id="contact" className="contact section">

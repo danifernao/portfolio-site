@@ -22,7 +22,7 @@ export interface HeaderType {
 }
 
 export interface SectionType {
-  showInMenu?: boolean;
+  isVisible?: boolean;
   id: string;
   title: string;
   description: string;
@@ -50,19 +50,19 @@ export interface TimelineType {
 }
 
 export interface SkillsType {
-  showInMenu?: boolean;
+  isVisible?: boolean;
   id: string;
   title: string;
   items: SkillsItemType[];
 }
 
 export interface SkillsItemType {
-    title: string;
-    icon: string;
+  title: string;
+  icon: string;
 }
 
 export interface BlogType {
-  showInMenu?: boolean;
+  isVisible?: boolean;
   id: string;
   title: string;
   description: string;
@@ -78,7 +78,7 @@ export interface BlogType {
 }
 
 export interface ContactType {
-  showInMenu?: boolean;
+  isVisible?: boolean;
   id: string;
   title: string;
   description: string;
@@ -103,7 +103,7 @@ export interface ContactType {
 }
 
 export interface LinksType {
-  showInMenu?: boolean;
+  isVisible?: boolean;
   id: string;
   title: string;
   items: LinksItemType[];

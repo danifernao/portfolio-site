@@ -1,6 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useRef, useState } from "react";
 import { DataType } from "../types/types";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 interface MenuProps {
   data: DataType;
@@ -13,12 +13,12 @@ function Menu({ data }: MenuProps) {
 
   const isValidItem = (
     obj: unknown,
-  ): obj is { showInMenu: boolean; id: string; title: string } => {
+  ): obj is { isVisible: boolean; id: string; title: string } => {
     if (
       typeof obj === "object" &&
       obj !== null &&
-      "showInMenu" in obj &&
-      obj.showInMenu === true &&
+      "isVisible" in obj &&
+      obj.isVisible === true &&
       "id" in obj &&
       "title" in obj
     ) {

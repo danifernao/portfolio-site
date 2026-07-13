@@ -1,7 +1,7 @@
-import type { BlogType } from "../types/types";
-import { useEffect, useRef, useState } from "react";
-import Title from "./SectionTitle";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useEffect, useRef, useState } from "react";
+import type { BlogType } from "../types/types";
+import Title from "./SectionTitle";
 
 interface BlogProps {
   data: BlogType;
@@ -100,6 +100,10 @@ function Blog({ data }: BlogProps) {
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  if (!data.isVisible) {
+    return null;
+  }
 
   return (
     <section id={data.id} ref={blogRef} className="section blog">

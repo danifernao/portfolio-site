@@ -1,20 +1,20 @@
-import type { DataType, LinksType, LinksItemType } from "./types/types";
-import Header from "./components/Header";
-import Skills from "./components/Skills";
-import Blog from "./components/Blog";
-import Links from "./components/Links";
-import Section from "./components/Section";
-import Language from "./components/Language";
-import { useEffect, useState } from "react";
-import ScrollToTop from "./components/ScrollToTop";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import "devicon/devicon.min.css";
+import { useEffect, useState } from "react";
+import Blog from "./components/Blog";
+import Header from "./components/Header";
+import Language from "./components/Language";
+import Links from "./components/Links";
+import ScrollToTop from "./components/ScrollToTop";
+import Section from "./components/Section";
+import Skills from "./components/Skills";
+import type { DataType, LinksItemType, LinksType } from "./types/types";
 
 import {
   faArrowUpRightFromSquare,
   faBars,
-  faChevronUp,
   faChevronDown,
+  faChevronUp,
   faCircleNotch,
   faGlobe,
   faXmark,

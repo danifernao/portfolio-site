@@ -10,13 +10,13 @@
     }
   },
   "about": {
-    "showInMenu": true,
+    "isVisible": true,
     "id": "about-me",
     "title": "About Me",
     "description": "I am a Colombian passionate about web development, with a philosophy focused on simple and adaptable designs, following good practices in markup and SEO, prioritizing efficiency and readability in coding, always in constant learning."
   },
   "skills": {
-    "showInMenu": true,
+    "isVisible": true,
     "id": "skills",
     "title": "Technical Skills",
     "items": [
@@ -63,7 +63,7 @@
     ]
   },
   "projects": {
-    "showInMenu": true,
+    "isVisible": true,
     "id": "projects",
     "title": "Projects",
     "description": "Some of my personal projects, created with the purpose of putting my knowledge into practice and improving my skills in web development.",
@@ -156,7 +156,7 @@
     }
   },
   "education": {
-    "showInMenu": true,
+    "isVisible": true,
     "id": "education",
     "title": "Education",
     "description": "My technical background includes the following qualifications:",
@@ -177,7 +177,7 @@
     }
   },
   "contact": {
-    "showInMenu": true,
+    "isVisible": true,
     "id": "contact",
     "title": "Contact",
     "description": "If you have any questions or inquiries, feel free to get in touch using the form below.",
@@ -201,7 +201,7 @@
     "gBranding": "This site is protected by reCAPTCHA and the Google [Privacy Policy](https://policies.google.com/privacy) and [Terms of Service](https://policies.google.com/terms) apply."
   },
   "links": {
-    "showInMenu": true,
+    "isVisible": true,
     "id": "links",
     "title": "Online Presence",
     "items": [

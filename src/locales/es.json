@@ -10,13 +10,13 @@
     }
   },
   "about": {
-    "showInMenu": true,
+    "isVisible": true,
     "id": "about-me",
     "title": "Acerca de mí",
     "description": "Soy un colombiano apasionado por el desarrollo web, con una filosofía centrada en los diseños sencillos y adaptables, siguiendo las buenas prácticas en marcado y SEO, priorizando la eficiencia y legibilidad en la codificación, siempre en constante aprendizaje."
   },
   "skills": {
-    "showInMenu": true,
+    "isVisible": true,
     "id": "skills",
     "title": "Competencias técnicas",
     "items": [
@@ -63,7 +63,7 @@
     ]
   },
   "projects": {
-    "showInMenu": true,
+    "isVisible": true,
     "id": "projects",
     "title": "Proyectos",
     "description": "Te comparto algunos de mis proyectos personales, creados con el propósito de poner en práctica mis conocimientos y mejorar mis habilidades en desarrollo web.",
@@ -156,7 +156,7 @@
     }
   },
   "blog": {
-    "showInMenu": true,
+    "isVisible": false,
     "id": "posts",
     "title": "Blog",
     "description": "Te invito a explorar mi blog, donde hablo sobre desarrollo web, bitácoras digitales y otros temas relacionados con la informática.",
@@ -169,7 +169,7 @@
     "error": "No se pudo obtener las publicaciones. Por favor, inténtelo más tarde."
   },
   "education": {
-    "showInMenu": true,
+    "isVisible": true,
     "id": "education",
     "title": "Educación",
     "description": "He tenido la oportunidad de alcanzar los siguientes logros académicos:",
@@ -190,7 +190,7 @@
     }
   },
   "contact": {
-    "showInMenu": true,
+    "isVisible": true,
     "id": "contact",
     "title": "Contactar",
     "description": "Para cualquier duda o consulta, puedes comunicarte mediante el siguiente formulario.",
@@ -214,7 +214,7 @@
     "gBranding": "Este sitio está protegido por reCAPTCHA y se aplican la [Política de privacidad](https://policies.google.com/privacy) y los [Términos del servicio](https://policies.google.com/terms) de Google."
   },
   "links": {
-    "showInMenu": true,
+    "isVisible": true,
     "id": "links",
     "title": "Presencia en línea",
     "items": [
