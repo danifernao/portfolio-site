@@ -15,6 +15,10 @@ function Timeline({ id, list, common }: TimelineProps) {
   const [isHidden, setIsHidden] = useState<boolean>(true);
   const timelineId = useId();
 
+  const sortedItems = [...list.items].sort((a, b) => {
+    return new Date(b.date).getTime() - new Date(a.date).getTime();
+  });
+
   const expand = () => {
     setIsHidden(false);
   };
@@ -32,31 +36,27 @@ function Timeline({ id, list, common }: TimelineProps) {
       className={`timeline ${isHidden ? "" : "expanded"}`}
       aria-live="polite"
     >
-      {list.items.map((item, i) => (
+      {sortedItems.map((item, i) => (
         <div
           className={`achievement ${isHidden && i > 1 ? "hidden" : ""}`}
           key={i}
         >
-          {item.date && (
-            <div className="date-wrapper">
-              <time className="date" dateTime={item.date}>
-                {item.date.split("-").map((part, j) => (
-                  <span key={j}>{part}</span>
-                ))}
-              </time>
-            </div>
-          )}
+          <div className="date-wrapper">
+            <time className="date" dateTime={item.date}>
+              {item.date.split("-").map((part, j) => (
+                <span key={j}>{part}</span>
+              ))}
+            </time>
+          </div>
 
           {item.title && <h3 className="title">{item.title}</h3>}
 
           <div className="details">
-            {item.description && (
-              <div className="description">
-                {item.description.split("\n").map((paragraph, j) => (
-                  <ReactMarkdown children={paragraph} key={j} />
-                ))}
-              </div>
-            )}
+            <div className="description">
+              {item.description.split("\n").map((paragraph, j) => (
+                <ReactMarkdown children={paragraph} key={j} />
+              ))}
+            </div>
 
             {(item.screenshot || item.links) && (
               <div className="source">
