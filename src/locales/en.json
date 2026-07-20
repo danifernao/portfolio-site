@@ -3,6 +3,7 @@
     "description": "I am a Colombian passionate about web development, with a philosophy focused on simple and adaptable designs, following good practices in markup and SEO, prioritizing efficiency and readability in coding, always in constant learning.",
     "id": "about-me",
     "isVisible": true,
+    "order": 2,
     "title": "About Me"
   },
   "common": {
@@ -21,6 +22,7 @@
     "gBranding": "This site is protected by reCAPTCHA and the Google [Privacy Policy](https://policies.google.com/privacy) and [Terms of Service](https://policies.google.com/terms) apply.",
     "id": "contact",
     "isVisible": true,
+    "order": 7,
     "placeholders": {
       "email": "Email address",
       "message": "Your message",
@@ -57,11 +59,13 @@
         }
       ]
     },
+    "order": 6,
     "title": "Education"
   },
   "header": {
     "address": "Ciénaga, Magdalena, Colombia",
     "name": "Daniel Fernandez",
+    "order": 1,
     "photo": {
       "alt": "Profile picture",
       "pathname": "me.jpg"
@@ -85,6 +89,7 @@
         "url": "https://linkedin.com/in/danifernao"
       }
     ],
+    "order": 8,
     "title": "Online Presence"
   },
   "projects": {
@@ -177,6 +182,7 @@
         }
       ]
     },
+    "order": 4,
     "title": "Projects"
   },
   "skills": {
@@ -224,6 +230,7 @@
         "title": "TypeScript"
       }
     ],
+    "order": 3,
     "title": "Technical Skills"
   }
 }

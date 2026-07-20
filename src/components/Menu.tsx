@@ -13,7 +13,12 @@ function Menu({ data }: MenuProps) {
 
   const isValidItem = (
     obj: unknown,
-  ): obj is { isVisible: boolean; id: string; title: string } => {
+  ): obj is {
+    isVisible: boolean;
+    id: string;
+    title: string;
+    order: number;
+  } => {
     if (
       typeof obj === "object" &&
       obj !== null &&
@@ -124,19 +129,19 @@ function Menu({ data }: MenuProps) {
         </button>
         <nav>
           <ul>
-            {Object.entries(data).map(
-              ([key, value]) =>
-                isValidItem(value) && (
-                  <li key={key}>
-                    <a
-                      href={`#${value["id"]}`}
-                      onClick={(e) => scrollInto(e, value["id"])}
-                    >
-                      {value["title"]}
-                    </a>
-                  </li>
-                ),
-            )}
+            {Object.entries(data)
+              .filter(([, value]) => isValidItem(value))
+              .sort(([, a], [, b]) => a.order - b.order)
+              .map(([key, value]) => (
+                <li key={key}>
+                  <a
+                    href={`#${value.id}`}
+                    onClick={(e) => scrollInto(e, value.id)}
+                  >
+                    {value.title}
+                  </a>
+                </li>
+              ))}
           </ul>
         </nav>
       </div>

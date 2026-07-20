@@ -3,9 +3,11 @@
     "description": "Soy un colombiano apasionado por el desarrollo web, con una filosofía centrada en los diseños sencillos y adaptables, siguiendo las buenas prácticas en marcado y SEO, priorizando la eficiencia y legibilidad en la codificación, siempre en constante aprendizaje.",
     "id": "about-me",
     "isVisible": true,
-    "title": "Acerca de mí"
+    "title": "Acerca de mí",
+    "order": 2
   },
   "blog": {
+    "order": 5,
     "api": {
       "maxResults": 3
     },
@@ -13,7 +15,7 @@
     "error": "No se pudo obtener las publicaciones. Por favor, inténtelo más tarde.",
     "id": "posts",
     "imgAlt": "Entrada del blog:",
-    "isVisible": false,
+    "isVisible": true,
     "title": "Blog"
   },
   "common": {
@@ -27,6 +29,7 @@
     "zoomIn": "Ampliar imagen"
   },
   "contact": {
+    "order": 7,
     "button": "Enviar mensaje",
     "description": "Para cualquier duda o consulta, puedes comunicarte mediante el siguiente formulario.",
     "gBranding": "Este sitio está protegido por reCAPTCHA y se aplican la [Política de privacidad](https://policies.google.com/privacy) y los [Términos del servicio](https://policies.google.com/terms) de Google.",
@@ -51,6 +54,7 @@
     "title": "Contactar"
   },
   "education": {
+    "order": 6,
     "description": "He tenido la oportunidad de alcanzar los siguientes logros académicos:",
     "id": "education",
     "isVisible": true,
@@ -71,6 +75,7 @@
     "title": "Educación"
   },
   "header": {
+    "order": 1,
     "address": "Ciénaga, Magdalena, Colombia",
     "name": "Daniel Fernández Juvinao",
     "photo": {
@@ -80,6 +85,7 @@
     "profession": "Desarrollador Web / Técnico Profesional en Sistemas"
   },
   "links": {
+    "order": 8,
     "id": "links",
     "isVisible": true,
     "items": [
@@ -99,6 +105,7 @@
     "title": "Presencia en línea"
   },
   "projects": {
+    "order": 4,
     "description": "Te comparto algunos de mis proyectos personales, creados con el propósito de poner en práctica mis conocimientos y mejorar mis habilidades en desarrollo web.",
     "id": "projects",
     "isVisible": true,
@@ -235,6 +242,7 @@
         "title": "TypeScript"
       }
     ],
-    "title": "Competencias técnicas"
+    "title": "Competencias técnicas",
+    "order": 3
   }
 }
