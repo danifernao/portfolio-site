@@ -47,6 +47,9 @@ function Header({ data }: HeaderProps) {
               buttonPrev: () => null,
               buttonNext: () => null,
             }}
+            controller={{
+              closeOnBackdropClick: true,
+            }}
           />
         </div>
       )}

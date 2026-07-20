@@ -60,6 +60,9 @@ function Screenshot({
           buttonPrev: () => null,
           buttonNext: () => null,
         }}
+        controller={{
+          closeOnBackdropClick: true,
+        }}
       />
     </>
   );
