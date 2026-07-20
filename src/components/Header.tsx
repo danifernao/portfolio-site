@@ -1,16 +1,21 @@
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import type { HeaderType, LinksItemType } from "../types/types";
 import { useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
-import { IconProp } from "@fortawesome/fontawesome-svg-core";
+import type { DataType } from "../types/types";
 
 interface HeaderProps {
-  dataHeader: HeaderType;
-  dataLinks: LinksItemType[];
+  data: DataType;
 }
 
-function Header({ dataHeader, dataLinks }: HeaderProps) {
+function Header({ data }: HeaderProps) {
+  const [header, links, common] = [
+    data.header,
+    data.links.items.filter((item) => item.icon),
+    data.common,
+  ];
+
   const [open, setOpen] = useState<boolean>(false);
 
   const viewFullImage = (event: React.MouseEvent<HTMLAnchorElement>) => {
@@ -21,23 +26,23 @@ function Header({ dataHeader, dataLinks }: HeaderProps) {
   return (
     <header id="header">
       {/* Columna del avatar */}
-      {dataHeader.photo && (
+      {header.photo && (
         <div>
           <a
             href="#"
-            title={dataHeader.photo.title}
+            title={common.zoomIn}
             onClick={viewFullImage}
             className="avatar"
           >
             <img
-              src={`./images/${dataHeader.photo.pathname}`}
-              alt={dataHeader.photo.alt}
+              src={`./images/${header.photo.pathname}`}
+              alt={header.photo.alt}
             />
           </a>
           <Lightbox
             open={open}
             close={() => setOpen(false)}
-            slides={[{ src: `./images/${dataHeader.photo.pathname}` }]}
+            slides={[{ src: `./images/${header.photo.pathname}` }]}
             render={{
               buttonPrev: () => null,
               buttonNext: () => null,
@@ -48,18 +53,18 @@ function Header({ dataHeader, dataLinks }: HeaderProps) {
 
       {/* Columna de la información general */}
       <div className="info-col">
-        {dataHeader.name && (
+        {header.name && (
           <h1>
-            <a href="/">{dataHeader.name}</a>
+            <a href="/">{header.name}</a>
           </h1>
         )}
 
-        {dataHeader.profession && <p>{dataHeader.profession}</p>}
-        {dataHeader.address && <p>{dataHeader.address}</p>}
+        {header.profession && <p>{header.profession}</p>}
+        {header.address && <p>{header.address}</p>}
 
-        {dataLinks.length > 0 && (
+        {links.length > 0 && (
           <ul>
-            {dataLinks.map((link, i) => (
+            {links.map((link, i) => (
               <li key={i}>
                 <a
                   href={link.url}

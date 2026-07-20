@@ -21,6 +21,8 @@ export interface HeaderType {
   };
 }
 
+export type SectionKey = "about" | "projects" | "education";
+
 export interface SectionType {
   isVisible?: boolean;
   id: string;
@@ -30,20 +32,18 @@ export interface SectionType {
 }
 
 export interface TimelineType {
-  more: string;
   items: {
     date: string;
     title: string;
     description: string;
     tags?: string[];
     screenshot?: {
-      title: string;
       pathname: string;
       alt: string;
       className?: string;
     };
     links?: {
-      text: string;
+      type: "demo" | "source";
       url: string;
     }[];
   }[];

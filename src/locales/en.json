@@ -1,227 +1,225 @@
 {
-  "header": {
-    "name": "Daniel Fernandez",
-    "profession": "Web Developer / IT Systems Technician",
-    "address": "Ciénaga, Magdalena, Colombia",
-    "photo": {
-      "title": "Zoom in image",
-      "pathname": "me.jpg",
-      "alt": "Profile picture"
-    }
-  },
   "about": {
-    "isVisible": true,
+    "description": "I am a Colombian passionate about web development, with a philosophy focused on simple and adaptable designs, following good practices in markup and SEO, prioritizing efficiency and readability in coding, always in constant learning.",
     "id": "about-me",
-    "title": "About Me",
-    "description": "I am a Colombian passionate about web development, with a philosophy focused on simple and adaptable designs, following good practices in markup and SEO, prioritizing efficiency and readability in coding, always in constant learning."
-  },
-  "skills": {
     "isVisible": true,
-    "id": "skills",
-    "title": "Technical Skills",
-    "items": [
-      {
-        "title": "HTML",
-        "icon": "html5"
-      },
-      {
-        "title": "CSS",
-        "icon": "css3"
-      },
-      {
-        "title": "JavaScript",
-        "icon": "javascript"
-      },
-      {
-        "title": "TypeScript",
-        "icon": "typescript"
-      },
-      {
-        "title": "React",
-        "icon": "react"
-      },
-      {
-        "title": "PHP",
-        "icon": "php"
-      },
-      {
-        "title": "MySQL",
-        "icon": "mysql"
-      },
-      {
-        "title": "Laravel",
-        "icon": "laravel"
-      },
-      {
-        "title": "Docker",
-        "icon": "docker"
-      },
-      {
-        "title": "Git",
-        "icon": "git"
-      }
-    ]
+    "title": "About Me"
   },
-  "projects": {
-    "isVisible": true,
-    "id": "projects",
-    "title": "Projects",
-    "description": "Some of my personal projects, created with the purpose of putting my knowledge into practice and improving my skills in web development.",
-    "list": {
-      "more": "See more projects...",
-      "items": [
-        {
-          "date": "2025-05-31",
-          "title": "Social",
-          "description": "A minimalist social network focused on delivering a simple and direct interaction experience. It features Markdown-based content editing, granular visibility controls, and emoji reactions to enhance communication.",
-          "tags": [
-            "PHP",
-            "MySQL",
-            "Laravel",
-            "Inertia.js",
-            "React",
-            "TypeScript",
-            "Docker"
-          ],
-          "screenshot": {
-            "title": "Zoom in image",
-            "pathname": "project-social.png",
-            "alt": "Web project screenshot"
-          },
-          "links": [
-            {
-              "text": "Source code",
-              "url": "https://github.com/danifernao/social"
-            }
-          ]
-        },
-        {
-          "date": "2025-03-20",
-          "title": "AniGuess",
-          "description": "A quiz game where players identify the correct work a character belongs to based on its image.",
-          "tags": ["React", "TypeScript", "API Integration", "PWA"],
-          "screenshot": {
-            "title": "Zoom in image",
-            "pathname": "project-aniguess.png",
-            "alt": "Web project screenshot",
-            "className": "with-border"
-          },
-          "links": [
-            {
-              "text": "Demo",
-              "url": "https://play-aniguess.netlify.app/"
-            },
-            {
-              "text": "Source code",
-              "url": "https://github.com/danifernao/aniguess"
-            }
-          ]
-        },
-        {
-          "date": "2025-03-12",
-          "title": "Danifernao",
-          "description": "A personal website designed to showcase my professional profile, projects, and growth throughout my web development learning journey.",
-          "tags": ["React", "TypeScript", "API Integration"],
-          "screenshot": {
-            "title": "Zoom in image",
-            "pathname": "project-danifernao.png",
-            "alt": "Web project screenshot",
-            "className": "with-border"
-          },
-          "links": [
-            {
-              "text": "Source code",
-              "url": "https://github.com/danifernao/portfolio-site"
-            }
-          ]
-        },
-        {
-          "date": "2023-12-06",
-          "title": "Fundadores",
-          "description": "A custom WordPress theme developed for the Hogar Infantil Los Fundadores website, aimed at strengthening its digital presence and promoting its institutional identity, services, activities, and contact channels.",
-          "tags": ["WordPress"],
-          "screenshot": {
-            "title": "Zoom in image",
-            "pathname": "project-fundadores.png",
-            "alt": "Web project screenshot"
-          },
-          "links": [
-            {
-              "text": "Source code",
-              "url": "https://github.com/danifernao/fundadores-wp-theme"
-            }
-          ]
-        }
-      ]
-    }
-  },
-  "education": {
-    "isVisible": true,
-    "id": "education",
-    "title": "Education",
-    "description": "My technical background includes the following qualifications:",
-    "list": {
-      "more": "See more education...",
-      "items": [
-        {
-          "date": "2023",
-          "title": "Analysis and Development of Information Systems",
-          "description": "Servicio Nacional de Aprendizaje\nSkilled in requirement specification, analysis, design, coding, and implementation of information systems, applying quality best practices throughout the software development lifecycle."
-        },
-        {
-          "date": "2010",
-          "title": "IT Systems Technician",
-          "description": "Instituto Nacional de Formacion Tecnica Profesional \"Humberto Velasquez Garcia\"\nSkilled in managing and maintaining hardware and software components, providing technical support, and assisting in the development and deployment of web and desktop applications."
-        }
-      ]
-    }
+  "common": {
+    "closeMenu": "Close menu",
+    "demo": "Demo",
+    "loading": "Loading...",
+    "more": "Show more...",
+    "openMenu": "Open menu",
+    "scrollToTop": "Scroll to top",
+    "sourceCode": "Source code",
+    "zoomIn": "Zoom in image"
   },
   "contact": {
-    "isVisible": true,
-    "id": "contact",
-    "title": "Contact",
-    "description": "If you have any questions or inquiries, feel free to get in touch using the form below.",
     "button": "Send message",
+    "description": "If you have any questions or inquiries, feel free to get in touch using the form below.",
+    "gBranding": "This site is protected by reCAPTCHA and the Google [Privacy Policy](https://policies.google.com/privacy) and [Terms of Service](https://policies.google.com/terms) apply.",
+    "id": "contact",
+    "isVisible": true,
     "placeholders": {
-      "name": "Full name",
       "email": "Email address",
-      "message": "Your message"
+      "message": "Your message",
+      "name": "Full name"
     },
     "status": {
+      "error": {
+        "network": "Network error. Please try again later.",
+        "response": "There was a problem sending the message. Please try again."
+      },
       "loading": {
         "button": "Sending...",
         "form": "Submitting form..."
       },
-      "error": {
-        "response": "There was a problem sending the message. Please try again.",
-        "network": "Network error. Please try again later."
-      },
       "success": "Message sent."
     },
-    "gBranding": "This site is protected by reCAPTCHA and the Google [Privacy Policy](https://policies.google.com/privacy) and [Terms of Service](https://policies.google.com/terms) apply."
+    "title": "Contact"
+  },
+  "education": {
+    "description": "My technical background includes the following qualifications:",
+    "id": "education",
+    "isVisible": true,
+    "list": {
+      "items": [
+        {
+          "date": "2010",
+          "description": "Instituto Nacional de Formacion Tecnica Profesional \"Humberto Velasquez Garcia\"\nSkilled in managing and maintaining hardware and software components, providing technical support, and assisting in the development and deployment of web and desktop applications.",
+          "title": "IT Systems Technician"
+        },
+        {
+          "date": "2023",
+          "description": "Servicio Nacional de Aprendizaje\nSkilled in requirement specification, analysis, design, coding, and implementation of information systems, applying quality best practices throughout the software development lifecycle.",
+          "title": "Analysis and Development of Information Systems"
+        }
+      ]
+    },
+    "title": "Education"
+  },
+  "header": {
+    "address": "Ciénaga, Magdalena, Colombia",
+    "name": "Daniel Fernandez",
+    "photo": {
+      "alt": "Profile picture",
+      "pathname": "me.jpg"
+    },
+    "profession": "Web Developer / IT Systems Technician"
   },
   "links": {
-    "isVisible": true,
     "id": "links",
-    "title": "Online Presence",
+    "isVisible": true,
     "items": [
       {
-        "text": "LinkedIn",
-        "url": "https://linkedin.com/in/danifernao",
-        "title": "Visit my profile on LinkedIn",
-        "icon": "linkedin"
+        "icon": "github",
+        "text": "GitHub",
+        "title": "Visit my profile on GitHub",
+        "url": "https://github.com/danifernao"
       },
       {
-        "text": "GitHub",
-        "url": "https://github.com/danifernao",
-        "title": "Visit my profile on GitHub",
-        "icon": "github"
+        "icon": "linkedin",
+        "text": "LinkedIn",
+        "title": "Visit my profile on LinkedIn",
+        "url": "https://linkedin.com/in/danifernao"
       }
-    ]
+    ],
+    "title": "Online Presence"
   },
-  "common": {
-    "closeMenu": "Close menu",
-    "openMenu": "Open menu",
-    "scrollToTop": "Scroll to top"
+  "projects": {
+    "description": "Some of my personal projects, created with the purpose of putting my knowledge into practice and improving my skills in web development.",
+    "id": "projects",
+    "isVisible": true,
+    "list": {
+      "items": [
+        {
+          "date": "2023-12-06",
+          "description": "A custom WordPress theme developed for the Hogar Infantil Los Fundadores website, aimed at strengthening its digital presence and promoting its institutional identity, services, activities, and contact channels.",
+          "links": [
+            {
+              "type": "source",
+              "url": "https://github.com/danifernao/fundadores-wp-theme"
+            }
+          ],
+          "screenshot": {
+            "alt": "Web project screenshot",
+            "pathname": "project-fundadores.png"
+          },
+          "tags": ["WordPress"],
+          "title": "Fundadores"
+        },
+        {
+          "date": "2025-03-12",
+          "description": "A personal website designed to showcase my professional profile, projects, and growth throughout my web development learning journey.",
+          "links": [
+            {
+              "type": "source",
+              "url": "https://github.com/danifernao/portfolio-site"
+            }
+          ],
+          "screenshot": {
+            "alt": "Web project screenshot",
+            "className": "with-border",
+            "pathname": "project-danifernao.png"
+          },
+          "tags": ["API Integration", "React", "TypeScript"],
+          "title": "Danifernao"
+        },
+        {
+          "date": "2025-03-20",
+          "description": "A quiz game where players identify the correct work a character belongs to based on its image.",
+          "links": [
+            {
+              "type": "demo",
+              "url": "https://play-aniguess.netlify.app/"
+            },
+            {
+              "type": "source",
+              "url": "https://github.com/danifernao/aniguess"
+            }
+          ],
+          "screenshot": {
+            "alt": "Web project screenshot",
+            "className": "with-border",
+            "pathname": "project-aniguess.png"
+          },
+          "tags": ["API Integration", "PWA", "React", "TypeScript"],
+          "title": "AniGuess"
+        },
+        {
+          "date": "2025-05-31",
+          "description": "A minimalist social network focused on delivering a simple and direct interaction experience. It features Markdown-based content editing, granular visibility controls, and emoji reactions to enhance communication.",
+          "links": [
+            {
+              "type": "source",
+              "url": "https://github.com/danifernao/social"
+            }
+          ],
+          "screenshot": {
+            "alt": "Web project screenshot",
+            "pathname": "project-social.png"
+          },
+          "tags": [
+            "Docker",
+            "Inertia.js",
+            "Laravel",
+            "MySQL",
+            "PHP",
+            "React",
+            "TypeScript"
+          ],
+          "title": "Social"
+        }
+      ]
+    },
+    "title": "Projects"
+  },
+  "skills": {
+    "id": "skills",
+    "isVisible": true,
+    "items": [
+      {
+        "icon": "css3",
+        "title": "CSS"
+      },
+      {
+        "icon": "docker",
+        "title": "Docker"
+      },
+      {
+        "icon": "git",
+        "title": "Git"
+      },
+      {
+        "icon": "html5",
+        "title": "HTML"
+      },
+      {
+        "icon": "javascript",
+        "title": "JavaScript"
+      },
+      {
+        "icon": "laravel",
+        "title": "Laravel"
+      },
+      {
+        "icon": "mysql",
+        "title": "MySQL"
+      },
+      {
+        "icon": "php",
+        "title": "PHP"
+      },
+      {
+        "icon": "react",
+        "title": "React"
+      },
+      {
+        "icon": "typescript",
+        "title": "TypeScript"
+      }
+    ],
+    "title": "Technical Skills"
   }
 }

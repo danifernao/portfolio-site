@@ -1,16 +1,17 @@
-import type { TimelineType } from "../types/types";
-import Screenshot from "./SectionTimelineScreenshot";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useId, useState } from "react";
 import ReactMarkdown from "react-markdown";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "yet-another-react-lightbox/styles.css";
+import type { TimelineType } from "../types/types";
+import Screenshot from "./SectionTimelineScreenshot";
 
 interface TimelineProps {
   id: string;
   list: TimelineType;
+  common: Record<string, string>;
 }
 
-function Timeline({ id, list }: TimelineProps) {
+function Timeline({ id, list, common }: TimelineProps) {
   const [isHidden, setIsHidden] = useState<boolean>(true);
   const timelineId = useId();
 
@@ -63,7 +64,7 @@ function Timeline({ id, list }: TimelineProps) {
                   <Screenshot
                     pathname={item.screenshot.pathname}
                     alt={item.screenshot.alt}
-                    title={item.screenshot.title}
+                    title={common.zoomIn}
                     className={item.screenshot.className}
                   />
                 )}
@@ -73,7 +74,8 @@ function Timeline({ id, list }: TimelineProps) {
                       {item.links.map((link, l) => (
                         <li key={l}>
                           <a href={link.url} target="_blank">
-                            {link.text}
+                            {link.type === "demo" && common.demo}
+                            {link.type === "source" && common.sourceCode}
                           </a>
                         </li>
                       ))}
@@ -98,7 +100,7 @@ function Timeline({ id, list }: TimelineProps) {
         <div className="more">
           <FontAwesomeIcon icon="chevron-down" aria-hidden={true} />
           <button onClick={expand} aria-controls={timelineId}>
-            {list.more}
+            {common.more}
           </button>
         </div>
       )}

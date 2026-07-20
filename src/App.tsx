@@ -8,7 +8,7 @@ import Links from "./components/Links";
 import ScrollToTop from "./components/ScrollToTop";
 import Section from "./components/Section";
 import Skills from "./components/Skills";
-import type { DataType, LinksItemType, LinksType } from "./types/types";
+import type { DataType } from "./types/types";
 
 import {
   faArrowUpRightFromSquare,
@@ -43,10 +43,6 @@ function App() {
     setData(langData);
   };
 
-  const getHeaderLinks = (links: LinksType): LinksItemType[] => {
-    return links && links.items ? links.items.filter((item) => item.icon) : [];
-  };
-
   useEffect(() => {
     if (!data) return;
 
@@ -62,16 +58,13 @@ function App() {
     <div id="wrapper">
       {data && (
         <>
-          <Header
-            dataHeader={data.header}
-            dataLinks={getHeaderLinks(data.links)}
-          />
+          <Header data={data} />
           <main id="content">
-            <Section data={data.about} />
+            <Section type="about" data={data} />
             <Skills data={data.skills} />
-            <Section data={data.projects} />
-            {data.blog && <Blog data={data.blog} />}
-            <Section data={data.education} />
+            <Section type="projects" data={data} />
+            {data.blog && <Blog data={data} />}
+            <Section type="education" data={data} />
             <Contact data={data.contact} />
             <Links data={data.links} />
           </main>

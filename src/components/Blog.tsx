@@ -1,10 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useRef, useState } from "react";
-import type { BlogType } from "../types/types";
+import type { DataType } from "../types/types";
 import Title from "./SectionTitle";
 
 interface BlogProps {
-  data: BlogType;
+  data: DataType;
 }
 
 interface Post {
@@ -15,16 +15,40 @@ interface Post {
 }
 
 function Blog({ data }: BlogProps) {
+  const [blog, common] = [data.blog, data.common];
   const [posts, setPosts] = useState<Post[]>([]);
   const [pageToken, setPageToken] = useState<null | string | undefined>(null);
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [errorFound, setErrorFound] = useState<boolean>(false);
   const blogRef = useRef<HTMLDivElement>(null);
+  const isDisabled = !blog || !blog.isVisible;
+
+  useEffect(() => {
+    if (isDisabled) {
+      return;
+    }
+
+    const controller = new AbortController();
+    const signal = controller.signal;
+
+    if (posts.length === 0) {
+      getEntries(signal);
+    }
+
+    return () => {
+      controller.abort();
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  if (isDisabled) {
+    return null;
+  }
 
   const getEntries = (signal: AbortSignal | null = null) => {
     const url = `https://www.googleapis.com/blogger/v3/blogs/${
       import.meta.env.VITE_BLOGGER_BLOG_ID
-    }/posts?maxResults=${data.api.maxResults}&key=${
+    }/posts?maxResults=${blog.api.maxResults}&key=${
       import.meta.env.VITE_GOOGLE_API_KEY
     }${pageToken ? "&pageToken=" + pageToken : ""}`;
 
@@ -87,28 +111,10 @@ function Blog({ data }: BlogProps) {
     return src.replace("/s20/", "/s300/");
   };
 
-  useEffect(() => {
-    const controller = new AbortController();
-    const signal = controller.signal;
-
-    if (posts.length === 0) {
-      getEntries(signal);
-    }
-
-    return () => {
-      controller.abort();
-    };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
-  if (!data.isVisible) {
-    return null;
-  }
-
   return (
-    <section id={data.id} ref={blogRef} className="section blog">
-      <Title id={data.id} title={data.title} />
-      {data.description && <p>{data.description}</p>}
+    <section id={blog.id} ref={blogRef} className="section blog">
+      <Title id={blog.id} title={blog.title} />
+      {blog.description && <p>{blog.description}</p>}
       <div id="entries" aria-live="polite">
         {posts.map((post) => (
           <article key={post.id}>
@@ -127,14 +133,14 @@ function Blog({ data }: BlogProps) {
             <a href={formatURL(post.url)} className="thumbnail" target="_blank">
               <img
                 src={getThumbnail(post.content)}
-                alt={`${data.imgAlt} ${post.title}`}
+                alt={`${blog.imgAlt} ${post.title}`}
               />
             </a>
           </article>
         ))}
       </div>
       {errorFound ? (
-        <p className="error">{data.error}</p>
+        <p className="error">{blog.error}</p>
       ) : (
         <>
           {isLoading ? (
@@ -144,14 +150,14 @@ function Blog({ data }: BlogProps) {
                 aria-hidden={true}
                 className="spinner"
               />
-              {data.loading}
+              {common.loading}
             </p>
           ) : (
             typeof pageToken !== "undefined" && (
               <div className="more">
                 <FontAwesomeIcon icon="chevron-down" aria-hidden={true} />
                 <button onClick={getMore} aria-controls="entries">
-                  {data.more}
+                  {common.more}
                 </button>
               </div>
             )

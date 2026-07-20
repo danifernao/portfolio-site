@@ -1,21 +1,26 @@
-import type { SectionType } from "../types/types";
+import type { DataType, SectionKey } from "../types/types";
 import Timeline from "./SectionTimeline";
 import Title from "./SectionTitle";
 
 interface SectionProps {
-  data: SectionType;
+  type: SectionKey;
+  data: DataType;
 }
 
-function Section({ data }: SectionProps) {
-  if (!data.isVisible) {
+function Section({ type, data }: SectionProps) {
+  const section = data[type];
+
+  if (!section.isVisible) {
     return null;
   }
 
   return (
-    <section id={data.id} className="section">
-      {data.title && <Title id={data.id} title={data.title} />}
-      {data.description && <p>{data.description}</p>}
-      {data.list && <Timeline id={data.id} list={data.list} />}
+    <section id={section.id} className="section">
+      {section.title && <Title id={section.id} title={section.title} />}
+      {section.description && <p>{section.description}</p>}
+      {section.list && (
+        <Timeline id={section.id} list={section.list} common={data.common} />
+      )}
     </section>
   );
 }

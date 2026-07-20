@@ -1,240 +1,236 @@
 {
-  "header": {
-    "name": "Daniel Fernández Juvinao",
-    "profession": "Desarrollador Web / Técnico Profesional en Sistemas",
-    "address": "Ciénaga, Magdalena, Colombia",
-    "photo": {
-      "title": "Ampliar imagen",
-      "pathname": "me.jpg",
-      "alt": "Fotografía de perfil"
-    }
-  },
   "about": {
-    "isVisible": true,
+    "description": "Soy un colombiano apasionado por el desarrollo web, con una filosofía centrada en los diseños sencillos y adaptables, siguiendo las buenas prácticas en marcado y SEO, priorizando la eficiencia y legibilidad en la codificación, siempre en constante aprendizaje.",
     "id": "about-me",
-    "title": "Acerca de mí",
-    "description": "Soy un colombiano apasionado por el desarrollo web, con una filosofía centrada en los diseños sencillos y adaptables, siguiendo las buenas prácticas en marcado y SEO, priorizando la eficiencia y legibilidad en la codificación, siempre en constante aprendizaje."
-  },
-  "skills": {
     "isVisible": true,
-    "id": "skills",
-    "title": "Competencias técnicas",
-    "items": [
-      {
-        "title": "HTML",
-        "icon": "html5"
-      },
-      {
-        "title": "CSS",
-        "icon": "css3"
-      },
-      {
-        "title": "JavaScript",
-        "icon": "javascript"
-      },
-      {
-        "title": "TypeScript",
-        "icon": "typescript"
-      },
-      {
-        "title": "React",
-        "icon": "react"
-      },
-      {
-        "title": "PHP",
-        "icon": "php"
-      },
-      {
-        "title": "MySQL",
-        "icon": "mysql"
-      },
-      {
-        "title": "Laravel",
-        "icon": "laravel"
-      },
-      {
-        "title": "Docker",
-        "icon": "docker"
-      },
-      {
-        "title": "Git",
-        "icon": "git"
-      }
-    ]
-  },
-  "projects": {
-    "isVisible": true,
-    "id": "projects",
-    "title": "Proyectos",
-    "description": "Te comparto algunos de mis proyectos personales, creados con el propósito de poner en práctica mis conocimientos y mejorar mis habilidades en desarrollo web.",
-    "list": {
-      "more": "Ver más proyectos...",
-      "items": [
-        {
-          "date": "2025-05-31",
-          "title": "Social",
-          "description": "Una red social minimalista enfocada en una experiencia de interacción simple y directa. Incorpora edición de contenido con Markdown, control granular de visibilidad y reacciones con emojis para enriquecer la comunicación.",
-          "tags": [
-            "PHP",
-            "MySQL",
-            "Laravel",
-            "Inertia.js",
-            "React",
-            "TypeScript",
-            "Docker"
-          ],
-          "screenshot": {
-            "title": "Ampliar imagen",
-            "pathname": "project-social.png",
-            "alt": "Captura de pantalla del proyecto"
-          },
-          "links": [
-            {
-              "text": "Código fuente",
-              "url": "https://github.com/danifernao/social"
-            }
-          ]
-        },
-        {
-          "date": "2025-03-20",
-          "title": "AniGuess",
-          "description": "Juego tipo quiz en el que el usuario debe identificar la animación, cómic o novela a la que pertenece cada personaje.",
-          "tags": ["React", "TypeScript", "Integración API", "PWA"],
-          "screenshot": {
-            "title": "Ampliar imagen",
-            "pathname": "project-aniguess.png",
-            "alt": "Captura de pantalla del proyecto",
-            "className": "with-border"
-          },
-          "links": [
-            {
-              "text": "Demostración",
-              "url": "https://play-aniguess.netlify.app/"
-            },
-            {
-              "text": "Código fuente",
-              "url": "https://github.com/danifernao/aniguess"
-            }
-          ]
-        },
-        {
-          "date": "2025-03-12",
-          "title": "Danifernao",
-          "description": "Página web personal diseñada para presentar mi perfil profesional, proyectos y evolución en el aprendizaje del desarrollo web.",
-          "tags": ["React", "TypeScript", "Integración API"],
-          "screenshot": {
-            "title": "Ampliar imagen",
-            "pathname": "project-danifernao.png",
-            "alt": "Captura de pantalla del proyecto",
-            "className": "with-border"
-          },
-          "links": [
-            {
-              "text": "Código fuente",
-              "url": "https://github.com/danifernao/portfolio-site"
-            }
-          ]
-        },
-        {
-          "date": "2023-12-06",
-          "title": "Fundadores",
-          "description": "Tema de WordPress desarrollado a medida para el sitio web del Hogar Infantil Los Fundadores, orientado a fortalecer su presencia digital y difundir su identidad institucional, servicios, actividades y canales de contacto.",
-          "tags": ["WordPress"],
-          "screenshot": {
-            "title": "Ampliar imagen",
-            "pathname": "project-fundadores.png",
-            "alt": "Captura de pantalla del proyecto"
-          },
-          "links": [
-            {
-              "text": "Código fuente",
-              "url": "https://github.com/danifernao/fundadores-wp-theme"
-            }
-          ]
-        }
-      ]
-    }
+    "title": "Acerca de mí"
   },
   "blog": {
-    "isVisible": false,
-    "id": "posts",
-    "title": "Blog",
-    "description": "Te invito a explorar mi blog, donde hablo sobre desarrollo web, bitácoras digitales y otros temas relacionados con la informática.",
     "api": {
       "maxResults": 3
     },
+    "description": "Te invito a explorar mi blog, donde hablo sobre desarrollo web, bitácoras digitales y otros temas relacionados con la informática.",
+    "error": "No se pudo obtener las publicaciones. Por favor, inténtelo más tarde.",
+    "id": "posts",
     "imgAlt": "Entrada del blog:",
-    "more": "Ver más publicaciones...",
-    "loading": "Obteniendo publicaciones...",
-    "error": "No se pudo obtener las publicaciones. Por favor, inténtelo más tarde."
+    "isVisible": false,
+    "title": "Blog"
   },
-  "education": {
-    "isVisible": true,
-    "id": "education",
-    "title": "Educación",
-    "description": "He tenido la oportunidad de alcanzar los siguientes logros académicos:",
-    "list": {
-      "more": "Ver más estudios...",
-      "items": [
-        {
-          "date": "2023",
-          "title": "Tecnólogo en Análisis y Desarrollo de Sistemas de Información",
-          "description": "Servicio Nacional de Aprendizaje\nCertifica las competencias para especificar los requisitos para el desarrollo de un sistema de información, realizar su análisis, diseñar y codificar la solución, y llevar a cabo la implementación del sistema, aplicando buenas prácticas de calidad durante todo el proceso de desarrollo de *software*."
-        },
-        {
-          "date": "2010",
-          "title": "Técnico Profesional en Sistemas",
-          "description": "Instituto Nacional de Formación Técnica Profesional «Humberto Velásquez García»\nCertifica las competencias para la gestión y mantenimiento de los componentes físicos y lógicos de sistemas informáticos, así como para apoyar en procesos técnicos relacionados con el desarrollo de aplicaciones web y de escritorio."
-        }
-      ]
-    }
+  "common": {
+    "closeMenu": "Cerrar menú",
+    "demo": "Demostración",
+    "loading": "Cargando...",
+    "more": "Ver más...",
+    "openMenu": "Abrir menú",
+    "scrollToTop": "Ir arriba",
+    "sourceCode": "Código fuente",
+    "zoomIn": "Ampliar imagen"
   },
   "contact": {
-    "isVisible": true,
-    "id": "contact",
-    "title": "Contactar",
-    "description": "Para cualquier duda o consulta, puedes comunicarte mediante el siguiente formulario.",
     "button": "Enviar mensaje",
+    "description": "Para cualquier duda o consulta, puedes comunicarte mediante el siguiente formulario.",
+    "gBranding": "Este sitio está protegido por reCAPTCHA y se aplican la [Política de privacidad](https://policies.google.com/privacy) y los [Términos del servicio](https://policies.google.com/terms) de Google.",
+    "id": "contact",
+    "isVisible": true,
     "placeholders": {
-      "name": "Nombre completo",
       "email": "Correo electrónico",
-      "message": "Tu mensaje"
+      "message": "Tu mensaje",
+      "name": "Nombre completo"
     },
     "status": {
+      "error": {
+        "network": "Error de red. Intenta más tarde.",
+        "response": "Hubo un problema al enviar el mensaje. Intenta de nuevo."
+      },
       "loading": {
         "button": "Enviando...",
         "form": "Enviando formulario..."
       },
-      "error": {
-        "response": "Hubo un problema al enviar el mensaje. Intenta de nuevo.",
-        "network": "Error de red. Intenta más tarde."
-      },
       "success": "Mensaje enviado."
     },
-    "gBranding": "Este sitio está protegido por reCAPTCHA y se aplican la [Política de privacidad](https://policies.google.com/privacy) y los [Términos del servicio](https://policies.google.com/terms) de Google."
+    "title": "Contactar"
+  },
+  "education": {
+    "description": "He tenido la oportunidad de alcanzar los siguientes logros académicos:",
+    "id": "education",
+    "isVisible": true,
+    "list": {
+      "items": [
+        {
+          "date": "2010",
+          "description": "Instituto Nacional de Formación Técnica Profesional «Humberto Velásquez García»\nCertifica las competencias para la gestión y mantenimiento de los componentes físicos y lógicos de sistemas informáticos, así como para apoyar en procesos técnicos relacionados con el desarrollo de aplicaciones web y de escritorio.",
+          "title": "Técnico Profesional en Sistemas"
+        },
+        {
+          "date": "2023",
+          "description": "Servicio Nacional de Aprendizaje\nCertifica las competencias para especificar los requisitos para el desarrollo de un sistema de información, realizar su análisis, diseñar y codificar la solución, y llevar a cabo la implementación del sistema, aplicando buenas prácticas de calidad durante todo el proceso de desarrollo de *software*.",
+          "title": "Tecnólogo en Análisis y Desarrollo de Sistemas de Información"
+        }
+      ]
+    },
+    "title": "Educación"
+  },
+  "header": {
+    "address": "Ciénaga, Magdalena, Colombia",
+    "name": "Daniel Fernández Juvinao",
+    "photo": {
+      "alt": "Fotografía de perfil",
+      "pathname": "me.jpg"
+    },
+    "profession": "Desarrollador Web / Técnico Profesional en Sistemas"
   },
   "links": {
-    "isVisible": true,
     "id": "links",
-    "title": "Presencia en línea",
+    "isVisible": true,
     "items": [
       {
-        "text": "LinkedIn",
-        "url": "https://linkedin.com/in/danifernao",
-        "title": "Visitar mi perfil en LinkedIn",
-        "icon": "linkedin"
+        "icon": "github",
+        "text": "GitHub",
+        "title": "Visitar mi perfil en GitHub",
+        "url": "https://github.com/danifernao"
       },
       {
-        "text": "GitHub",
-        "url": "https://github.com/danifernao",
-        "title": "Visitar mi perfil en GitHub",
-        "icon": "github"
+        "icon": "linkedin",
+        "text": "LinkedIn",
+        "title": "Visitar mi perfil en LinkedIn",
+        "url": "https://linkedin.com/in/danifernao"
       }
-    ]
+    ],
+    "title": "Presencia en línea"
   },
-  "common": {
-    "closeMenu": "Cerrar menú",
-    "openMenu": "Abrir menú",
-    "scrollToTop": "Ir arriba"
+  "projects": {
+    "description": "Te comparto algunos de mis proyectos personales, creados con el propósito de poner en práctica mis conocimientos y mejorar mis habilidades en desarrollo web.",
+    "id": "projects",
+    "isVisible": true,
+    "list": {
+      "items": [
+        {
+          "date": "2023-12-06",
+          "description": "Tema de WordPress desarrollado a medida para el sitio web del Hogar Infantil Los Fundadores, orientado a fortalecer su presencia digital y difundir su identidad institucional, servicios, actividades y canales de contacto.",
+          "links": [
+            {
+              "type": "source",
+              "url": "https://github.com/danifernao/fundadores-wp-theme"
+            }
+          ],
+          "screenshot": {
+            "alt": "Captura de pantalla del proyecto",
+            "pathname": "project-fundadores.png"
+          },
+          "tags": ["WordPress"],
+          "title": "Fundadores"
+        },
+        {
+          "date": "2025-03-12",
+          "description": "Página web personal diseñada para presentar mi perfil profesional, proyectos y evolución en el aprendizaje del desarrollo web.",
+          "links": [
+            {
+              "type": "source",
+              "url": "https://github.com/danifernao/portfolio-site"
+            }
+          ],
+          "screenshot": {
+            "alt": "Captura de pantalla del proyecto",
+            "className": "with-border",
+            "pathname": "project-danifernao.png"
+          },
+          "tags": ["Integración API", "React", "TypeScript"],
+          "title": "Danifernao"
+        },
+        {
+          "date": "2025-03-20",
+          "description": "Juego tipo quiz en el que el usuario debe identificar la animación, cómic o novela a la que pertenece cada personaje.",
+          "links": [
+            {
+              "type": "demo",
+              "url": "https://play-aniguess.netlify.app/"
+            },
+            {
+              "type": "source",
+              "url": "https://github.com/danifernao/aniguess"
+            }
+          ],
+          "screenshot": {
+            "alt": "Captura de pantalla del proyecto",
+            "className": "with-border",
+            "pathname": "project-aniguess.png"
+          },
+          "tags": ["Integración API", "PWA", "React", "TypeScript"],
+          "title": "AniGuess"
+        },
+        {
+          "date": "2025-05-31",
+          "description": "Una red social minimalista enfocada en una experiencia de interacción simple y directa. Incorpora edición de contenido con Markdown, control granular de visibilidad y reacciones con emojis para enriquecer la comunicación.",
+          "links": [
+            {
+              "type": "source",
+              "url": "https://github.com/danifernao/social"
+            }
+          ],
+          "screenshot": {
+            "alt": "Captura de pantalla del proyecto",
+            "pathname": "project-social.png"
+          },
+          "tags": [
+            "Docker",
+            "Inertia.js",
+            "Laravel",
+            "MySQL",
+            "PHP",
+            "React",
+            "TypeScript"
+          ],
+          "title": "Social"
+        }
+      ]
+    },
+    "title": "Proyectos"
+  },
+  "skills": {
+    "id": "skills",
+    "isVisible": true,
+    "items": [
+      {
+        "icon": "css3",
+        "title": "CSS"
+      },
+      {
+        "icon": "docker",
+        "title": "Docker"
+      },
+      {
+        "icon": "git",
+        "title": "Git"
+      },
+      {
+        "icon": "html5",
+        "title": "HTML"
+      },
+      {
+        "icon": "javascript",
+        "title": "JavaScript"
+      },
+      {
+        "icon": "laravel",
+        "title": "Laravel"
+      },
+      {
+        "icon": "mysql",
+        "title": "MySQL"
+      },
+      {
+        "icon": "php",
+        "title": "PHP"
+      },
+      {
+        "icon": "react",
+        "title": "React"
+      },
+      {
+        "icon": "typescript",
+        "title": "TypeScript"
+      }
+    ],
+    "title": "Competencias técnicas"
   }
 }
