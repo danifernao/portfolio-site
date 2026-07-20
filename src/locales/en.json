@@ -114,6 +114,10 @@
           "description": "A personal website designed to showcase my professional profile, projects, and growth throughout my web development learning journey.",
           "links": [
             {
+              "type": "demo",
+              "url": "https://danifernao.web.app"
+            },
+            {
               "type": "source",
               "url": "https://github.com/danifernao/portfolio-site"
             }

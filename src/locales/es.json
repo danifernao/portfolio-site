@@ -125,6 +125,10 @@
           "description": "Página web personal diseñada para presentar mi perfil profesional, proyectos y evolución en el aprendizaje del desarrollo web.",
           "links": [
             {
+              "type": "demo",
+              "url": "https://danifernao.web.app"
+            },
+            {
               "type": "source",
               "url": "https://github.com/danifernao/portfolio-site"
             }
