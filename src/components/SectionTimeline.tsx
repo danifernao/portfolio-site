@@ -73,6 +73,15 @@ function Timeline({ id, list, common }: TimelineProps) {
                     <ul className="links">
                       {item.links.map((link, l) => (
                         <li key={l}>
+                          {link.type === "demo" && (
+                            <FontAwesomeIcon
+                              icon="window-maximize"
+                              aria-hidden={true}
+                            />
+                          )}
+                          {link.type === "source" && (
+                            <FontAwesomeIcon icon="code" aria-hidden={true} />
+                          )}
                           <a href={link.url} target="_blank">
                             {link.type === "demo" && common.demo}
                             {link.type === "source" && common.sourceCode}

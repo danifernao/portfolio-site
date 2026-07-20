@@ -16,7 +16,9 @@ import {
   faChevronDown,
   faChevronUp,
   faCircleNotch,
+  faCode,
   faGlobe,
+  faWindowMaximize,
   faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 
@@ -30,9 +32,11 @@ library.add(
   faChevronUp,
   faChevronDown,
   faCircleNotch,
+  faCode,
   faGithub,
   faGlobe,
   faLinkedin,
+  faWindowMaximize,
   faXmark,
 );
 
