@@ -16,9 +16,11 @@ function Skills({ data }: SkillsProps) {
       {data.title && <Title id={data.id} title={data.title} />}
       {data.items && (
         <ul>
-          {data.items.map((item, i) => (
-            <SkillsItem key={i} item={item} />
-          ))}
+          {[...data.items]
+            .sort((a, b) => a.order - b.order)
+            .map((item, i) => (
+              <SkillsItem key={i} item={item} />
+            ))}
         </ul>
       )}
     </section>

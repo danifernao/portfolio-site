@@ -203,43 +203,63 @@
     "items": [
       {
         "icon": "css3",
-        "title": "CSS"
+        "order": 2,
+        "title": "CSS",
+        "url": "https://developer.mozilla.org/es/docs/Web/CSS"
       },
       {
         "icon": "docker",
-        "title": "Docker"
+        "title": "Docker",
+        "order": 10,
+        "url": "https://www.docker.com"
       },
       {
         "icon": "git",
-        "title": "Git"
+        "order": 9,
+        "title": "Git",
+        "url": "https://git-scm.com"
       },
       {
         "icon": "html5",
-        "title": "HTML"
+        "order": 1,
+        "title": "HTML",
+        "url": "https://developer.mozilla.org/es/docs/Web/HTML"
       },
       {
         "icon": "javascript",
-        "title": "JavaScript"
+        "order": 3,
+        "title": "JavaScript",
+        "url": "https://developer.mozilla.org/es/docs/Web/JavaScript"
       },
       {
         "icon": "laravel",
-        "title": "Laravel"
+        "order": 8,
+        "title": "Laravel",
+        "url": "https://laravel.com"
       },
       {
         "icon": "mysql",
-        "title": "MySQL"
+        "order": 7,
+        "title": "MySQL",
+        "url": "https://www.mysql.com"
       },
       {
         "icon": "php",
-        "title": "PHP"
+        "order": 6,
+        "title": "PHP",
+        "url": "https://www.php.net"
       },
       {
         "icon": "react",
-        "title": "React"
+        "order": 4,
+        "title": "React",
+        "url": "https://reactjs.org"
       },
       {
         "icon": "typescript",
-        "title": "TypeScript"
+        "order": 5,
+        "title": "TypeScript",
+        "url": "https://www.typescriptlang.org"
       }
     ],
     "title": "Competencias técnicas",

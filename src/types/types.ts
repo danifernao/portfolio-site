@@ -57,8 +57,10 @@ export interface SkillsType {
 }
 
 export interface SkillsItemType {
+  order: number;
   title: string;
   icon: string;
+  url: string;
 }
 
 export interface BlogType {
