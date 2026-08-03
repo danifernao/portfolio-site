@@ -82,7 +82,11 @@ function Timeline({ id, list, common }: TimelineProps) {
                           {link.type === "source" && (
                             <FontAwesomeIcon icon="code" aria-hidden={true} />
                           )}
-                          <a href={link.url} target="_blank">
+                          <a
+                            href={link.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
                             {link.type === "demo" && common.demo}
                             {link.type === "source" && common.sourceCode}
                           </a>

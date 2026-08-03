@@ -164,7 +164,9 @@ function Contact({ data }: ContactProps) {
         <div className="recaptcha-branding">
           <ReactMarkdown
             components={{
-              a: (props) => <a {...props} target="_blank" />,
+              a: (props) => (
+                <a {...props} target="_blank" rel="noopener noreferrer" />
+              ),
             }}
             children={data.gBranding}
           />

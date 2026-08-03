@@ -120,17 +120,22 @@ function Blog({ data }: BlogProps) {
           <article key={post.id}>
             <header>
               <h3 className="title">
-                <a href={formatURL(post.url)} target="_blank">
+                <a href={formatURL(post.url)} target="_blank" rel="noopener">
                   {post.title}
                 </a>
               </h3>
             </header>
             <p className="summary">
-              <a href={formatURL(post.url)} target="_blank">
+              <a href={formatURL(post.url)} target="_blank" rel="noopener">
                 {formatContent(post.content)}
               </a>
             </p>
-            <a href={formatURL(post.url)} className="thumbnail" target="_blank">
+            <a
+              href={formatURL(post.url)}
+              className="thumbnail"
+              target="_blank"
+              rel="noopener"
+            >
               <img
                 src={getThumbnail(post.content)}
                 alt={`${blog.imgAlt} ${post.title}`}

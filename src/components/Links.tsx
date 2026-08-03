@@ -25,7 +25,7 @@ function Links({ data }: LinksProps) {
             <Fragment key={i}>
               <dt>{link.text}</dt>
               <dd>
-                <a href={link.url} target="_blank">
+                <a href={link.url} target="_blank" rel="noopener noreferrer">
                   {formatUrl(link.url)}
                 </a>
               </dd>

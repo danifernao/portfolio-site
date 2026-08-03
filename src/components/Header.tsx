@@ -74,6 +74,7 @@ function Header({ data }: HeaderProps) {
                   title={link.title}
                   aria-label={link.title}
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <FontAwesomeIcon
                     icon={["fab", link.icon] as IconProp}
