@@ -134,32 +134,38 @@ function Contact({ data }: ContactProps) {
           {isProcessing ? data.status.loading.form : ""}
         </p>
 
-        <input
-          aria-label={data.placeholders.name}
-          type="text"
-          name="name"
-          placeholder={data.placeholders.name}
-          disabled={isProcessing}
-          required
-        />
+        <div className="field name">
+          <input
+            type="text"
+            name="name"
+            placeholder={data.placeholders.name}
+            disabled={isProcessing}
+            required
+          />
+          <label htmlFor="name">{data.placeholders.name}</label>
+        </div>
 
-        <input
-          aria-label={data.placeholders.email}
-          type="email"
-          name="email"
-          placeholder={data.placeholders.email}
-          disabled={isProcessing}
-          required
-        />
+        <div className="field email">
+          <input
+            type="email"
+            name="email"
+            placeholder={data.placeholders.email}
+            disabled={isProcessing}
+            required
+          />
+          <label htmlFor="email">{data.placeholders.email}</label>
+        </div>
 
-        <textarea
-          aria-label={data.placeholders.message}
-          name="message"
-          placeholder={data.placeholders.message}
-          disabled={isProcessing}
-          required
-          ref={textareaRef}
-        ></textarea>
+        <div className="field message">
+          <textarea
+            name="message"
+            placeholder={data.placeholders.message}
+            disabled={isProcessing}
+            required
+            ref={textareaRef}
+          ></textarea>
+          <label htmlFor="message">{data.placeholders.message}</label>
+        </div>
 
         <div className="recaptcha-branding">
           <ReactMarkdown
